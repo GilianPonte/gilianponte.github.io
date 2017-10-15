@@ -10,4 +10,4 @@ Gilian
 
 
 ### R
-- [Scraping with R](www.gilianponte.github.io/scraping_with_r)
+- [Scraping with R](scraping_with_r)
