@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to my personal blog. 
 
-You can use the [editor on GitHub](https://github.com/GilianPonte/gilianponte.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Here I will write about projects that I did or that I am working on. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I work as a web analyst and currently I am a master marketing student. In my free time and work I learned a lot about programming languages (R, JavaScript and Python). They made my life a lot easier during my work experience and education. My goal with this blog is to write about my experiences and project which I enjoyed most. Hopefully you will find these interesting and educational. If you ever want to reach out to me: gilianponte@gmail.com. 
 
-### Markdown
+I hope you enjoy my content,
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Gilian
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GilianPonte/gilianponte.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### R
+- [Scraping with R](www.gilianponte.github.io/scraping_with_r)
