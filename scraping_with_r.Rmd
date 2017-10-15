@@ -1,0 +1,43 @@
+```{r}
+### Load library
+library(rvest)
+library(dplyr)
+library(XLConnect)
+```
+
+```{r}
+### GET URLS
+urls <- read_html("http://www.klassiekshop.nl/labels/labels-a-e/?limit=all")
+```
+
+```{r}
+### EXTRACT URLS FROM PRODUCTS
+urls <- urls %>% 
+  html_nodes(".product-name a") %>% 
+  html_attr("href") %>%
+  as.character()
+
+url <- as.data.frame(urls)
+as.character(url$urls)
+```
+
+```{r}
+### CREATE EMPTY DATAFRAME
+EAN <- NULL
+price <- NULL
+aanbieding <- NULL
+df <- data.frame(EAN, price, aanbieding)
+```
+
+```{r}
+### GET DATA
+for(i in urls){
+  
+site <-read_html(i)
+print(i)
+  data <- data.frame(EAN =site %>% html_node("b") %>% html_text() ,
+               price =site %>% html_node(".price") %>% html_text() ,
+               stringsAsFactors=FALSE)
+ df <-rbind(df,data)
+}
+```
