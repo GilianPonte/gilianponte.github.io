@@ -1,2 +1,8 @@
 theme: jekyll-theme-cayman
 title: Big on Data
+
+---
+layout: default
+comments: true
+# other options
+---
