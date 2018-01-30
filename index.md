@@ -8,5 +8,8 @@ Gilian
 
 # Topics
 
-## R
-- [Scraping with R](scraping_with_R/)
+## Scraping
+- [Scraping product prices with R](scraping_with_R/)
+
+## Deep learning
+- 
