@@ -12,4 +12,4 @@ Gilian
 - [Scraping product prices with R](scraping_with_R/)
 
 ## Deep learning
-- 
+-  [Building a neural network to recognize clothing in Zalando's images](building-a-neural-network/)
