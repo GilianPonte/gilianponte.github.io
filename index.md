@@ -1,3 +1,5 @@
+![gihpy](http://www.esri.nl/~/media/Images/Content/technology-topics/big-data/main-improved-decision-making.gif)
+
 ## Welcome to my blog
 
 My name is Gilian Ponte, 23 years old and born/living in the Netherlands. Currently, I am a MSc Marketing student at Rijksuniversiteit Groningen. In my free time and work I learned a lot about programming languages. For example, R, JavaScript and Python. These languages made my life a lot easier during my work experience and education. 
