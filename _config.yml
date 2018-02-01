@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Big on Data
-google_analytics: UA-108205532-1
+plugins:
+  - jekyll-feed
