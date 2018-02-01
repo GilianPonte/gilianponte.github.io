@@ -13,3 +13,6 @@ My goal with this blog is to write about this exciting combination of marketing 
 
 ### Deep learning
 -  [Building a neural network to recognize clothing in Zalando's images](building-a-neural-network/)
+
+### Other blogs
+-  [R-bloggers](https://www.r-bloggers.com)
