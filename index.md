@@ -6,7 +6,7 @@ My name is Gilian Ponte, 23 years old and born/living in the Netherlands. Curren
 
 My goal with this blog is to write about this exciting combination of marketing and technology. Hopefully you will find these articles interesting and educational. If you ever want to reach out to me. You can send an email to gilianponte@gmail.com or go to my [Linkedin page](https://www.linkedin.com/in/gilianponte/). I am always open to discuss, suggest or take suggestions and willing to share all the data.
 
-## Topics
+## Articles
 
 ### Scraping
 - [Scraping product prices with R](scraping_with_R/)
