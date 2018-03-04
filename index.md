@@ -16,3 +16,8 @@ My goal with this blog is to write about this exciting combination of marketing 
 
 ### Other blogs
 -  [R-bloggers](https://www.r-bloggers.com)
+
+### Books
+- [Bishop - Pattern Recognition And Machine Learning - Springer 2006](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
+- [Francesco Ricci - Recommender System Handook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
+- [Tom Mitchell - Machine Learning - McGraw Hill 1997](http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf)
