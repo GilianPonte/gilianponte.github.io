@@ -24,7 +24,7 @@ My goal with this blog is to write about this exciting combination of marketing 
 - [Tom Mitchell - Machine Learning - McGraw Hill 1997](http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf)
 
 ### Recommender systems
-- [Francesco Ricci - Recommender System Handook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
+- [Francesco Ricci - Recommender System Handbook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
 
 ### Ethics
 - [Cathy O'Neil - Weapons of Math Destruction - Crown New York 2016](https://we.riseup.net/assets/.../Weapons+of+Math+Destruction+Cathy+O%27Neil.pdf)
