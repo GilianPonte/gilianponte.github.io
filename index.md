@@ -27,4 +27,4 @@ My goal with this blog is to write about this exciting combination of marketing 
 - [Francesco Ricci - Recommender System Handook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
 
 #### Ethics
-[Cathy O'Neil - Weapons of Math Destruction - Crown New York](https://we.riseup.net/assets/.../Weapons+of+Math+Destruction+Cathy+O%27Neil.pdf)
+- [Cathy O'Neil - Weapons of Math Destruction - Crown New York](https://we.riseup.net/assets/.../Weapons+of+Math+Destruction+Cathy+O%27Neil.pdf)
