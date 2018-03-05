@@ -10,8 +10,7 @@ Here I post my articles that I wrote.
 - [Scraping product prices with R](scraping_with_R/)
 - [Building a neural network to recognize clothing in Zalando's images](building-a-neural-network/)
 
-#### Other blogs
--  [R-bloggers](https://www.r-bloggers.com)
+---
 
 ### Books
 Some books that have helped me understanding my field better and that I would definitely recommend to all of my readers!
