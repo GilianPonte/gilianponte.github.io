@@ -23,4 +23,4 @@ Some books that have helped me understanding my field better and that I would de
 - [Francesco Ricci - Recommender System Handbook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
 
 #### Ethics
-- [Cathy O'Neil - Weapons of Math Destruction - Crown New York 2016](https://we.riseup.net/assets/.../Weapons+of+Math+Destruction+Cathy+O%27Neil.pdf)
+- [Cathy O'Neil - Weapons of Math Destruction - Crown New York 2016](https://www.google.nl/search?q=weapons+of+math+destruction+pdf&oq=weapons+of+m&aqs=chrome.0.69i59j69i60j69i57j0l3.6289j0j7&sourceid=chrome&ie=UTF-8)
