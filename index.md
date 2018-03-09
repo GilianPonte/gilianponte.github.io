@@ -1,26 +1,17 @@
-## Welcome to my blog
+# Articles
 
-My name is Gilian Ponte, 23 years old and born/living in the Netherlands. Currently, I am a MSc Marketing student at Rijksuniversiteit Groningen. In my free time and work I learned a lot about programming languages. For example, R, JavaScript and Python. These languages made my life a lot easier during my work experience and education. I especially appreciate the combination of new technology, statistics and marketing.
+## Machine learning
+![Zalando](https://i.imgur.com/VrKiMgq.png)
+Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Increasingly, these applications make use of a class of techniques called deep learning. Building a neural network is a form of machine learning. Machine learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation (Lecun, Bengio & Hinton, 2015; Krizhevsky, Sutskever & Hinton, 2017). This post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). 
 
-My goal with this blog is to write about this exciting combination of marketing and technology. Hopefully you will find these articles interesting and educational. If you ever want to reach out to me. You can send an email to gilianponte@gmail.com or go to my [Linkedin page](https://www.linkedin.com/in/gilianponte/). I am always open to discuss, suggest or take suggestions and willing to share all the data.
 
-### My articles
-Here I post my articles that I wrote.
+- [Read more](building-a-neural-network/)
 
-- [Scraping product prices with R](scraping_with_R/)
-- [Building a neural network to recognize clothing in Zalando's images](building-a-neural-network/)
+## Scraping
+![giphy][cat]
 
----
+[cat]: https://media.giphy.com/media/yjeAgye5hbFAc/giphy.gif
+Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). 
 
-### Books
-Some books that have helped me understanding my field better and that I would definitely recommend to all of my readers!
+- [Read more](scraping_with_R/)
 
-#### Machine learning
-- [Christopher M. Bishop - Pattern Recognition And Machine Learning - Springer 2006](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)
-- [Tom Mitchell - Machine Learning - McGraw Hill 1997](http://www.cs.ubbcluj.ro/~gabis/ml/ml-books/McGrawHill%20-%20Machine%20Learning%20-Tom%20Mitchell.pdf)
-
-#### Recommender systems
-- [Francesco Ricci - Recommender System Handbook - Springer 2011](http://www.cs.ubbcluj.ro/~gabis/DocDiplome/SistemeDeRecomandare/Recommender_systems_handbook.pdf)
-
-#### Ethics
-- [Cathy O'Neil - Weapons of Math Destruction - Crown New York 2016](https://www.google.nl/search?q=weapons+of+math+destruction+pdf&oq=weapons+of+m&aqs=chrome.0.69i59j69i60j69i57j0l3.6289j0j7&sourceid=chrome&ie=UTF-8)
