@@ -1,7 +1,7 @@
 # Articles
 
 ## Building a neural network to detect clothing in images
-*01 February, 2018*
+*1 February, 2018*
 ![Zalando](https://i.imgur.com/VrKiMgq.png)
 Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Increasingly, these applications make use of a class of techniques called deep learning. Building a neural network is a form of machine learning. Machine learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation (Lecun, Bengio & Hinton, 2015; Krizhevsky, Sutskever & Hinton, 2017). This post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). 
 
