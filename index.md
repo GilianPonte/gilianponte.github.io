@@ -12,12 +12,10 @@ Machine-learning technology powers many aspects of modern society: from searchin
 
 ___
 
-## Scraping
+## Scraping with R
 *16 October, 2017*
 
-![giphy][cat]
-
-[cat]: https://media.giphy.com/media/yjeAgye5hbFAc/giphy.gif
+[![example](https://i.imgur.com/EslEU0Y.png)](/scraping_with_R)
 
 Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). 
 
