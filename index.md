@@ -4,7 +4,7 @@
 
 *1 February, 2018*
 
-[![Imgur](https://i.imgur.com/61NIeNp.png)](/building-a-neural-network)
+[![Zalando](https://i.imgur.com/VrKiMgq.png)](/building-a-neural-network)
 
 Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Building a neural network is a form of machine learning. Machine learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation. This post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). 
 
