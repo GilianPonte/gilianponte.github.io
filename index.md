@@ -1,4 +1,9 @@
 # Articles
+## Coming soon - Which churn estimation method should I use?
+
+*22 may 2018*
+
+[![Churn](https://i.imgur.com/dUwUPBC.png)](/building-a-neural-network)
 
 ## Building a neural network to detect clothing in images
 
