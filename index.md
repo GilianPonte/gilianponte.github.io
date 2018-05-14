@@ -3,7 +3,7 @@
 
 *22 may 2018*
 
-[![Churn](https://i.imgur.com/dUwUPBC.png)](/building-a-neural-network)
+[![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)](/building-a-neural-network)
 
 ## Building a neural network to detect clothing in images
 
