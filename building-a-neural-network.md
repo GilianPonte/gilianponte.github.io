@@ -4,7 +4,7 @@
 ![Zalando](https://i.imgur.com/VrKiMgq.png)
 
 # Summary
-This blog post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). Just here to check out the code, click [here](https://github.com/GilianPonte/building-a-neural-network/blob/master/neuralnet.R).
+This blog post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). Just here to check out the code, click [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/neuralnet.R).
 
 1. Keywords: Deep learning, multinominal classification, neural network, image recognition.
 2. Level of programming: Advanced
