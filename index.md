@@ -1,9 +1,11 @@
 # Articles
-## Coming soon - Which churn estimation method should I use?
+## Which churn estimation method should I use? - In progress
 
 *22 may 2018*
 
 [![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)](/building-a-neural-network)
+
+[Read more...](/)
 
 ## Building a neural network to detect clothing in images
 
