@@ -7,7 +7,7 @@ Today I would like to show you that you don't have to be an expert at coding in 
 1. Level of programming: Beginner/Intermediate
 2. Programming language: R 
 3. Reading time: 10 min
-4. If you don't want to read my whole explanation on how to scrape, you can find the piece of code [here](https://github.com/GilianPonte/scraping_with_R/blob/master/scrapingexample.R) and start scraping yourself.
+4. If you don't want to read my whole explanation on how to scrape, you can find the piece of code [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/scrapingexample.R) and start scraping yourself.
 
 
 # Introduction
