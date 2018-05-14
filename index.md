@@ -5,7 +5,8 @@
 
 [![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)](/building-a-neural-network)
 
-Predicting churn gives you the power to prevent customers from going to the competitor or becoming inactive. It enables you to target them with more relevant marketing messages to reactivate them and make a loyal customer out of them. Literature describe the need to evaluate modern machine learning techiques in the context of predicting customer churn. In this article I compare a neural network with a logistic regression, decision tree, bagging and boosting in terms of predictive power.
+Predicting churn gives you the power to prevent customers from going to the competitor or becoming inactive. It enables you to target them with more relevant marketing messages to reactivate them and make a loyal customer out of them. Literature describes the need to evaluate modern machine learning techiques in the context of predicting customer churn. In this article I compare a neural network with a logistic regression, decision tree, bagging and boosting in terms of predictive power. Will a neural network outperform the more classical approaches?
+
 [Read more...](/)
 
 ## Building a neural network to detect clothing in images
