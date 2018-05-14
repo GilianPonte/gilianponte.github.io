@@ -10,6 +10,8 @@ Predicting churn gives you the power to prevent customers from going to the comp
 
 [Read more...](/)
 
+___
+
 ## Building a neural network to detect clothing in images
 
 *1 February, 2018*
@@ -22,6 +24,7 @@ Machine-learning technology powers many aspects of modern society: from searchin
 
 [Read more...](building-a-neural-network)
 
+___
 
 ## Scraping with R
 *16 October, 2017*
