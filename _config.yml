@@ -2,3 +2,8 @@ theme: jekyll-theme-cayman
 title: MarketingLearning
 plugins:
   - jekyll-feed
+---
+layout: default
+comments: true
+# other options
+---
