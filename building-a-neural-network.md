@@ -9,7 +9,7 @@ This blog post describes how to create a neural network to recognize clothing pi
 1. Keywords: Deep learning, multinominal classification, neural network, image recognition.
 2. Level of programming: Advanced
 3. Programming language: R 
-4. Reading time: 30 min
+4. Reading time: 10 min
 
 # Introduction
 Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Increasingly, these applications make use of a class of techniques called deep learning. Building a neural network is a form of deep learning. It has beaten other machine-learning techniques in predicting the activity of potential drugs molecules, analysing particle accelerator data and reconstructing brain circuits. Deep learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation (Lecun, Bengio & Hinton, 2015; Krizhevsky, Sutskever & Hinton, 2017). 
