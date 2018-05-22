@@ -8,7 +8,7 @@
 
 Predicting churn gives you the power to prevent customers from going to the competitor or becoming inactive. It enables you to target them with more relevant marketing messages, to reactivate them or to create a new loyal customer. Literature describes the need to evaluate modern machine learning techiques in the context of predicting customer churn. In this article I compare a neural network with a logistic regression, decision tree, bagging and boosting in terms of predictive power for churn. Will a neural network outperform the more classical approaches?
 
-**[Read more...](/)**
+**[Coming soon...](/)**
 
 ___
 
