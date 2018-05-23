@@ -1,6 +1,6 @@
 ## Coming soon - Predicting customer churn: Which estimation method should I use?
 
-*22 May 2018*
+*31 May, 2018*
 
 [![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)](/building-a-neural-network)
 
