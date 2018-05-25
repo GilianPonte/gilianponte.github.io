@@ -139,7 +139,7 @@ By now your fashiondata dataframe consists out of the correct labels and normali
 
 When your data is complete it is time to divide your total data into a training set and test set. From this training set the model is derived. From the test set it is possible to "test" the accuracy of the model. This process is visualized in figure 4.
 
-![train](http://www.nosimpler.me/wp-content/uploads/2016/08/training-test.png)
+![train](https://cdn-images-1.medium.com/max/1600/1*u03UsvBGwkYD4E7BObpcaw.png)
 
 *Figure 4, the flow of building a neural net.*
 
