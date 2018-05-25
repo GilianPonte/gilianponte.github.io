@@ -43,7 +43,7 @@ options(scipen= 999)
 
 
 ## Loading product numbers
-In this case you will need a .csv file containing all product numbers you want to scrape data of. Load them as a [data frame](http://www.r-tutor.com/r-introduction/data-frame) in R with the following line of code. Make sure the file is in your working directory.
+In this case you will need a .csv file containing all product numbers you want to scrape data of. Load them as a [data frame](https://stat.ethz.ch/R-manual/R-devel/library/base/html/data.frame.html) in R with the following line of code. Make sure the file is in your working directory.
 
 ```{r}
 productnumbers <- read.csv("UniqueProductCodes.csv")
