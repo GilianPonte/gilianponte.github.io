@@ -6,7 +6,7 @@
 
 *Author(s): [Gilian Ponte](https://nl.linkedin.com/in/gilianponte)*
 
-Predicting churn gives you the power to prevent customers from going to the competitor or becoming inactive. It enables you to target them with more relevant marketing messages, to reactivate them or to create a new loyal customer. Literature describes the need to evaluate modern machine learning techiques in the context of predicting customer churn. In this article I compare a neural network with a logistic regression, decision tree, bagging and boosting in terms of predictive power for churn. Will a neural network outperform the more classical approaches?
+This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. In the first section, relevant variables for explaining churn behaviour are evaluated. Followed by a description of the methodology of a logistic regression, decision trees, bagging, boosting and a neural network to model churn behaviour. These models are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression. Will a neural network outperform the more classical approaches?
 
 **[Coming soon...](/)**
 
