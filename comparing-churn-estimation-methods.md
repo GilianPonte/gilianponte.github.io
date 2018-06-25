@@ -1,7 +1,7 @@
 # Measuring and comparing predictive power of churn estimation methods
 *26th of June 2018*
 
-![Zalando](https://i.imgur.com/VrKiMgq.png)
+![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)
 
 # Summary
 This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. In the first section, relevant variables for explaining churn behaviour are evaluated. Followed by a description of the methodology of a logistic regression, decision trees, bagging, boosting and a neural network to model churn behaviour. These models are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression.
