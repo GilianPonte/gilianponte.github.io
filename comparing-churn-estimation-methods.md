@@ -127,6 +127,8 @@ Removing all the insignificant variables resulted in the estimation presented in
 
 Marginal effects are calculated to describe the impact of the variables on churn. Marginal effects describe the change in churn probability, as x increases with one unit, holding all other variables in the model constant or at average observation (Torres-Reyna, 2014). Table two shows the marginal effects of model two from the logistic regression. This table shows the same directional effect as described before, however now it is possible to describe the impact of the variables on churn.
 
+*Table 2, marginal effects*
+
 ![marginaleffects](https://i.imgur.com/jPkXy9a.png)
 
 For example, as the total charge of a customer increases with one dollar, the probability of a customer churning increases with 1.95 percent. Moreover, when a customer calls more in total, the probability of churning decreases with 1.42 percent. 
