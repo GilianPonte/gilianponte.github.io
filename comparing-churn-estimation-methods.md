@@ -123,19 +123,18 @@ The Akaike information criterion (AIC), which indicates a goodness of fit of the
 
 ![logisticregression](https://i.imgur.com/ztteLu0.png)
 
-## Bagging and boosting
-Bagging creates multiple decision trees over subsets of the telecom dataset and aggregates the outcomes of these trees to estimate the probability a churn (Breiman, 1996). All the variables that are in the dataset are used to estimate the churn probability. With these variables, the model was able to predict the customer status 94.84% of all customers correctly. The estimation method resulted in a comparable top decile lift of 6.47. However, the overall performance of the bagging method is higher than the decision tree and logistic regression, as the Gini coefficient is .74.
-Using the Boosting estimation method, 94.96% of all customer statuses are predicted correctly. The ability to separate the high probability churners from the other customers of the model is equal to the bagging model. However, the overall performance of the model is better compared to all previous described estimation methods (Gini coefficient is .77). 
+Removing all the insignificant variables resulted in the estimation presented in model two. This estimation has an AIC value of 1627, a lower BIC compared to model one of 1692 and is able to predict 84.89% of all customers correctly. It is not possible to interpret the coefficients of the logistic regression, in the same way as a linear regression. Only the signs of the logistic regression give a direction to the variable on the probability of a customer churning. The total charge, having an international plan, the number of day, evening and night calls, and the number of calls to customer service have a positive effect on the probability to churn. While the total number of calls, the total number of minutes called, having a voicemail plan, number of daytime, evening minutes reduce the probability of a customer churning.
 
-## Neural network
-As presented in figure 3, all variables are included in the estimation of the neural network.
- 
-Figure 3, estimation of neural network.
+Marginal effects are calculated to describe the impact of the variables on churn. Marginal effects describe the change in churn probability, as x increases with one unit, holding all other variables in the model constant or at average observation (Torres-Reyna, 2014). Table two shows the marginal effects of model two from the logistic regression. This table shows the same directional effect as described before, however now it is possible to describe the impact of the variables on churn.
 
-The variables are displayed at as input of the neural network , by hidden layers (H1, H2, H3) and biases (B1 and B2) the values of the inputs are transformed into an output in the form of probability of a customer to churn. When training the model, the model adjusts the hidden layers and biases until the squared error between the estimated churn probability and actual churn value 0 or 1 (Mitchell, 1997: Bishop, 2006). On the test data the estimation resulted in a top decile lift of 3.35, a Gini coefficient of 0.22 and a hit score of 86%.
+![marginaleffects](https://i.imgur.com/jPkXy9a.png)
 
-# Conclusion
-Au et al. (2003) proposed that neural network would overperform decision trees in predicting customer churn. Mozer et al. (2000) presented that neural networks outperform a logistic regression and a decision tree. Ha, Cho & Maclachlan (2005) proposed that also bagging and boosting would be outperformed by a neural network. Therefore, the need to compare modern machine learning techniques in terms of predictive power is self-evident. As displayed in figure 4, the neural network did not perform competitive in terms of overall performance (Gini coefficient), to separate the top churners from other customers (Top Decile Lift), the amount of correct predicted churn statuses and overall time to train the model. 
+For example, as the total charge of a customer increases with one dollar, the probability of a customer churning increases with 1.95 percent. Moreover, when a customer calls more in total, the probability of churning decreases with 1.42 percent. 
+
+Model three in table one is a result of the fit on the important variables from the decision tree, see table 1. Compared to the other models, the AIC and BIC are significantly higher. Also, this model was less good in identifying top churners and the performance of the overall model was weaker. Surprisingly, the hit rate of the model was comparable to the other models. Therefore, the estimation of model two is used to compare the logistic regression with the decision tree, bagging, boosting and a neural network.
+
+
+
 
 # References
 1. Ahn, J.-H., Han, S.-P., & Lee, Y.-S. (2006). Customer churn analysis: Churn determinants and mediation effects of partian defection in the Korean mobile telecommunications service industry. Telecommunications Policy (30), 552-568.
