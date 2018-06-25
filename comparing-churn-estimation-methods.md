@@ -1,3 +1,16 @@
+# Measuring and comparing predictive power of churn estimation methods
+*26th of June 2018*
+
+![Zalando](https://i.imgur.com/VrKiMgq.png)
+
+# Summary
+This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. In the first section, relevant variables for explaining churn behaviour are evaluated. Followed by a description of the methodology of a logistic regression, decision trees, bagging, boosting and a neural network to model churn behaviour. These models are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression.
+
+1. Keywords: Churn, machine learning, logistic regression, neural network, bagging, boosting, decision tree, Gini coefficient, top decile lift and hit rate.
+2. Level of programming: Advanced
+3. Programming language: R
+4. Reading time: 10 min
+
 # Introduction
 
 Customer relationship management is a strategy based on of building, managing and strengthen the relationship with customers (Vafeiadis, et al., 2015). Predicting churn and preventing customers from churning can save companies hundreds of thousands of dollars (Neslin, et al., 2006). The cost of attracting new customers is twelve times the cost of retaining your existing customers. Moreover, service providers can no longer rely on a steady customer base. In telecom service industries churn rates range from 23.4% to 46% (Neslin, et al., 2006). This makes customer churn a significant problem for companies. Hence, getting a clear view of which customers are likely to churn enables companies to focus on customers that are likely to churn and reactivate them (Neslin, et al, 2006). This study uses a dataset from an anonymous telecom provider.
@@ -39,6 +52,7 @@ For estimation of the models, five methodologies are evaluated in terms of their
 A logistic regression is one of the most used approaches to estimate the probability to churn (Neslin, et al., 2006: Risselada, Verhoef & Bijmolt, 2010). A logistic regression also referred to as a logit, is similar to a linear regression. Similar in a way that, a logistic regression is also able to test for a hypothesis. This implies that a logistic regression is able to test for significant variables, whereas a decision tree, bagging and boosting, neural networks are only able to present variable importance (Bischop, 2006). Moreover, a regression is able to output continuous variables, whereas a logistic regression only estimates the probability belonging to a group between 0 and 1 due to its sigmoid nature (Malhotra, 2010: Vafeiadis, et al., 2015). According to Bischop (2006), a logistic regression connects the latent utility to the probability of churning by a cumulative distribution function (CDF). This process is displayed in figure 1.
 
 ![CDF](https://i.imgur.com/ydYxuNj.png)
+
 *Figure 1, logistic regression cdf*
 
 From the calculation of the probability through the CDF, the probability is converted to a choice, to churn or not. Consider that churn has two outcomes: the customer churned and the customer did not churn. When the probability is greater than 0.5, then the predicted value of churning is set to 1, when the value is below 0.5 the predicted value is set to 0. The probability of a customer churning is modelled using the logit model (Bishop, 2006: Malhotra, 2010).
@@ -88,11 +102,13 @@ The probability of churning is a function of all the variables available in the 
 ![varimportancedecisiontree](https://i.imgur.com/IfCWVNS.png)
 
 *Figure 2, the variable importance of the decision tree*
+
 Based on information gain, splitting the dataset based on the total a customer was charged lead to the highest information gain and therefore is the most important variable, as presented in figure 2. Moreover, it is used as the first variable to split the decision tree as visible in figure 3.
 
 ![decisiontree](https://i.imgur.com/o66MBlg.png)
 
 *Figure 3, estimation of the decision tree.*
+
 Figure 3 could be interpreted as, when a customer has a total charge of 35 euros and called the customer service more than 4 times, the customer is .94 likely to stay. For example, when a customer has called for 70 minutes in one month and was charged 120 cents per minute, the total charge would be 84 dollars. Also, the customer has a voicemail plan. This means that customer has a probability of 96 percent to stay with the company. This shows how easy it is to interpret a decision tree.
 The decision tree was able to predict 94.84% of all the customers’ status correctly. The decision tree is better at identifying the customers with a high churn rate from other customers than the logistic regression, as the top decile lift is 6.47. However, the overall performance of the decision tree is weaker compared to the logistic regression, as the Gini coefficient is .53.
 
