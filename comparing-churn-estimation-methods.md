@@ -3,7 +3,7 @@
 
 ![Churn](https://d2mkz4zdclmlek.cloudfront.net/images/articles/what-is-customer-churn.png)
 
-# Summary
+## Summary
 This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. A logistic regression, decision trees, bagging, boosting and a neural network are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression.
 
 1. Keywords: Churn, machine learning, logistic regression, neural network, bagging, boosting, decision tree, gini coefficient, top decile lift and hit rate.
@@ -13,13 +13,13 @@ This article presents a comparative study of churn estimation methods. Telecommu
 5. The R code is available [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/ChurnData.R).
 
 
-# Introduction
+## Introduction
 
 Customer relationship management is a strategy based on of building, managing and strengthen the relationship with customers (Vafeiadis, et al., 2015). Predicting churn and preventing customers from churning can save companies hundreds of thousands of dollars (Neslin, et al., 2006). The cost of attracting new customers is twelve times the cost of retaining your existing customers. Moreover, service providers can no longer rely on a steady customer base. In telecom service industries churn rates range from 23.4% to 46% (Neslin, et al., 2006). 
 
 This makes customer churn a significant problem for companies. Hence, getting a clear view of which customers are likely to churn enables companies to focus on customers that are likely to churn and reactivate them (Neslin, et al, 2006). This study uses a dataset from an anonymous telecom provider.
 
-# Problem statement
+## Problem statement
 
 Numerous studies have described methods for predicting customer churn (Kim & Yoon, 2004: Ahn, Han & Lee, 2006: Neslin, et al., 2006: Risselada, Verhoef & Bijmolt, 2010: Nie, et al., 2011: Lu, Lin, Lu & Zhang, 2014:  Vafeiadis, et al., 2015). Predicting customer churn entails a decision in terms of a nominal variable, where zero describes no cancellation of the contract and one means the customer cancelled the contract. 
 
@@ -27,7 +27,8 @@ Methods that become relevant when the dependent variable, churn or no churn, is 
 
 Au et al. (2003) propose that neural networks outperform decision trees on large datasets. Also, experimental results showed that a neural network outperformed logistic regression and decision trees for churn prediction (Mozer et al., 2000). Ha, Cho & Maclachlan (2005) find that a neural network outperforms boosting and bagging. Therefore, this study compares the predictive power of a neural network with a decision tree, a logistic regression, bagging and boosting to predict churn using the dataset of an anonymous telecom provider.
 
-# Decision tree
+## Decision tree
+
 All the variables available in the dataset are used for the estimation of the decision tree presented in figure 2 is estimated. As in the following formula:
 
 *Pr⁡(Churn)~ f(AccountLength, TotalCharge, TotalCalls, TotalMinutes, IntlPlan, VoiceMailPlan, VoiceMailMessage, DayMinutes, DayCharge, DayCalls, EveMinutes, EveCharge, EveCalls, NightMinutes, NightCharge, NightCalls, CustServCalls)*
@@ -48,7 +49,7 @@ Figure 2 could be interpreted as, when a customer has a total charge of 35 euros
 
 The decision tree was able to predict 94.84% of all the customers’ status correctly. The decision tree is better at identifying the customers with a high churn rate from other customers than the logistic regression, as the top decile lift is 6.47. However, the overall performance of the decision tree is weaker compared to the logistic regression, as the Gini coefficient is .53.
 
-# Logistic regression 
+## Logistic regression 
 
 In table 1, three logistic models are presented. The first logistic estimation includes all the available variables in the telecom dataset, which results in model one. A check for highly correlated variables are included. This resulted in a high correlation between minutes called and charge. Therefore, these two variables are not added to the estimation at the same time in all the models.
 
@@ -62,6 +63,8 @@ Removing all the insignificant variables resulted in the estimation presented in
 
 Model three in table one is a result of the fit on the important variables from the decision tree, see table 1. Compared to the other models, the AIC and BIC are significantly higher. Also, this model was less good in identifying top churners and the performance of the overall model was weaker. Surprisingly, the hit rate of the model was comparable to the other models. Therefore, the estimation of model two is used to compare the logistic regression with the decision tree, bagging, boosting and a neural network.
 
+### Marginal effects
+
 Marginal effects are calculated to describe the impact of the variables on churn. Marginal effects describe the change in churn probability, as x increases with one unit, holding all other variables in the model constant or at average observation (Torres-Reyna, 2014). Table two shows the marginal effects of model two from the logistic regression. This table shows the same directional effect as described before, however now it is possible to describe the impact of the variables on churn.
 
 *Table 2, marginal effects*
@@ -70,7 +73,7 @@ Marginal effects are calculated to describe the impact of the variables on churn
 
 For example, as the total charge of a customer increases with one dollar, the probability of a customer churning increases with 1.95 percent. Moreover, when a customer calls more in total, the probability of churning decreases with 1.42 percent. 
 
-# Bagging and boosting
+## Bagging and boosting
 
 Bagging creates multiple decision trees over subsets of the telecom dataset and aggregates the outcomes of these trees to estimate the probability of churning (Breiman, 1996). All the variables that are in the dataset are used to estimate the churn probability. With these variables, the model was able to predict the customer status 94.84% of all customers correctly. The estimation method resulted in a comparable top decile lift of 6.47. However, the overall performance of the bagging method is higher than the decision tree and logistic regression, as the Gini coefficient is .74. The relative variable importance in relative percentages is visible in figure 3. It shows that, as in the decision tree, the total charge, voicemail plan and customer service calls are very important variable to estimate customer churn.  
 
@@ -84,7 +87,7 @@ Using the boosting estimation method, 94.96% of all customer statuses are predic
 
 *Figure 4, the relative importance of variables for boosting in percentage.*
 
-# Neural network
+## Neural network
 The neural network is estimated on data scaled by a min-max scale to a fixed range from zero to one. This improves the predictive performance and time of the neural network to estimate (Sola & Sevilla, 1997). In figure 5, the variables are displayed as the input of the neural network, by one hidden layer, 5 neurons and biases (B1 and B2) the values of the inputs are transformed into an output in the form of probability of a customer to churn. 
 
 ![neuralnetwork](https://preview.ibb.co/jJed5T/neuralnetwork.png)
@@ -93,7 +96,7 @@ The neural network is estimated on data scaled by a min-max scale to a fixed ran
 
 All variables are included in the estimation of the neural network. By estimating the model, the model adjusts the neurons and biases until the squared error between the estimated churn probability and actual churn value 0 or 1 (Mitchell, 1997: Bishop, 2006). On the test data, the estimation resulted in a top decile lift of 5.69, a Gini coefficient of 0.77 and a hit score of 92%.
 
-# Conclusion and discussion
+## Conclusion and discussion
 
 Churn prediction is very important for enterprises in a competitive market to retain valuable customers, as the telecom sector. Therefore, to build an effective churn prediction model, which has a certain level of predictive power is relevant (Tsai & Lu, 2009).
 Au et al. (2003) proposed that neural network would overperform decision trees in predicting customer churn. Mozer et al. (2000) presented that neural networks outperform a logistic regression and a decision tree. Ha, Cho & Maclachlan (2005) proposed that also bagging and boosting would be outperformed by a neural network. Therefore, the need to compare modern machine learning techniques in terms of predictive power is evident. As displayed in figure 6, the neural network did perform in terms of overall performance (Gini coefficient). 
@@ -108,14 +111,14 @@ The most competitive estimation methods are the bagging and boosting methods. Th
 
 Moreover, hit rate appeared to be a weak measurement of the predictive power of the logistic regression. Where in model three, the hit rate remained equal to the other estimations, the Gini coefficient and top decile lift decreased. 
 
-## Managerial implications
+### Managerial implications
 
 Out of all the methods evaluated in this paper in the context of estimating churn, bagging and boosting are most advisable for managers to estimate churn. Especially due to the high ability to discover the customers that are most likely to churn (TDL). 
 There are numerous methods available to estimate a binary decision (i.e., churn). Out of these methods, managers have to evaluate each method in terms of multiple performance measures. Just evaluating the estimations in terms of hit rate is not sufficient. A variety of performance measurements should also be included in the analysis of which estimation method has the highest predictive power.
 
 Managers should profit from the understandability of decision trees. They are easy to interpret or evaluate why customers churn, due to its structure. Neural networks are harder to interpret as it is a collection of adjustments by nodes and biases that lead to a probability. 
 
-## Limitations
+### Limitations
 
 First, this paper did not focus on the staying power of predictive models. This means that the model estimates are not evaluated over a certain time period. This implies that the predictive power of boosting and bagging may decline over time. Neslin, et al. (2006) describes that model last at least three months. In that time practitioners do not need to develop a new model. However, future research should test for longer time periods.
 
@@ -126,7 +129,7 @@ Third, the dataset on churn is limited, in this case, the data was from the tele
 Finally, there might be interaction effects among the variables used, which have not been discovered. For example, the account length might moderate the minutes called of customers. Future research could look for interaction effects, besides looking at the main effects.
 
 
-# References
+## References
 
 1. Ahn, J.-H., Han, S.-P., & Lee, Y.-S. 2006. Customer churn analysis: Churn determinants and mediation effects of partian defection in the Korean mobile telecommunications service industry. Telecommunications Policy (30), 552-568.
 2. Akaike, H. 1974. A new look at the statistical model identification. IEEE Transactions on Automatic Control, 19(6): 716–723.
