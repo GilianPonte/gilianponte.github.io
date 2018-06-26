@@ -1,7 +1,7 @@
 # Measuring and comparing predictive power of churn estimation methods
 *26th of June 2018*
 
-![Churn](https://rajputhimanshu.files.wordpress.com/2018/03/linear_vs_logistic_regression.jpg)
+![Churn](https://d2mkz4zdclmlek.cloudfront.net/images/articles/what-is-customer-churn.png)
 
 # Summary
 This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. A logistic regression, decision trees, bagging, boosting and a neural network are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression.
@@ -11,6 +11,7 @@ This article presents a comparative study of churn estimation methods. Telecommu
 3. Reading time: 10 min
 4. This article is part of a larger paper, which is available upon request.
 5. The R code is available [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/ChurnData.R).
+
 
 # Introduction
 
