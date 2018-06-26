@@ -107,13 +107,16 @@ Au et al. (2003) proposed that neural network would overperform decision trees i
 
 However, the neural network estimation did not overperform the other estimations in terms of separating the top churners from other customers (Top Decile Lift), the amount of correct predicted churn statuses and overall time to train the model. 
 
-The most competitive estimation methods are the bagging and boosting methods. These methods outperform the other estimations, except for the neural network in terms of the Gini coefficient. However, the top decile lift is more important for managers than the Gini coefficient and the hit rate, because a manager wants to find a model that finds those people that are the most likely to churn. These customers that are most likely to churn are targeted by the managers to convince them of becoming a loyal customer. Considering the time it takes to create a bagging or boosting model, the decision tree is competitive in terms of top decile lift. However, choosing a decision tree might imply that the overall prediction is weaker compared to boosting and bagging.
+The most competitive estimation methods are the bagging and boosting methods. These methods outperform the other estimations, except for the neural network in terms of the Gini coefficient. However, the top decile lift is more important for managers than the Gini coefficient and the hit rate, because a manager wants to find a model that finds those people that are the most likely to churn. These customers that are most likely to churn are targeted by the managers to convince them of becoming a loyal customer. 
+
+Considering the time it takes to create a bagging or boosting model, the decision tree is competitive in terms of top decile lift. However, choosing a decision tree might imply that the overall prediction is weaker compared to boosting and bagging.
 
 Moreover, hit rate appeared to be a weak measurement of the predictive power of the logistic regression. Where in model three, the hit rate remained equal to the other estimations, the Gini coefficient and top decile lift decreased. 
 
 ### Managerial implications
 
 Out of all the methods evaluated in this paper in the context of estimating churn, bagging and boosting are most advisable for managers to estimate churn. Especially due to the high ability to discover the customers that are most likely to churn (TDL). 
+
 There are numerous methods available to estimate a binary decision (i.e., churn). Out of these methods, managers have to evaluate each method in terms of multiple performance measures. Just evaluating the estimations in terms of hit rate is not sufficient. A variety of performance measurements should also be included in the analysis of which estimation method has the highest predictive power.
 
 Managers should profit from the understandability of decision trees. They are easy to interpret or evaluate why customers churn, due to its structure. Neural networks are harder to interpret as it is a collection of adjustments by nodes and biases that lead to a probability. 
