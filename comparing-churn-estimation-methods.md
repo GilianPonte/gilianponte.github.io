@@ -21,58 +21,8 @@ Numerous studies have described methods for predicting customer churn (Kim & Yoo
 
 Au et al. (2003) propose that neural networks outperform decision trees on large datasets. Also, experimental results showed that a neural network outperformed logistic regression and decision trees for churn prediction (Mozer et al., 2000). Ha, Cho & Maclachlan (2005) find that a neural network outperforms boosting and bagging. Therefore, this study compares the predictive power of a neural network with a decision tree, a logistic regression, bagging and boosting to predict churn using the dataset of an anonymous telecom provider.
 
-
-# Methodology
-
-For estimation of the models, five methodologies are evaluated in terms of their relevance and predictive power. A logistic regression, decision tree, bagging, boosting and neural networks are described.
-
-## Logistic regression
-
-A logistic regression is one of the most used approaches to estimate the probability to churn (Neslin, et al., 2006: Risselada, Verhoef & Bijmolt, 2010). A logistic regression also referred to as a logit, is similar to a linear regression. Similar in a way that, a logistic regression is also able to test for a hypothesis. This implies that a logistic regression is able to test for significant variables, whereas a decision tree, bagging and boosting, neural networks are only able to present variable importance (Bischop, 2006). Moreover, a regression is able to output continuous variables, whereas a logistic regression only estimates the probability belonging to a group between 0 and 1 due to its sigmoid nature (Malhotra, 2010: Vafeiadis, et al., 2015). According to Bischop (2006), a logistic regression connects the latent utility to the probability of churning by a cumulative distribution function (CDF). This process is displayed in figure 1.
-
-![CDF](https://i.imgur.com/ydYxuNj.png)
-
-*Figure 1, logistic regression cdf*
-
-From the calculation of the probability through the CDF, the probability is converted to a choice, to churn or not. Consider that churn has two outcomes: the customer churned and the customer did not churn. When the probability is greater than 0.5, then the predicted value of churning is set to 1, when the value is below 0.5 the predicted value is set to 0. The probability of a customer churning is modelled using the logit model (Bishop, 2006: Malhotra, 2010).
-
-## Decision trees
-
-Decision trees have been proved to be a popular methodology to predict churn (Nie, et al., 2011), especially due to their human readability and resistance to errors in the data (Mitchell, 1997). Decision trees classify instances by organizing information extracted from a training dataset in a hierarchical top-down structure composed of nodes and ramifications. Each node in the tree specifies an attribute of the instances (Mitchell, 1997: Nie, et al., 2011). 
-
-The most common algorithm for creating a decision tree is ID3 (Mitchell, 1997). The first question this algorithm needs to answer is which attribute is most useful for classifying instances. Recent studies have developed an algorithm CD4.5, which performs better in terms of predictive power than the original ID3 algorithm (Hssina, Merbouha, Ezzikouri, & Erritali, 2014). Both ID3 and CD4.5 are based on the information theory that uses an information gain measure called entropy to determine which variables separate the instances in each step of the decision tree. Entropy is a measure of the (im)purity of an arbitrary collection of examples, or the amount of unpredictability in a set of events (Mitchell, 1997). Bishop (2006) defines entropy as: “The average amount of information needed to specify the state of a random variable”.
-
-With the definition of entropy, the next step is to define information gain. Mitchell (1997) defines information gain as: “the measure of the effectiveness of an attribute in classifying the training data”. Information gain is based on the decrease in entropy, to find the attribute that returns the highest information gain. The information gain for all attributes is calculated, which forms the hierarchy of the attributes in the decision tree (Mitchell, 1997: Bishop, 2006).
-
-## Bagging
-
-Bagging has been proven extremely effective in improving the predictive accuracy of neural networks and decision trees (Ha, et al., 2005: Risselada, Verhoef, Bijmolt, 2010). Bagging consists of bootstrapping and aggregating. Bootstrapping in the form of training multiple tree models, also called a committee, that has each been estimated on an nth part of the original dataset. The results of these multiple models are aggregated to calculate a probability of churning for each customer (Breiman, 1996: Bishop, 2006).
-
-## Boosting
-
-Boosting has been proven effective in increasing the performance of customer churn in retail and telecommunications companies (Vafeiadis, et al., 2015). Lu, Lin, Lu & Zhang (2014) present boosting as a method to “boost” the predictive accuracy of a learning algorithm. One of the best known boosting techniques is AdaBoost, short for ‘adaptive boosting’ (Bishop, 2006). Ricci, Rokach Shapria and Kantor (2010) describe boosting as: “an iterative procedure to adaptively change the distribution of training data by focusing more on previously misclassified records”. Initially, all records are assigned equal weights. But, unlike bagging, weights may change at the end of each boosting round: Records that are wrongly classified will have their weights increased while records that are classified correctly will have their weights decreased. 
-
-## Neural networks
-
-Artificial neural networks are among the most effective learning methods currently known (Mitchell, 1997). Lecun, Bengio & Hinton (2015) describe a neural network as a methodology that discovers intricate structure in large datasets by using the feedforward backpropagation algorithm. Where feedforward stands for the type of neural network architecture where the connections are “fed forward”. Nie, et al (2011) describes a neural network as a supervised feed-forward neural network and usually consists of input, hidden and output layers, as visible in figure 6. Neural networks employ stochastic gradient descent to attempt to minimize the squared error between the network output values and the target values for these outputs (Mitchell, 1997: Bishop, 2006). 
-
-# Performance measures
-
-The top decile lift and Gini coefficient measure the accuracy of the churn model predictions. These measures are used to compare the predictive power of multiple estimation methods (Risselada, Verhoef & Bijmolt, 2010: Neslin, et al., 2006: Nie, et al., 2010: Holtrop, Wieringa, Gijsenberg & Verhoef, 2017).
-
-## Top decile lift
-
-The top decile lift measures to what extent the model is to identify the customers with a high churn rate from other customers (Holtop, Wieringa, Gijsenberg & Verhoef, 2017). The customers are divided into ten separate groups, each 10% of the customers, according to their churn probability. The percentage of churn is calculated in the highest group and divided by the average churn probability. The result indicates to what extent the model was able to identify the top churners in comparison to the random selection of customers (Verhoef & Wieringa, 2011).
-
-## Gini coefficient
-
-The Gini coefficient is an extension of the top decile lift measure. Compared to the top decile lift the Gini coefficient describes an overall performance of the model. The Gini coefficient is a number between zero and one, where zero is a bad performance and one is a perfect performance. It is calculated by dividing the area between the cumulative lift curve and the 45-degree line by the total area under the 45-degree line (Risselada, Verhoef, & Bijmolt, 2010).
-
-# Evaluation
-This chapter presents the estimation of all the described methods. These methods are evaluated accordingly to the performance measures. 
-
-## Decision tree
-All the variables available in the dataset are used for the estimation of the decision tree presented in figure 3 is estimated. As in the following formula:
+# Decision tree
+All the variables available in the dataset are used for the estimation of the decision tree presented in figure 2 is estimated. As in the following formula:
 
 *Pr⁡(Churn)~ f(AccountLength, TotalCharge, TotalCalls, TotalMinutes, IntlPlan, VoiceMailPlan, VoiceMailMessage, DayMinutes, DayCharge, DayCalls, EveMinutes, EveCharge, EveCalls, NightMinutes, NightCharge, NightCalls, CustServCalls)*
 
@@ -80,19 +30,19 @@ The probability of churning is a function of all the variables available in the 
 
 ![varimportancedecisiontree](https://i.imgur.com/IfCWVNS.png)
 
-*Figure 2, the variable importance of the decision tree*
+*Figure 1, the variable importance of the decision tree*
 
-Based on information gain, splitting the dataset based on the total a customer was charged lead to the highest information gain and therefore is the most important variable, as presented in figure 2. Moreover, it is used as the first variable to split the decision tree as visible in figure 3.
+Based on information gain, splitting the dataset based on the total a customer was charged lead to the highest information gain and therefore is the most important variable, as presented in figure 1. Moreover, it is used as the first variable to split the decision tree as visible in figure 2.
 
 ![decisiontree](https://i.imgur.com/o66MBlg.png)
 
-*Figure 3, estimation of the decision tree.*
+*Figure 2, estimation of the decision tree.*
 
-Figure 3 could be interpreted as, when a customer has a total charge of 35 euros and called the customer service more than 4 times, the customer is .94 likely to stay. For example, when a customer has called for 70 minutes in one month and was charged 120 cents per minute, the total charge would be 84 dollars. Also, the customer has a voicemail plan. This means that customer has a probability of 96 percent to stay with the company. This shows how easy it is to interpret a decision tree.
+Figure 3=2 could be interpreted as, when a customer has a total charge of 35 euros and called the customer service more than 4 times, the customer is .94 likely to stay. For example, when a customer has called for 70 minutes in one month and was charged 120 cents per minute, the total charge would be 84 dollars. Also, the customer has a voicemail plan. This means that customer has a probability of 96 percent to stay with the company. This shows how easy it is to interpret a decision tree.
 The decision tree was able to predict 94.84% of all the customers’ status correctly. The decision tree is better at identifying the customers with a high churn rate from other customers than the logistic regression, as the top decile lift is 6.47. However, the overall performance of the decision tree is weaker compared to the logistic regression, as the Gini coefficient is .53.
 
 
-## Logistic regression 
+# Logistic regression 
 
 In table 1, two logistic models are presented. The first logistic estimation includes all the available variables in the telecom dataset, which results in model one. A check for highly correlated variables are included in Appendix B. This resulted in a high correlation between minutes called and charge. Therefore, these two variables are not added to the estimation at the same time in all the models.
 
@@ -114,37 +64,37 @@ For example, as the total charge of a customer increases with one dollar, the pr
 
 Model three in table one is a result of the fit on the important variables from the decision tree, see table 1. Compared to the other models, the AIC and BIC are significantly higher. Also, this model was less good in identifying top churners and the performance of the overall model was weaker. Surprisingly, the hit rate of the model was comparable to the other models. Therefore, the estimation of model two is used to compare the logistic regression with the decision tree, bagging, boosting and a neural network.
 
-## Bagging and boosting
+# Bagging and boosting
 
-Bagging creates multiple decision trees over subsets of the telecom dataset and aggregates the outcomes of these trees to estimate the probability of churning (Breiman, 1996). All the variables that are in the dataset are used to estimate the churn probability. With these variables, the model was able to predict the customer status 94.84% of all customers correctly. The estimation method resulted in a comparable top decile lift of 6.47. However, the overall performance of the bagging method is higher than the decision tree and logistic regression, as the Gini coefficient is .74. The relative variable importance in relative percentages is visible in figure 4. It shows that, as in the decision tree, the total charge, voicemail plan and customer service calls are very important variable to estimate customer churn.  
+Bagging creates multiple decision trees over subsets of the telecom dataset and aggregates the outcomes of these trees to estimate the probability of churning (Breiman, 1996). All the variables that are in the dataset are used to estimate the churn probability. With these variables, the model was able to predict the customer status 94.84% of all customers correctly. The estimation method resulted in a comparable top decile lift of 6.47. However, the overall performance of the bagging method is higher than the decision tree and logistic regression, as the Gini coefficient is .74. The relative variable importance in relative percentages is visible in figure 3. It shows that, as in the decision tree, the total charge, voicemail plan and customer service calls are very important variable to estimate customer churn.  
 
 ![bagging](https://preview.ibb.co/bZBBs8/variableimportancebagging.png)
 
-*Figure 4, the relative importance of variables for bagging in percentage.*
+*Figure 3, the relative importance of variables for bagging in percentage.*
 
-Using the boosting estimation method, 94.96% of all customer statuses are predicted correctly. The ability to separate the high probability churners from the other customers of the model is equal to the bagging model. However, the overall performance of the model is better compared to all previous described estimation methods (Gini coefficient is .77). The variable importance of the boosting estimation is presented in figure 5. Where it also shows that the total amount of money charged was most important. However less important than in the bagging estimation. Here seems to be more of a distribution among the importance of the variables.
+Using the boosting estimation method, 94.96% of all customer statuses are predicted correctly. The ability to separate the high probability churners from the other customers of the model is equal to the bagging model. However, the overall performance of the model is better compared to all previous described estimation methods (Gini coefficient is .77). The variable importance of the boosting estimation is presented in figure 4. Where it also shows that the total amount of money charged was most important. However less important than in the bagging estimation. Here seems to be more of a distribution among the importance of the variables.
 
 ![boosting](https://preview.ibb.co/g8at5T/variableimportanceboosting.png)
 
-*Figure 5, the relative importance of variables for boosting in percentage.*
+*Figure 4, the relative importance of variables for boosting in percentage.*
 
-## Neural network
-The neural network is estimated on data scaled by a min-max scale to a fixed range from zero to one. This improves the predictive performance and time of the neural network to estimate (Sola & Sevilla, 1997). In figure 6, the variables are displayed as the input of the neural network, by one hidden layer, 5 neurons and biases (B1 and B2) the values of the inputs are transformed into an output in the form of probability of a customer to churn. 
+# Neural network
+The neural network is estimated on data scaled by a min-max scale to a fixed range from zero to one. This improves the predictive performance and time of the neural network to estimate (Sola & Sevilla, 1997). In figure 5, the variables are displayed as the input of the neural network, by one hidden layer, 5 neurons and biases (B1 and B2) the values of the inputs are transformed into an output in the form of probability of a customer to churn. 
 
 ![neuralnetwork](https://preview.ibb.co/jJed5T/neuralnetwork.png)
 
-*Figure 6, estimation of the neural network.*
+*Figure 5, estimation of the neural network.*
 
 All variables are included in the estimation of the neural network. By estimating the model, the model adjusts the neurons and biases until the squared error between the estimated churn probability and actual churn value 0 or 1 (Mitchell, 1997: Bishop, 2006). On the test data, the estimation resulted in a top decile lift of 5.69, a Gini coefficient of 0.77 and a hit score of 92%.
 
 # Conclusion and discussion
 
 Churn prediction is very important for enterprises in a competitive market to retain valuable customers, as the telecom sector. Therefore, to build an effective churn prediction model, which has a certain level of predictive power is relevant (Tsai & Lu, 2009).
-Au et al. (2003) proposed that neural network would overperform decision trees in predicting customer churn. Mozer et al. (2000) presented that neural networks outperform a logistic regression and a decision tree. Ha, Cho & Maclachlan (2005) proposed that also bagging and boosting would be outperformed by a neural network. Therefore, the need to compare modern machine learning techniques in terms of predictive power is evident. As displayed in figure 7, the neural network did perform in terms of overall performance (Gini coefficient). 
+Au et al. (2003) proposed that neural network would overperform decision trees in predicting customer churn. Mozer et al. (2000) presented that neural networks outperform a logistic regression and a decision tree. Ha, Cho & Maclachlan (2005) proposed that also bagging and boosting would be outperformed by a neural network. Therefore, the need to compare modern machine learning techniques in terms of predictive power is evident. As displayed in figure 6, the neural network did perform in terms of overall performance (Gini coefficient). 
 
 ![conclusion](https://image.ibb.co/mPWfKo/conclusion.png)
 
-*Figure 7, overall performance of the machine learning algorithms.*
+*Figure 6, overall performance of the machine learning algorithms.*
 
 However, the neural network estimation did not overperform the other estimations in terms of separating the top churners from other customers (Top Decile Lift), the amount of correct predicted churn statuses and overall time to train the model. 
 
