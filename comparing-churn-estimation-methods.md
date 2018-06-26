@@ -6,7 +6,7 @@
 # Summary
 This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. A logistic regression, decision trees, bagging, boosting and a neural network are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression.
 
-1. Keywords: Churn, machine learning, logistic regression, neural network, bagging, boosting, decision tree, Gini coefficient, top decile lift and hit rate.
+1. Keywords: Churn, machine learning, logistic regression, neural network, bagging, boosting, decision tree, gini coefficient, top decile lift and hit rate.
 2. Programming language: R
 3. Reading time: 10 min
 4. This article is part of a larger paper, which is available upon request.
