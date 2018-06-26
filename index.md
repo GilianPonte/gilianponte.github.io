@@ -1,4 +1,4 @@
-Predicting customer churn: Which estimation method should I use?
+## Predicting customer churn: Which estimation method should I use?
 
 *26 June, 2018*
 
