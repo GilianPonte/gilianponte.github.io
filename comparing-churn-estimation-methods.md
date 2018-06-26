@@ -52,7 +52,7 @@ The decision tree was able to predict 94.84% of all the customers’ status corr
 
 In table 1, three logistic models are presented. The first logistic estimation includes all the available variables in the telecom dataset, which results in model one. A check for highly correlated variables are included. This resulted in a high correlation between minutes called and charge. Therefore, these two variables are not added to the estimation at the same time in all the models.
 
-The Akaike information criterion (AIC), which indicates a goodness of fit of the logistic regression meanwhile penalizing for adding variables, has a value of 1628. While the Bayesian information criteria (BIC) which accounts for the sample size, resulted in a value of 1713. Model one was able to predict 84.65% of all the customers correctly (Akaike, 1974). 
+The Akaike information criterion (AIC), which indicates a goodness of fit of the logistic regression meanwhile penalizing for adding variables, has a value of 1628 (Akaike, 1974). While the Bayesian information criteria (BIC) which accounts for the sample size, resulted in a value of 1713. Model one was able to predict 84.65% of all the customers correctly. 
 
 *Table 1, estimation of the logistic regression*
 
