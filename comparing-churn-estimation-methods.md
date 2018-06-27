@@ -10,7 +10,6 @@ This article presents a comparative study of churn estimation methods. Telecommu
 2. Programming language: R
 3. Reading time: 10 min
 4. This article is part of a larger paper, which is available upon request.
-5. The R code is available [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/ChurnData.R).
 
 
 ## Introduction
