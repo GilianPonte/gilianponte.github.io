@@ -83,8 +83,8 @@ str(fashiondata)
 
 >In this case, there are no missing data points. If there would be missing data points for the pixels, you could delete the image completely. Make sure you check this for your dataset. Otherwise, your neural net won't work.
 
-## Normalization of the data
-By normalizing the data before you fit your neural network, the process of fitting the neural network will go faster (Sola & Sevilla, 1997). There are numerous ways of standardizing the pixel scores of the dataset: min-max normalization, z-score normalization, etc. In this case, min-max normalization will do, because it retains the original distribution.
+## Standardization of the data
+By standardizing the data before you fit your neural network, the process of fitting the neural network will go faster (Sola & Sevilla, 1997). There are numerous ways of standardizing the pixel scores of the dataset: min-max standardization, z-score standardization, etc. In this case, min-max standardization will do, because it retains the original distribution.
 
 First, remove the actual label column from the dataset because the label should not be standardized along with the actual pixel scores with ```fashiondata$label <- NULL``` . Save the label column into a separate dataframe for later manipulation ```label <- fashiondata$label```.
 
