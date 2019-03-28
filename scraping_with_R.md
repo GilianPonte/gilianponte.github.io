@@ -11,7 +11,7 @@ Today I would like to show you that you don't have to be an expert at coding in 
 
 
 # Introduction
-Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). 
+Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). This case is pure for educational purposes...
 
 
 # Let's start scraping
@@ -82,7 +82,7 @@ for (i in 1:nrow(pricedata)) {
 }
 ```
 
-The ```nrow``` function counts the number of rows in our data frame with EAN's. Therefore, the loop will start with the first EAN (row number one) in our data frame and end when it has used the last EAN in our scraper.
+The ```nrow``` function counts the number of rows in our data frame with unique product numbers (i.e., EAN or UPC). Therefore, the loop will start with the first EAN (row number one) in our data frame and end when it has used the last EAN in our scraper.
 
 
 ## Inside the loop
@@ -94,7 +94,7 @@ EAN <- as.character(pricedata[i,1])
 
 Next up, we want to load the competitors website its url. Most websites offer to search for EAN's or product numbers and then load the page of the concerning product directly. Try to find the url that performs a search query and directly loads the product page. In this case we will use a website which does offer the instant search method.
 
-> Sometimes you will need to go to the network tab of the developer section in your browser, to check what the real search url is.  
+> Sometimes you will need to go to the network tab of the developer section in your browser, to check what the real search url is. In this case, I have done this for you.
 
 With the function ```read_html``` in the second line we "load" the page. There is some error handling in the second line. If you don't understand this piece of code, I recommend reading [this](https://www.r-bloggers.com/error-handling-in-r/) article about error handling.
 
