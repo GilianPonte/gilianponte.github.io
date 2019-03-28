@@ -156,7 +156,7 @@ pricedata <- data.frame(EAN = productnumbers$EAN, Price = NA, stringsAsFactors=F
 ## looping
 for (i in 1:nrow(pricedata)) {
   EAN <- as.character(pricedata[i,1])
-  url <- paste0("https://www.muziekweb.nl/Muziekweb/Cat/SingleSearch/Search?q=",EAN, "&catalogue=")
+  url <- paste0("https://www.bol.com/nl/s/algemeen/zoekresultaten/Ntt/",EAN, "/N/0/Nty/1/search/true/searchType/qck/defaultSearchContext/media_al/sc/media_all/index.html")
   result <- tryCatch({pdp <- read_html(url)}, error = function(err) {error <- err})
   try(pricedata[i,2] <- pdp %>% html_nodes(".promo-price") %>% html_text())
 }
