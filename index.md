@@ -1,3 +1,10 @@
+## Generative adversarial networks (GANs): Overwhelming privacy concerns with the generation of fake data.
+*16 May, 2019*
+
+![img](https://i.imgur.com/kZcbwvQ.png)
+
+As part of the Rijksuniversiteit Groningen Seminar regarding privacy on the 16th of May, I gave a talk on generative adversarial networks and their ability to alleviate privacy issues. More content soon...
+
 ## Scraping the internet with R
 *31 August, 2018*
 
