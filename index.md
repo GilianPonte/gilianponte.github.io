@@ -1,4 +1,9 @@
-## Generative adversarial networks (GANs): Overwhelming privacy concerns with the generation of fake data.
+## Generative adversarial networks (GANs): generating celebrity faces.
+*27 March, 2019*
+
+[![](http://img.youtube.com/vi/-9Py2RKGRc4/0.jpg)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
+
+## Generative adversarial networks (GANs): Overwhelming privacy concerns with the generation of artificial data.
 *16 May, 2019*
 
 ![img](https://i.imgur.com/kZcbwvQ.png)
