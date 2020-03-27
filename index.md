@@ -1,7 +1,7 @@
 ## Generative adversarial networks (GANs): generating celebrity faces.
 *27 March, 2019*
 
-[![](http://img.youtube.com/vi/-9Py2RKGRc4/0.jpg)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
+[![](https://camo.githubusercontent.com/7dafb37991598560d368b24d078834747d431af3/68747470733a2f2f692e696d6775722e636f6d2f5a4736756d71732e706e67)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
 
 As part of the Deep Learning course at Rijksuniversiteit Groningen, we aimed to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
 
