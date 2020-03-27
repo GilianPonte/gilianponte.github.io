@@ -3,6 +3,8 @@
 
 [![](http://img.youtube.com/vi/-9Py2RKGRc4/0.jpg)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
 
+As part of the Deep Learning course at Rijksuniversiteit Groningen, we aimed to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required.
+
 ## Generative adversarial networks (GANs): Overwhelming privacy concerns with the generation of artificial data.
 *16 May, 2019*
 
