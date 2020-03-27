@@ -3,9 +3,16 @@
 
 [![](https://camo.githubusercontent.com/7dafb37991598560d368b24d078834747d431af3/68747470733a2f2f692e696d6775722e636f6d2f5a4736756d71732e706e67)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
 
-As part of the Deep Learning course at Rijksuniversiteit Groningen, we aimed to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
+As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
 
-## Generative adversarial networks (GANs): Overwhelming privacy concerns with the generation of artificial data.
+## Convolutional neural networks (CNN): image recognition with CIFAR-10 data set.
+*1 March, 2020*
+
+![img](https://i.imgur.com/eCMg9dp.png)
+
+In this project we aim to predict the classes from the CIFAR-10 data set. We develop a convolutional neural network (CNN) with varying parameters. We conduct four main experiments with the activation functions, different optimizers, weight decay and data augmentation. The code is available [here](https://github.com/GilianPonte/Deep-Learning/blob/master/CNNs/cnn.py).
+
+## Generative adversarial networks (GANs): overcoming privacy concerns with the generation of artificial data.
 *16 May, 2019*
 
 ![img](https://i.imgur.com/kZcbwvQ.png)
