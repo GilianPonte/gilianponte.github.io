@@ -1,5 +1,5 @@
 ## Generative adversarial networks (GANs): generating celebrity faces.
-*27 March, 2019*
+*27 March, 2020*
 
 [![](https://camo.githubusercontent.com/7dafb37991598560d368b24d078834747d431af3/68747470733a2f2f692e696d6775722e636f6d2f5a4736756d71732e706e67)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
 
