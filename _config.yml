@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Gilian Ponte"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Gilian Ponte"
 description              : &description "Ph.D. candidate, Marketing, Rijksuniversiteit Groningen"
