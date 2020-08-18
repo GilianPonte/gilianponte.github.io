@@ -10,4 +10,4 @@ author_profile: true
 - RUGCIC Seminar, "*Generative adversarial networks in marketing: Overcoming privacy concerns by generating artificial data*", Putten (The Netherlands), May 2019.
 
 ## 2018
-- [SatRday](https://amsterdam2018.satrdays.org/), "Scraping the internet with R", Uber Amsterdam (The Netherlands), September 2018.
+- [SatRday](https://amsterdam2018.satrdays.org/), "*Scraping the internet with R*", Uber Amsterdam (The Netherlands), September 2018.
