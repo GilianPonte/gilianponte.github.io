@@ -8,7 +8,7 @@ author_profile: true
 <br>
 <b>[Generative adversarial networks in marketing:
 Overcoming privacy issues with the generation of
-artificial data](http://gilianponte.nl/publications/RM_thesis_Gilian.pdf)</b> <br> 
+artificial data](https://gilianponte.nl/publications/RM%20thesis%20Gilian.pdf)</b> <br> 
 <i><b>Gilian Ponte</b></i>.<br>
 <i><b>Supervisor: Jaap Wieringa</b></i>.<br>
 <i>Research Master Thesis - Rijksuniversiteit Groningen</i>.
