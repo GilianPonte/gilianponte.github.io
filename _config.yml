@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Personal page"
-  avatar           : "profile.png"
+  avatar           : "https://gilianponte.nl/files/Knipsel.PNG"
   bio              : "PhD student Marketing"
   location         : "Groningen, The Netherlands"
   employer         : "Rijksuniversiteit Groningen"
