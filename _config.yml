@@ -7,10 +7,6 @@
 
 # Site Settings
 locale                   : "en-US"
-plugins:
-  - jekyll-remote-theme
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 title                    : "Gilian Ponte"
 title_separator          : "-"
 name                     : &name "Gilian Ponte"
