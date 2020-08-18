@@ -1,9 +1,4 @@
 theme: jekyll-theme-minimal
 title: Gilian Ponte
-plugins:
-  - jekyll-feed
----
-layout: default
-comments: true
-# other options
+description: [A short description of your site's purpose]
 ---
