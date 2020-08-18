@@ -90,13 +90,12 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : mix($primary-color, $text-color, 40%);
-$link-color-hover           : mix(#fff, $link-color, 25%);
-$link-color-visited         : mix(#000, $link-color, 25%);
-$masthead-link-color        : $text-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
-
-
+$link-color                 : mix(#000, $info-color, 15%) !default;
+$link-color-hover           : mix(#000, $link-color, 25%) !default;
+$link-color-visited         : mix(#fff, $link-color, 15%) !default;
+$masthead-link-color        : $primary-color !default;
+$masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;
+$navicon-link-color-hover   : mix(#fff, $primary-color, 75%) !default;
 /*
    Breakpoints
    ========================================================================== */
