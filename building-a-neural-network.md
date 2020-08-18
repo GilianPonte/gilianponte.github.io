@@ -4,19 +4,19 @@
 ![Zalando](https://i.imgur.com/VrKiMgq.png)
 
 # Summary
-This blog post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). Just here to check out the code, click [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/neuralnet.R).
+This blog post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). This post is written for very beginners and R users. Just here to check out the code, click [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/neuralnet.R).
 
 1. Keywords: Deep learning, multinominal classification, neural network, image recognition.
-2. Level of programming: Advanced
+2. Level of programming: Beginner
 3. Programming language: R 
 4. Reading time: 10 min
 
 # Introduction
-Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Increasingly, these applications make use of a class of techniques called deep learning. Building a neural network is a form of deep learning. It has beaten other machine-learning techniques in predicting the activity of potential drugs molecules, analysing particle accelerator data and reconstructing brain circuits. Deep learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation (Lecun, Bengio & Hinton, 2015; Krizhevsky, Sutskever & Hinton, 2017). 
+Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Increasingly, these applications make use of a class of techniques called deep learning. Building a neural network is a form of deep learning.  Deep learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation (Lecun, Bengio & Hinton, 2015; Krizhevsky, Sutskever & Hinton, 2017). 
 
 ## Neural networks
 
-Lecun, Bengio & Hinton (2015) describe deep learning as a technique that discovers intricate structure in large datasets by using the feedforward [backpropagation algorithm](https://www.youtube.com/watch?v=aVId8KMsdUU). Where feedforward stands for the type of neural network architecture where the connections are "fed forward", as displayed in figure 1. The "input" travels from the input layer to the hidden layers and output layer. 
+Lecun, Bengio & Hinton (2015) describe a training technique: the [backpropagation algorithm](https://www.youtube.com/watch?v=aVId8KMsdUU). In figure 1, we feedforward the input to a prediction and backpropagate the error to update the weights. 
 
 ![neuralnet](http://neuralnetworksanddeeplearning.com/images/tikz11.png)
 
@@ -24,10 +24,10 @@ Lecun, Bengio & Hinton (2015) describe deep learning as a technique that discove
 
 ### Input layer
 
-A neural network is created by training an algorithm to discover structure in a dataset. The machine is shown an image and produces an output in the form probability scores, one for each category/label. The desired category should have the highest scores of all categories, which is very unlikely to happen before training (Lecun, Bengio & Hinton, 2015). For example, when the input is a picture of a t-shirt, the machine should assign the highest probability to the category t-shirts.
+A neural network is created by training an algorithm to discover structure in a dataset. The network is shown an image and produces an output in the form probability scores, one for each category/label with an unnormalized softmax activation function. The desired category should have the highest scores of all categories, which is very unlikely to happen before training (Lecun, Bengio & Hinton, 2015). For example, when the input is a picture of a t-shirt, the machine should assign the highest probability to the category t-shirts.
 
 ### Hidden layers
-The network computes an objective function which measures the error between the output scores and the desired scores. The machine then modifies its internal adjustable parameters to reduce this error. These adjustable parameters, also called weights, are numbers that can be seen as "knobs" that represent the input-output function of the total network. For each "knob" the machine learns by what amount the error would increase or decrease if the weight where increased by a tiny amount. This process continues to happen until the machine finds the lowest total error possible. Therefore, the algorithm is able to take an input and produce the best output possible based on the training data (Lecun, Bengio & Hinton, 2015).
+The network computes an objective function which measures the error between the output scores and the desired scores. The machine then modifies its adjustable weights to reduce this error. These weights are numbers that can be seen as "knobs" that represent the input-output function of the total network. For each "knob" the machine learns by what amount the error would increase or decrease if the weight where increased by a tiny amount. This process continues to happen until the machine finds the lowest total error possible. Therefore, the algorithm is able to take an input and produce the best output possible based on the training data (Lecun, Bengio & Hinton, 2015).
 
 If you want to dig deeper and really want to understand the mathematical way of calculating the weights, I would recommend this article by [Yann LeCun](http://pages.cs.wisc.edu/~dyer/cs540/handouts/deep-learning-nature2015.pdf). Or for a brief gist, you could watch [this video](https://www.youtube.com/watch?v=BFdMrDOx_CM) about deep learning.
 
