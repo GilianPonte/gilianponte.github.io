@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : &name "Gilian Ponte"
-description              : &description "Ph.D. candidate, Marketing, Rijksuniversiteit Groningen"
+description              : &description "Ph.D candidate, Marketing, Rijksuniversiteit Groningen"
 url                      : "https://gilianponte.nl"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "GilianPonte/gilianponte.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Gilian Ponte"
   avatar           : "https://gilianponte.nl/files/Knipsel.PNG"
-  bio              : "PhD student Marketing"
+  bio              : "Ph.D student Marketing"
   location         : "Groningen, The Netherlands"
   employer         : "Rijksuniversiteit Groningen"
   pubmed           : 
