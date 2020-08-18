@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Gilian Ponte"
 title_separator          : "-"
 name                     : &name "Gilian Ponte"
-description              : &description "Personal page"
+description              : &description "Ph.D. candidate, Marketing, Rijksuniversiteit Groningen"
 url                      : "https://gilianponte.nl"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "GilianPonte/gilianponte.github.io"
@@ -75,7 +75,7 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-108205532-1"
 
 
 # Site Author
