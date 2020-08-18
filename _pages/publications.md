@@ -11,7 +11,7 @@ Overcoming privacy issues with the generation of
 artificial data](https://gilianponte.nl/publications/RM%20thesis%20Gilian.pdf)
 
 <i><b>Gilian Ponte</b></i>.<br>
-<b>Supervisor: Jaap Wieringa</b>
+<b>Supervisor: Jaap Wieringa</b><br>
 <i>Research Master Thesis - Rijksuniversiteit Groningen</i>.
 <br>
 
