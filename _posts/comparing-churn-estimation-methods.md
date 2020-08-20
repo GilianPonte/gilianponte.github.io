@@ -1,4 +1,10 @@
-# Measuring and comparing predictive power of churn estimation methods
+---
+layout: archive
+permalink: /year-archive/churn-estimation-methods
+title: "Measuring and comparing predictive power of churn estimation methods"
+author_profile: true
+---
+
 *26th of June 2018*
 
 ![Churn](https://d2mkz4zdclmlek.cloudfront.net/images/articles/what-is-customer-churn.png)
