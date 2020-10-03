@@ -5,10 +5,10 @@ permalink: /teaching/
 author_profile: true
 ---
 
-PhD (2020-2023)
+PhD (2020)
 
 - Markting BDK, BSc BDK, Rijksuniversiteit Groningen.
-- Business Research Methods for Pre-MSc, Pre-MSc, Rijksuniversiteit Groningen.
+- Market Models, MSc Marketing, Rijksuniversiteit Groningen.
 
 Assistant (2019):
 
