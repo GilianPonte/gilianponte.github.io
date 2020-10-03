@@ -51,20 +51,6 @@ This article presents a comparative study of churn estimation methods. Telecommu
 
 ___
 
-## Building a neural network to detect clothing in images
-
-*1 February, 2018*
-
-[![Zalando](https://i.imgur.com/VrKiMgq.png)](/building-a-neural-network)
-
-*Author(s): [Gilian Ponte](https://nl.linkedin.com/in/gilianponte)*
-
-Machine-learning technology powers many aspects of modern society: from searching on the web to recommendations on e-commerce websites, and it is increasingly present in consumer products. Machine learning also has shown promising results in natural language understanding, topic classification, sentiment analysis, question answering and language translation. This post describes how to create a neural network to recognize clothing pieces in pictures provided by [Zalando](https://zalando.com). 
-
-**[Read more...](/year-archive/churn-estimation-methods)**
-
-___
-
 ## Scraping with R
 *16 October, 2017*
 
