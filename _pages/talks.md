@@ -8,7 +8,7 @@ author_profile: true
 ## 2021
 
 - [INFORMS Marketing Science 2021: Privacy](https://simon.rochester.edu/simon-events/ISMSconference2021): "*Privacy-preserving Generative Adversarial Networks to Share Data and Derive Marketing Insights*", Paper presented _online_ by Gilian Ponte at the Simon Business School, the University of Rochester, June 2021.
-- 
+
 - [EMAC 2021: Special Session](https://gilianponte.github.io/files/186495092_158337092906279_7541098145022632093_n.png): "*Privacy-preserving Generative Adversarial Networks to Share Data and Derive Marketing Insights*", Paper presented _online_ by Gilian Ponte at the ESIC university (Madrid), May 2021.
 
 - [EMAC 2021: Doctoral Colloquium](https://gilianponte.github.io/files/186495092_158337092906279_7541098145022632093_n.png): "*Privacy-preserving Generative Adversarial Networks to Share Data and Derive Marketing Insights*", Paper presented _online_ by Gilian Ponte at the ESIC university (Madrid), May 2021.
