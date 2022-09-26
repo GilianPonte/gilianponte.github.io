@@ -1,9 +1,9 @@
 
 In this section, we aim to provide intuition for the proof of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
 
-Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation \ref{eq:1} and use the following equality:
+Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 and use the following equality:
 
-$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z})))=\mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log (1-D(\boldsymbol{x})).$
+$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z})))=\mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log (1-D(\boldsymbol{x})).$$
 
 At first glance, one could argue that the equality in Equation \ref{eq:equality} comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function. For example, if we use a ReLU activation function in the hidden layers, all the negative inputs are mapped to zero. Intuitively, consider the situation where we use a ReLU activation function and the activation is -10. The output of the activation function would be $\max(0,-10) = 0$. Subsequently, if we adjust the weight so that the activation becomes -20, the result from the ReLU activation function is still zero $\max(0,-20) = 0$. As a result, the inverse function $G^{-1}$ is not unique.
 
