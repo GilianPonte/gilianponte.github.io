@@ -1,9 +1,9 @@
-\label{appendix:A}
+
 In this section, we aim to provide intuition for the proof of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$ from \cite{goodfellow_2014}. We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
 
 \cite{goodfellow_2014} take the value function $V(D,G)$ from Equation \ref{eq:1} and use the following equality:
 
-\begin{equation}\label{eq:equality}
+\begin{equation}
 \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z})))=\mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log (1-D(\boldsymbol{x})).    
 \end{equation}
 
@@ -11,7 +11,7 @@ At first glance, one could argue that the equality in Equation \ref{eq:equality}
 
 We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem \citep{Bill86}. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In Equation \ref{eq:equality}, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
-\begin{equation}\label{eq:8}
+\begin{equation}
 \begin{split}
 V(D, G) & := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))] \\
 & = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} %x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z \\
