@@ -21,22 +21,6 @@ As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to ge
 
 In this project we aim to predict the classes from the CIFAR-10 data set. We develop a convolutional neural network (CNN) with varying parameters. We conduct four main experiments with the activation functions, different optimizers, weight decay and data augmentation. The code is available [here](https://github.com/GilianPonte/Deep-Learning/blob/master/CNNs/cnn.py).
 
-## Generative adversarial networks (GANs): overcoming privacy concerns with the generation of artificial data.
-*16 May, 2019*
-
-![img](https://i.imgur.com/kZcbwvQ.png)
-
-As part of the Rijksuniversiteit Groningen Seminar regarding privacy on the 16th of May, I gave a talk on generative adversarial networks and their ability to alleviate privacy issues. More content soon...
-
-## Scraping the internet with R
-*31 August, 2018*
-
-![img](https://i.imgur.com/LFoX3Sa.png])
-
-As part of the SatRday conference on the 31st of August, I will give a workshop on scraping the internet in R. This will be located in the Uber office @ Amsterdam. Get your tickets in the link below.
-
-[Get tickets here...](https://amsterdam2018.satrdays.org)
-
 ## Predicting customer churn: Which estimation method should I use?
 
 *26 June, 2018*
