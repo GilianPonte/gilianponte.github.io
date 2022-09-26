@@ -14,15 +14,15 @@ author_profile: true
 - RUG CIC Seminar with industry partners, Utrecht (The Netherlands). 
 
 ## 2021
--  \url{INFORMS Marketing Science}(https://simon.rochester.edu/simon-events/ISMSconference2021), University of Rochester (USA).
-- \url{EMAC}(http://proceedings.emac-online.org/pdfs/A2021-102341.pdf) Special Session, ESIC university (Spain).
+- [INFORMS Marketing Science](https://simon.rochester.edu/simon-events/ISMSconference2021), University of Rochester (USA).
+- [EMAC](http://proceedings.emac-online.org/pdfs/A2021-102341.pdf) Special Session, ESIC university (Spain).
 - EMAC Doctoral Colloquium, ESIC university (Spain).
 - SOM PhD Conference, University of Groningen (The Netherlands).
         
 ## 2019
-- \url{Research Seminars Series}(https://www.wu.ac.at/en/mm/news-details-mm/detail/research-talk-by-je-jaap-wieringa-university-of-groningen-nl-1/), WU Vienna (Austria).
+- [Research Seminars Series](https://www.wu.ac.at/en/mm/news-details-mm/detail/research-talk-by-je-jaap-wieringa-university-of-groningen-nl-1/), WU Vienna (Austria).
 - RUG CIC Seminar with industry partners, Putten (The Netherlands).
 
 ## 2018
-- \url{\tt SatRday}(https://amsterdam2018.satrdays.org/), "Scraping the internet with R", Uber Amsterdam (The Netherlands).
+- [SatRday](https://amsterdam2018.satrdays.org/), "Scraping the internet with R", Uber Amsterdam (The Netherlands).
 
