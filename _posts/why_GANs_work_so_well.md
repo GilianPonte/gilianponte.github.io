@@ -1,21 +1,18 @@
 
 In this section, we aim to provide intuition for the proof of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
 
-Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 and use the following equality:
+Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 in their paper and use the following equality:
 
 $$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z})))=\mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log (1-D(\boldsymbol{x})).$$
 
-At first glance, one could argue that the equality in Equation \ref{eq:equality} comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function. For example, if we use a ReLU activation function in the hidden layers, all the negative inputs are mapped to zero. Intuitively, consider the situation where we use a ReLU activation function and the activation is -10. The output of the activation function would be $\max(0,-10) = 0$. Subsequently, if we adjust the weight so that the activation becomes -20, the result from the ReLU activation function is still zero $\max(0,-20) = 0$. As a result, the inverse function $G^{-1}$ is not unique.
+At first glance, one could argue that the equality comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique.
 
-We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem \citep{Bill86}. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In Equation \ref{eq:equality}, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
+We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In the Equation above, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
-\begin{equation}
-\begin{split}
-V(D, G) & := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))] \\
+
+$$V(D, G) & := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))] \\
 & = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} %x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z \\
-& =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log %D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\
-\end{split}
-\end{equation}
+& =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log %D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
 Subsequently, recall that the goal of the discriminator $D$ is to maximize Equation \ref{eq:8} (see Equation \ref{eq:1}). If $G$ is given, we can rewrite Equation \ref{eq:8} as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
