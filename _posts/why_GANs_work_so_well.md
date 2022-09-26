@@ -10,7 +10,7 @@ At first glance, one could argue that the equality comes from a neural network $
 We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In the Equation above, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 
-$$ V(D, G) & := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))]$$
+$$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))]$$
 $$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} %x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z $$
 $$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log %D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
