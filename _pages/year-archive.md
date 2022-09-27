@@ -8,7 +8,7 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, University of Groningen (The Netherlands). My research interests lie in Marketing, Deep Learning and Applied Econometrics. My two excellent promotors are [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). My current research focuses on the development of methodologies to preserve privacy in marketing. Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
+I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, University of Groningen, The Netherlands. My research interests lie in Marketing, Deep Learning and Applied Econometrics. My two excellent promotors are [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). My current research focuses on the development of methodologies to preserve privacy in marketing. Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
 
 Probably about 50% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students.
 
@@ -16,7 +16,7 @@ Probably about 50% we write as academics does not end up in journals. In this bl
 ## Generative adversarial networks (GANs): generating celebrity faces.
 *27 March, 2020*
 
-[![](https://camo.githubusercontent.com/7dafb37991598560d368b24d078834747d431af3/68747470733a2f2f692e696d6775722e636f6d2f5a4736756d71732e706e67)](http://www.youtube.com/watch?v=-9Py2RKGRc4 "GAN")
+![DCGAN](https://s5.gifyu.com/images/DCGAN_64x64.gif)
 
 As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
 
