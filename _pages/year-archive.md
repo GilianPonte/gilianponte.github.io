@@ -30,6 +30,7 @@ Probably about 50% we write as academics does not end up in journals. In this bl
 [![DCGAN](https://s5.gifyu.com/images/DCGAN_64x64.gif)](https://www.youtube.com/watch?v=-9Py2RKGRc4)
 
 As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
+
 ---
 
 ## Convolutional neural networks (CNN): image recognition with CIFAR-10 data set.
@@ -38,6 +39,7 @@ As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to ge
 ![img](https://i.imgur.com/eCMg9dp.png)
 
 In this project we aim to predict the classes from the CIFAR-10 data set. We develop a convolutional neural network (CNN) with varying parameters. We conduct four main experiments with the activation functions, different optimizers, weight decay and data augmentation. The code is available [here](https://github.com/GilianPonte/Deep-Learning/blob/master/CNNs/cnn.py).
+
 ---
 
 ## Predicting customer churn: Which estimation method should I use?
