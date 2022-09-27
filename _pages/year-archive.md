@@ -14,7 +14,7 @@ Probably about 50% we write as academics does not end up in journals. In this bl
 
 # Some of my thoughts...
 
-## Providing some intuition to why GANs converge to any probability distribution
+## Why can GANs learn any probability distribution?
 
 [Read more...](https://gilianponte.github.io/why_GANs_work_so_well/)
 
