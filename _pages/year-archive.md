@@ -14,8 +14,6 @@ I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, Uni
 
 Probably about 50% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students. *Please be aware that some of the posts below were written a very long time ago. I keep them on here to observe the progress over time.*
 
-# Some of my thoughts...
-
 ## Why can GANs learn any probability distribution?
 *7 September, 2021*
 
