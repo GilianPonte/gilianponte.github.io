@@ -2,6 +2,8 @@
 layout: archive
 permalink: /
 author_profile: true
+toc: true
+toc_sticky: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
