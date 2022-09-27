@@ -16,7 +16,7 @@ Today I would like to show you that you don't have to be an expert at coding in 
 
 
 # Introduction
-Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). This case is pure for educational purposes...
+Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (e.g., getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). This case is pure for educational purposes...
 
 
 # Let's start scraping
@@ -76,7 +76,7 @@ pricedata <- data.frame(EAN = productnumbers$EAN, Price = NA, stringsAsFactors=F
 
 
 ## Competitors website
-Now we have everything set to collect the data from our victims' website. Let's get down to the real scraping. For this we will need a loop, since we have multiple EAN's we want to scrape. If you are not familiar with loops, [here](https://www.r-bloggers.com/how-to-write-the-first-for-loop-in-r/) is a very useful instruction to learn or to better understand it. 
+Now we have everything set to collect the data from our victims' website. Let's get down to the real scraping. For this we will need a loop, since we have multiple EAN's we want to scrape. If you are not familiar with loops, [here](https://www.r-bloggers.com/how-to-write-the-first-for-loop-in-r/) is a very useful instruction to learn about loops. 
 
 In our loop we call our earlier defined data frame with the EAN's to iterate over all the EAN's in the data frame with:
 
@@ -87,7 +87,7 @@ for (i in 1:nrow(pricedata)) {
 }
 ```
 
-The ```nrow``` function counts the number of rows in our data frame with unique product numbers (i.e., EAN or UPC). Therefore, the loop will start with the first EAN (row number one) in our data frame and end when it has used the last EAN in our scraper.
+The ```nrow``` function counts the number of rows in our data frame with unique product numbers (i.e., EAN or UPC). The loop will start with the first EAN (row number one) in our data frame and end when it has used the last EAN in our scraper.
 
 
 ## Inside the loop
