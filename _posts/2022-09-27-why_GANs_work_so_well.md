@@ -65,15 +65,15 @@ $$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log(\frac{p_{\text{d
 
 Subsequently, we use a trick to add and subtract $\log 2$ and multiply with a probability distribution in Equation \ref{eq:15}, which is equal to adding zero to both integrals:
 
-$$ C(G) =\int_{\boldsymbol{x}}\textcolor{blue}{(\log 2-\log 2) p_{\text {data}}(\boldsymbol{x})+}p_{\text{data}}(\boldsymbol{x})\log\left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
+$$ C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text {data}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})\log\left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
 
-$$ +\textcolor{blue}{(\log 2-\log 2) p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
+$$ +(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
 Subsequently, we can rewrite the equation as follows:
 
-$$ =\int_{\boldsymbol{x}}\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{\text {data}}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ =\int_{\boldsymbol{x}}\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{\text {data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
 
-$$ +\textcolor{blue}{\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
+$$ +\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})\right) \mathrm{d} x $$
 
 $$ =\int_{\boldsymbol{x}}\textcolor{blue}{-\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
 
