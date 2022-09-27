@@ -1,6 +1,7 @@
 ---
-layout: archive
+layout: post
 title: "Measuring and comparing predictive power of churn estimation methods"
+published: true
 ---
 
 *26th of June 2018*
