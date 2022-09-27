@@ -65,12 +65,12 @@ $$+\textcolor{blue}{(\log 2-\log 2) p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x})
 
 Subsequently, we can rewrite the equation as follows:
 
-$$=\int_{\boldsymbol{x}}\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{\text {data}}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
-$$+\textcolor{blue}{\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x$$
-$$=\int_{\boldsymbol{x}}\textcolor{blue}{-\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
-$$+\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
-$$=\int_{\boldsymbol{x}}\textcolor{blue}{-\log 2(p_{\text {data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})) +}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
-$$+\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x$$
+$$ =\int_{\boldsymbol{x}}\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{\text {data}}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ +\textcolor{blue}{\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
+$$ =\int_{\boldsymbol{x}}\textcolor{blue}{-\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ +\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
+$$ =\int_{\boldsymbol{x}}\textcolor{blue}{-\log 2(p_{\text {data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})) +}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ +\textcolor{blue}{\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
 
 Eventually, we can integrate $\textcolor{blue}{p_{\text {data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})}$ over $x$ and use linearity of the integral to rewrite as
 
