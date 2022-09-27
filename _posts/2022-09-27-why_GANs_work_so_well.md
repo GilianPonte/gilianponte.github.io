@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: archive
 title:  "Why do Generative Adversarial Networks (GANs) work so well?"
 published: true
 ---
