@@ -15,6 +15,9 @@ Probably about 50% we write as academics does not end up in journals. In this bl
 # Some of my thoughts...
 
 ## Why can GANs learn any probability distribution?
+*7 September 2021*
+
+[![pdf](https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG)](https://gilianponte.github.io/why_GANs_work_so_well/)
 
 [Read more...](https://gilianponte.github.io/why_GANs_work_so_well/)
 
