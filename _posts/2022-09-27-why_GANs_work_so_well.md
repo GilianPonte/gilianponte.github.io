@@ -4,7 +4,7 @@ title:  "Why do Generative Adversarial Networks (GANs) work so well?"
 published: true
 ---
 
-In this section, we aim to provide intuition for the proof of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
+In this post, I will aim to provide intuition for the proof of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text { plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
 
 Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 in their paper and use the following equality:
 
