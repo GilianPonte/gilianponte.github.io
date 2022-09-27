@@ -1,5 +1,7 @@
 ---
 title:  "Scraping with R"
+layout: post
+published: true
 ---
 
 # Scraping with R
