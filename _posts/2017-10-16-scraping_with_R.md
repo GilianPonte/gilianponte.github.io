@@ -1,6 +1,6 @@
 ---
 title:  "Scraping with R"
-layout: post
+layout: archive
 published: true
 ---
 
