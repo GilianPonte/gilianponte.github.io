@@ -46,7 +46,7 @@ $$ D^{*}_{G}(\boldsymbol{x})=\frac{1}{2} \text{ and } 1 - D^{*}_{G}(\boldsymbol{
 
 This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, \cite{goodfellow_2014} plug the optimal discriminator $D^{*}_{G}(\boldsymbol{x})$ back into the value function from Equation \ref{eq:8} to obtain a candidate value for a global minimum:
 
-$$C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text{data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
+$$C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text{data}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
 
 $$+(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
@@ -72,17 +72,17 @@ $$ +(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac
 Subsequently, we can rewrite the equation as follows:
 
 
-$$ =\int_{\boldsymbol{x}}\log 2p_{\text{data}}(\boldsymbol{x})-\log 2p_{\text{data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ =\int_{\boldsymbol{x}}\log 2p_{\text{data}}(\boldsymbol{x})-\log 2p_{\text{data}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) $$
 
-$$ +\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
+$$ +\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
 
-$$ =\int_{\boldsymbol{x}}-\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ =\int_{\boldsymbol{x}}-\log 2p_{\text{data}}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) $$
 
-$$ +\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
+$$ +\log 2p_{\text{data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
 
-$$ =\int_{\boldsymbol{x}}-\log 2(p_{\text {data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})) +p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ =\int_{\boldsymbol{x}}-\log 2(p_{\text{data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})) +p_{\text{data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) $$
 
-$$ +\log 2p_{\text {data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x$$
+$$ +\log 2p_{\text{data}}(\boldsymbol{x}) +\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x$$
 
 Eventually, we can integrate $p_{\text{data}}(\boldsymbol{x})+ p_{G}(\boldsymbol{x})$ over $x$ and use linearity of the integral to rewrite as
 
