@@ -8,7 +8,7 @@ In this post, I will aim to provide intuition for the proof of $p_{G} \stackrel{
 
 Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 in their paper and use the following equality:
 
-$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z})))=\mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log (1-D(\boldsymbol{x})).$$
+$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})).$$
 
 At first glance, one could argue that the equality comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique.
 
@@ -16,8 +16,10 @@ We posit that the equality is a result from a Radon-Nikodym derivative from the 
 
 
 $$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z})))$$
+
 $$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z $$
-$$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log %D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
+
+$$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
 Subsequently, recall that the goal of the discriminator $D$ is to maximize Equation \ref{eq:8} (see Equation \ref{eq:1}). If $G$ is given, we can rewrite Equation \ref{eq:8} as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
