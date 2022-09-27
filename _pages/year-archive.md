@@ -31,7 +31,7 @@ In this project we aim to predict the classes from the CIFAR-10 data set. We dev
 
 This article presents a comparative study of churn estimation methods. Telecommunication providers can no longer rely on a steady customer base. Machine learning methods are applied to the problem of customer churn in the telecommunications industry. In the first section, relevant variables for explaining churn behaviour are evaluated. Followed by a description of the methodology of a logistic regression, decision trees, bagging, boosting and a neural network to model churn behaviour. These models are estimated and evaluated by comparative performance measures. The results show that bagging performs better than decision trees, boosting, neural network and a logistic regression. Will a neural network outperform the more classical approaches?
 
-**[Read more...](posts/comparing-churn-estimation-methods)**
+**[Read more...](https://gilianponte.github.io/comparing-churn-estimation-methods)**
 
 ___
 
@@ -44,6 +44,6 @@ ___
 
 Scraping is a time-saving skill. It makes you save time for more important things in your daily routine work or hobbies (for example: getting coffee for your colleagues). More important in my experience, for most companies it enables the company to analyse its competitors' pricing strategy, product availability or collect reviews to do a sentiment analysis. In this case, we will scrape some prices from a Dutch webshop (please don't sue me). 
 
-**[Read more...](posts/scraping_with_R)**
+**[Read more...](https://gilianponte.github.io/scraping_with_R/)**
 
 ___
