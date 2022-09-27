@@ -2,6 +2,8 @@
 title:  "Scraping with R"
 layout: archive
 published: true
+toc: true
+toc_sticky: true
 ---
 
 *16 October, 2017*
