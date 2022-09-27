@@ -12,8 +12,7 @@ $$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbo
 
 At first glance, one could argue that the equality comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique.
 
-We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In the Equation above, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
-
+We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between probability measures. In the Equation below, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 $$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z}))) $$
 
@@ -21,7 +20,7 @@ $$ = \int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log D(\boldsymbol{x}
 
 $$ = \int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
-Subsequently, recall that the goal of the discriminator $D$ is to maximize Equation \ref{eq:8} (see Equation \ref{eq:1}). If $G$ is given, we can rewrite Equation \ref{eq:8} as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
+Subsequently, recall that the goal of the discriminator $D$ is to maximize the value function $V(D,G)$. If $G$ is given, we can rewrite Equation 4 as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
 $$ f^{\prime}(y) = 0 \Rightarrow \frac{a}{y}+\frac{b}{1-y} = 0 \Rightarrow \frac{-a+a y-b y}{y(y-1)}=0 \Rightarrow -a+a y-b y= 0 \Rightarrow
 y(a-b)-a=0 \Rightarrow y=\frac{a}{a-b}.$$
@@ -34,7 +33,7 @@ Thus, we can conclude that $\frac{a}{a+b}$ is indeed a maximum (i.e., $f^{\prime
 
 $$ D^{*}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{*}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
 
-\cite{goodfellow_2014} explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation \ref{eq:8} and define a virtual training criteria for the generator $C(G)$:
+\cite{goodfellow_2014} explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation 2 and define a virtual training criteria for the generator $C(G)$:
 
 $$ C(G) = \max_{D}V(D^{*}_{G},G) $$
 
@@ -42,13 +41,13 @@ $$ = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}(\log \frac{p_{\text{data}}
 
 Now that we have the optimal discriminator $D$ for a given generator $G$, we must find a global minimum of $G$. \cite{goodfellow_2014} claim that the global minimum of $C(G)$ is achieved iff $p_{G} = p_{\text{data}}$. In the first direction, given that $p_{\text{data}} = p_{G}$, we arrive at the optimal discriminator that is unable to distinguish real from artificial samples:
 
-$$ D^{*}_{G}(\boldsymbol{x})=\frac{1}{2} \text{ and } 1 - D^{*}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
+$$ D^{*}_{G}(\boldsymbol{x})=\frac{1}{2} \text{and} 1 - D^{*}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
 
-This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, \cite{goodfellow_2014} plug the optimal discriminator $D^{*}_{G}(\boldsymbol{x})$ back into the value function from Equation \ref{eq:8} to obtain a candidate value for a global minimum:
+This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, \cite{goodfellow_2014} plug the optimal discriminator $D^{*}_{G}(\boldsymbol{x})$ back into the value function from Equation 2 to obtain a candidate value for a global minimum:
 
-$$ C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text{data}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
+$$ C(G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}\left(\log D_{G}^{*}(\boldsymbol{x})\right)+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left(\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right) $$
 
-$$ +(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
+$$ =\int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log (\frac{1}{2})+p_{G}(\boldsymbol{x}) \log (\frac{1}{2}) \mathrm{d}x.$$
 
 Subsequently, we can integrate over the entire domain of both $p_{\text{data}}(\boldsymbol{x})$ and $p_{G}(\boldsymbol{x})$ with respect to $x$. The integrals of both pdfs are by definition equal to one such that
 
@@ -62,7 +61,7 @@ $$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{
 
 $$ =\int_{x} p_{\text{data}}(x) \log(\frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) + p_{G}(x)(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)})\mathrm{d}x.$$
 
-Subsequently, we use a trick to add and subtract $\log 2$ and multiply with a probability distribution in Equation \ref{eq:15}, which is equal to adding zero to both integrals:
+Subsequently, we use a trick to add and subtract $\log 2$ and multiply with a probability distribution in the Equation 9, which is equal to adding zero to both integrals:
 
 $$ C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text{data}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})\log\left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
 
@@ -111,7 +110,7 @@ Subsequently, \cite{goodfellow_2014} largely draw from information theory and us
 
 $$ \mathrm{KL}(P \| Q)= \int_{\boldsymbol{x}} p(\boldsymbol{x}) \log \left(\frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
-Intuitively, the Kullback-Leibler divergence measures the difference between two probability distributions. We arrive at Equation 5 by following \cite{goodfellow_2014}, in which the authors apply the definition of the Kullback-Leibler divergence in Equation \ref{eq:finally} to arrive at
+Intuitively, the Kullback-Leibler divergence measures the difference between two probability distributions. We arrive at Equation 5 by following Goodfellow et al. (2014), in which the authors apply the definition of the Kullback-Leibler divergence in Equation \ref{eq:finally} to arrive at
 
 $$ C(G)=-\log4 + \mathrm{K L}\left(p_{\text{data }}(\boldsymbol{x}) \| \frac{p_{\text{data }}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}{2}\right) + \mathrm{K L}\left(p_{G}(\boldsymbol{x}) \| \frac{p_{\text{data }}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}{2}\right).$$
 
