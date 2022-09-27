@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: archive
 title: "Measuring and comparing predictive power of churn estimation methods"
 published: true
 ---
