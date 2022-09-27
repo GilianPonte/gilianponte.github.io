@@ -1,16 +1,14 @@
 ---
 layout: archive
 permalink: /
-title: "Gilian's thoughts"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
-##
 Gilian Ponte is a Ph.D student at the Faculty of Business and Economics, University of Groningen (The Netherlands). My research interests lie in Marketing, Deep Learning and Applied Econometrics. My two excellent promotors are Jaap Wieringa and Tom Boot. My current research focuses on the development of methodologies to preserve privacy in marketing. Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
 
-
+# Thoughts
 ## Generative adversarial networks (GANs): generating celebrity faces.
 *27 March, 2020*
 
