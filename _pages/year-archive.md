@@ -13,6 +13,12 @@ I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, Uni
 Probably about 50% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students.
 
 # Some of my thoughts...
+
+## Providing some intuition to why GANs converge to any probability distribution
+
+[Read more...](https://gilianponte.github.io/why_GANs_work_so_well/)
+
+
 ## Generative adversarial networks (GANs): generating celebrity faces.
 *27 March, 2020*
 
