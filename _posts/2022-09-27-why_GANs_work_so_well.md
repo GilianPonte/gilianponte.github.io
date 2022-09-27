@@ -46,9 +46,9 @@ $$ D^{*}_{G}(\boldsymbol{x})=\frac{1}{2} \text{ and } 1 - D^{*}_{G}(\boldsymbol{
 
 This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, \cite{goodfellow_2014} plug the optimal discriminator $D^{*}_{G}(\boldsymbol{x})$ back into the value function from Equation \ref{eq:8} to obtain a candidate value for a global minimum:
 
-$$ C(G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data }}}\left(\log D_{G}^{*}(\boldsymbol{x})\right)+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left(\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right)$$
+$$C(G) =\int_{\boldsymbol{x}}(\log 2-\log 2) p_{\text{data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
 
-$$ =\int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log (\frac{1}{2})+p_{G}(\boldsymbol{x}) \log (\frac{1}{2}) \mathrm{d}x.$$
+$$+(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
 Subsequently, we can integrate over the entire domain of both $p_{\text{data}}(\boldsymbol{x})$ and $p_{G}(\boldsymbol{x})$ with respect to $x$. The integrals of both pdfs are by definition equal to one such that
 
@@ -72,7 +72,7 @@ $$ +(\log 2-\log 2) p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac
 Subsequently, we can rewrite the equation as follows:
 
 
-$$ =\int_{\boldsymbol{x}}\log 2p_{\text {data}}(\boldsymbol{x})-\log 2p_{\text {data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
+$$ =\int_{\boldsymbol{x}}\log 2p_{\text{data}}(\boldsymbol{x})-\log 2p_{\text{data}}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) $$
 
 $$ +\log 2p_{G}(\boldsymbol{x})-\log 2p_{G}(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x $$
 
