@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Scraping with R"
+---
+
 # Scraping with R
 *16 October, 2017*
 
