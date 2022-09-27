@@ -187,9 +187,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  posts:
-    output: true
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -314,3 +311,17 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+      toc: true
