@@ -1,3 +1,9 @@
+---
+title:  "Training a neural network for image recognition."
+layout: post
+published: true
+---
+
 # Training a neural network for image recognition.
 *1st of February 2018*
 
