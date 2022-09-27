@@ -15,9 +15,9 @@ Probably about 50% we write as academics does not end up in journals. In this bl
 # Some of my thoughts...
 
 ## Why can GANs learn any probability distribution?
-*7 September 2021*
+*7 September, 2021*
 
-[![pdf](https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG)](https://gilianponte.github.io/why_GANs_work_so_well/)
+<img src="https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG" alt="drawing" width="700"/>
 
 [Read more...](https://gilianponte.github.io/why_GANs_work_so_well/)
 
@@ -40,7 +40,7 @@ In this project we aim to predict the classes from the CIFAR-10 data set. We dev
 
 *26 June, 2018*
 
-[![Churn](https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png)](/building-a-neural-network)
+<img src="https://www.optimove.com/wp-content/uploads/2014/02/Customer-Churn-Prediction-Prevention.png" alt="churn" width="700"/>
 
 *Author(s): [Gilian Ponte](https://nl.linkedin.com/in/gilianponte)*
 
@@ -53,7 +53,8 @@ ___
 ## Scraping with R
 *16 October, 2017*
 
-[![example](https://i.imgur.com/EslEU0Y.png)](/scraping_with_R)
+
+<img src="https://i.imgur.com/EslEU0Y.png" alt="scraping" width="700"/>
 
 *Author(s): [Gilian Ponte](https://nl.linkedin.com/in/gilianponte)*
 
