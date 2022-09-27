@@ -15,13 +15,13 @@ At first glance, one could argue that the equality comes from a neural network $
 We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In the Equation above, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 
-$$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + %\mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))]$$
-$$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} %x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z $$
+$$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} [\log(D(\boldsymbol{z})] + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} [\log(1-D(G(\boldsymbol{z}))]$$
+$$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z $$
 $$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log %D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
 Subsequently, recall that the goal of the discriminator $D$ is to maximize Equation \ref{eq:8} (see Equation \ref{eq:1}). If $G$ is given, we can rewrite Equation \ref{eq:8} as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
-$$ f^{\prime}(y) = 0 \Rightarrow \frac{a}{y}+\frac{b}{1-y} = 0 \Rightarrow \frac{-a+a y-b %y}{y(y-1)}=0 \Rightarrow -a+a y-b y= 0 \Rightarrow
+$$ f^{\prime}(y) = 0 \Rightarrow \frac{a}{y}+\frac{b}{1-y} = 0 \Rightarrow \frac{-a+a y-b y}{y(y-1)}=0 \Rightarrow -a+a y-b y= 0 \Rightarrow
 y(a-b)-a=0 \Rightarrow y=\frac{a}{a-b}.$$
 
 We can determine whether this is a maximum with $f^{\prime\prime}(y)$:
