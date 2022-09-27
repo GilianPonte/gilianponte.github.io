@@ -1,6 +1,6 @@
 ---
 layout: archive
-title:  "Why do Generative Adversarial Networks (GANs) work so well?"
+title:  "Why can Generative Adversarial Networks (GANs) learn any probability distribution?"
 published: true
 ---
 
