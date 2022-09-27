@@ -1,6 +1,6 @@
 ---
 title:  "Training a neural network for image recognition."
-layout: post
+layout: archive
 published: true
 ---
 
