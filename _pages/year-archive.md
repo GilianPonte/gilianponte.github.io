@@ -40,7 +40,7 @@ In this project we aim to predict the classes from the CIFAR-10 data set. We dev
 
 *26 June, 2018*
 
-<img src="https://image.ibb.co/mPWfKo/conclusion.png" alt="churn" width="700"/>
+<img src="https://image.ibb.co/mPWfKo/conclusion.png" alt="churn" width="600" height="400"/>
 
 *Author(s): [Gilian Ponte](https://nl.linkedin.com/in/gilianponte)*
 
