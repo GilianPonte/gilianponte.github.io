@@ -31,21 +31,21 @@ $$ f^{\prime\prime}(y) = 0 \Rightarrow -\frac{a}{y^{2}}-\frac{b}{(1-y)^{2}} = 0 
 
 Thus, we can conclude that $\frac{a}{a+b}$ is indeed a maximum (i.e., $f^{\prime\prime}(y) < 0$). Goodfellow et al. (2014) provide further evidence that the maximum $\frac{a}{a+b}$ must be a unique maximum on the domain given $a,b \in (0,1)$ and $a + b \neq 0$. Therefore, we find that the optimal discriminator given $G$ is
 
-$$ D^{*}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{*}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
+$$ D^{opt}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{*}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
 
 Goodfellow et al. (2014) explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation 2 and define a virtual training criteria for the generator $C(G)$:
 
-$$ C(G) = \max_{D}V(D^{*}_{G},G) $$
+$$ C(G) = \max_{D}V(D^{opt}_{G},G) $$
 
 $$ = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})})+\mathbb{E}_{\boldsymbol{x} \sim p_{G}}(\log \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}).$$
 
 Now that we have the optimal discriminator $D$ for a given generator $G$, we must find a global minimum of $G$. Goodfellow et al. (2014) claim that the global minimum of $C(G)$ is achieved iff $p_{G} = p_{\text{data}}$. In the first direction, given that $p_{\text{data}} = p_{G}$, we arrive at the optimal discriminator that is unable to distinguish real from artificial samples:
 
-$$ D^{*}_{G}(\boldsymbol{x})=\frac{1}{2} \text{and} 1 - D^{*}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
+$$ D^{opt}_{G}(\boldsymbol{x})=\frac{1}{2} \text{and} 1 - D^{opt}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
 
-This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, Goodfellow et al. (2014) plug the optimal discriminator $D^{*}_{G}(\boldsymbol{x})$ back into the value function from Equation 2 to obtain a candidate value for a global minimum:
+This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, Goodfellow et al. (2014) plug the optimal discriminator $D^{opt}_{G}(\boldsymbol{x})$ back into the value function from Equation 2 to obtain a candidate value for a global minimum:
 
-$$ C(G) := \mathbb{E}_{\boldsymbol{x}\simp_{\text{data}}}\left(\log D_{G}^{*}(\boldsymbol{x})\right)+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left(\log \left(1-D_{G}^{*}(\boldsymbol{x})\right)\right) $$
+$$ C(G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}\left(\log D_{G}^{opt}(\boldsymbol{x})\right)+\mathbb{E}_{\boldsymbol{x} \sim p_{g}}\left(\log \left(1-D_{G}^{opt}(\boldsymbol{x})\right)\right) $$
 
 $$ =\int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log (\frac{1}{2})+p_{G}(\boldsymbol{x}) \log (\frac{1}{2}) \mathrm{d}x.$$
 
@@ -55,7 +55,7 @@ $$ =\log \frac{1}{2} + \log \frac{1}{2}$$
 
 $$ =- \log 4. $$
 
-The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{*}_{G}$ into the equation where the discriminator achieves its maximum:
+The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{opt}_{G}$ into the equation where the discriminator achieves its maximum:
 
 $$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)})+\mathbb{E}_{x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $$
 
