@@ -15,11 +15,11 @@ At first glance, one could argue that the equality comes from a neural network $
 We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between the probability measures $z$ and $g$, In the Equation above, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 
-$$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z})))$$
+$$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z}))) $$
 
 $$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x}) \mathrm{d} x+\int_{z} p(\boldsymbol{z}) \log (1-D(G(\boldsymbol{z}))) \mathrm{d}z $$
 
-$$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
+$$ = \int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
 Subsequently, recall that the goal of the discriminator $D$ is to maximize Equation \ref{eq:8} (see Equation \ref{eq:1}). If $G$ is given, we can rewrite Equation \ref{eq:8} as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
@@ -58,7 +58,7 @@ $$=\log \frac{1}{2} + \log \frac{1}{2}$$
 
 $$=- \log 4. $$
 
-The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{*}_{G}$ into the equation where the discriminator achieves its maximum (see Equation \ref{eq:maxdiscriminator}):
+The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{*}_{G}$ into the equation where the discriminator achieves its maximum:
 
 
 $$ C(G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})})+\mathbb{E}_{\boldsymbol{x} \sim p_{G}}(\log \frac{p_{G}(\boldsymbol{x})}{{p_{G}}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})}) $$
@@ -67,7 +67,7 @@ $$ =\int_{\boldsymbol{x}} p_{\text {data}}(\boldsymbol{x}) \log(\frac{p_{\text{d
 
 Subsequently, we use a trick to add and subtract $\log 2$ and multiply with a probability distribution in Equation \ref{eq:15}, which is equal to adding zero to both integrals:
 
-$$ C(G) =\int_{\boldsymbol{x}}\textcolor{blue}{(\log 2-\log 2) p_{\text {data}}(\boldsymbol{x})+}p_{\text {data}}(\boldsymbol{x}) \log \left(\frac{p_{\text {data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
+$$ C(G) =\int_{\boldsymbol{x}}\textcolor{blue}{(\log 2-\log 2) p_{\text {data}}(\boldsymbol{x})+}p_{\text{data}}(\boldsymbol{x})\log\left(\frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}\right) $$
 
 $$+\textcolor{blue}{(\log 2-\log 2) p_{G}(\boldsymbol{x})+}p_{G}(\boldsymbol{x}) \log \left(\frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x})+p_{\text {data}}(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
