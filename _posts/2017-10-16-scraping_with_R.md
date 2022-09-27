@@ -4,7 +4,6 @@ layout: archive
 published: true
 ---
 
-# Scraping with R
 *16 October, 2017*
 
 Today I would like to show you that you don't have to be an expert at coding in order to scrape some data from the web. I will try to show you how you can scrape prices from webshops. However, this tutorial could also be used in case of scraping other content.
