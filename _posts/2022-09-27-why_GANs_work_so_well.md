@@ -8,7 +8,7 @@ In this post, I will aim to provide intuition for the proof of $p_{G} \stackrel{
 
 Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 in their paper and use the following equality:
 
-$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})).$$
+$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})). $$
 
 At first glance, one could argue that the equality comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique.
 
@@ -31,7 +31,7 @@ $$ f^{\prime\prime}(y) = 0 \Rightarrow -\frac{a}{y^{2}}-\frac{b}{(1-y)^{2}} = 0 
 
 Thus, we can conclude that $\frac{a}{a+b}$ is indeed a maximum (i.e., $f^{\prime\prime}(y) < 0$). Goodfellow et al. (2014) provide further evidence that the maximum $\frac{a}{a+b}$ must be a unique maximum on the domain given $a,b \in (0,1)$ and $a + b \neq 0$. Therefore, we find that the optimal discriminator given $G$ is
 
-$$ D^{opt}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{*}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
+$$ D^{opt}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{opt}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
 
 Goodfellow et al. (2014) explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation 2 and define a virtual training criteria for the generator $C(G)$:
 
