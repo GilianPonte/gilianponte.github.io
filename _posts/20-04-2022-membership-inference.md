@@ -6,6 +6,9 @@ editor_options:
   chunk_output_type: inline
 -
 
+# Your first membership inference attack.
+*20 March 2020*
+
 ```{r setup, include=FALSE}
 rm(list = ls())
 library(rpart.plot)
