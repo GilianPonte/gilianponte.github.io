@@ -1,11 +1,10 @@
-
 ---
-title: "Memberschip inference"
+title: "Your first membership inference attack"
 published: true
 layout: archive
 editor_options:
   chunk_output_type: inline
----
+-
 
 ```{r setup, include=FALSE}
 rm(list = ls())
@@ -14,8 +13,6 @@ library(data.table)
 library(tidyverse)
 library(ggplot2)
 ```
-
-## Your first membership inference attack
 
 The first step is to load all the data. The data is available at: [membership_inference_data.RData](https://github.com/GilianPonte/membership_inference/blob/main/membership_inference_data.RData "membership_inference_data.RData") and place it in your working directory.
 
@@ -26,13 +23,13 @@ load("C:/Users/Gilia/Dropbox/PhD/Conferences/2022/MARUG/workshop/membership_infe
 
 The following files have been loaded into your working directory:
 
-### Churn data
+## Churn data
 
 ```{r}
 print(head(churn2)) ## churn data set with 1,666 obs.
 ```
 
-### Trained model
+## Trained model
 
 Decision tree used to predict churn:
 
@@ -40,7 +37,7 @@ Decision tree used to predict churn:
 rpart.plot(tree)
 ```
 
-###  Use the trained model to predict churn over the entire data set.
+##  Use the trained model to predict churn over the entire data set.
 
 The model was trained as follows:
 
@@ -64,7 +61,7 @@ print("true churn")
 head(churn2$Churn[1])
 ```
 
-# Calculating the error.
+## Calculating the error.
 
 We use the predictions to calculate the error: $error = churn - predictions$.
 
@@ -90,7 +87,7 @@ colnames(sorted) = c("rn","error")
 ggplot(sorted, aes(x = as.numeric(reorder(rn,-error)), y = as.numeric(error))) + geom_point() + ylab("error") + xlab("row number") + theme(axis.text.x = element_text(angle = -90))
 ```
 
-### Simply select the first 1,666 observations and say they are in training set!
+## Simply select the first 1,666 observations and say they are in training set!
 
 ```{r}
 in_training = sorted[1:1666,] # get the first 1,666 observations that have the highest loss
@@ -98,7 +95,7 @@ in_training$rn = as.numeric(in_training$rn) # make row number numeric
 in_training$train_prediction = 1 # assign label that the data point is in training set.
 ```
 
-### Combine the predictions with the original data set.
+## Combine the predictions with the original data set.
 
 ```{r}
 churn2$rn = as.numeric(row.names(churn2)) # store row number.
@@ -108,7 +105,7 @@ accuracy[is.na(accuracy$train_prediction),22] = 0 # the values that are missing 
 head(accuracy[,c(20,22)])
 ```
 
-### Calculate the accuracy!
+## Calculate the accuracy!
 
 ```{r}
 print(sum(accuracy$train_prediction == churn2$train)/3333 * 100) ## 80% accuracy!
