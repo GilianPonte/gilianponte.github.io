@@ -7,7 +7,7 @@ editor_options:
 ---
 
 # Your first membership inference attack.
-*20 March 2020*
+*20 March, 2020*
 
 ```{r setup, include=FALSE}
 rm(list = ls())
