@@ -16,6 +16,12 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 
 ---
 
+
+## Your first membership inference attack.
+*20 March, 2022*
+
+[Read more...](https://gilianponte.github.io/membership-inference/)
+
 ## Why can GANs learn any probability distribution?
 *7 September, 2021*
 
