@@ -10,7 +10,7 @@ redirect_from:
 
 ![banner](https://raw.githubusercontent.com/GilianPonte/gilianponte.github.io/master/files/DALL%C2%B7E%202022-09-05%2017.24.49%20-%20a%20basquiat%20style%20stream%20of%20data%2C%20digital%20art%20-%20kopie.png)
 
-## I am on the marketing job market for 2023
+## I am on the marketing job market for september 2023. Find my job market paper [here](https://drive.google.com/file/d/1UtupASApScfGGO0_pyXudJk3cEurfu78/view?usp=sharing).
 
 I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, University of Groningen, The Netherlands. My research interests lie in Marketing, Deep Learning and Applied Econometrics. My two excellent promotors are [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). Early in my PhD, [Felix Eggers](https://www.cbs.dk/en/research/departments-and-centres/department-of-marketing/staff/femarktg) was also part of the team before going to Copenhagen Business School. My current research focuses on the development of methodologies to preserve privacy in marketing. Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
 
