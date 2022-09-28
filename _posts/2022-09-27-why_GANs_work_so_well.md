@@ -4,15 +4,21 @@ title:  "Why can Generative Adversarial Networks (GANs) learn any probability di
 published: true
 ---
 
-In this post, I will aim to provide intuition for the proof of $p_{G} \stackrel{\text{plim.}}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text{ plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
+This is somewhat a work in progress post... In this post, I will aim to provide intuition for the proof of $p_{G} \stackrel{\text{plim.}}{\longrightarrow} p_{\text{data}}$ from Goodfellow et al. (2014). We want to be clear about our contribution to the proof, we only aim to provide more intuition for marketing scholars. Recall that we define $p_{G}$ as the distribution of the random variable $G$ and that $p_{\text{data}}$ is the dgp or real distribution. In the situation of $p_{G} \stackrel{\text{ plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp. 
 
-Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation 1 in their paper and use the following equality:
+Goodfellow et al. (2014) formulate the objective of a GAN as follows:
 
-$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})). $$
+$$ \min_{G} \max_{D} V(D,G),$$
 
-At first glance, one could argue that the equality comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, in practice a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique.
+where the value function is defined as
 
-We posit that the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between probability measures. In the Equation below, the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
+$$ V(D,G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})} (\log(D(\boldsymbol{x}))) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} (\log(1-D(G(\boldsymbol{z}))). $$
+
+take the value function $V(D,G)$ from Equation (1) and use the following equality:
+
+$$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})).$$
+
+At first glance, one could argue that the equality from Equation (1) comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique. Instead, the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between probability measures. In the Equation (1), the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 $$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z}))) $$
 
@@ -20,7 +26,7 @@ $$ = \int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log D(\boldsymbol{x}
 
 $$ = \int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x}) \log D(\boldsymbol{x})+p_{G}(\boldsymbol{x}) \log (1-D(\boldsymbol{x})) \mathrm{d}x.\\$$
 
-Subsequently, recall that the goal of the discriminator $D$ is to maximize the value function $V(D,G)$. If $G$ is given, we can rewrite Equation 4 as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
+Subsequently, recall that the goal of the discriminator $D$ is to maximize the value function $V(D,G)$ in Equation (2). If $G$ is given, we can rewrite Equation 4 as $f(y)=a \log y+b \log (1-y)$. To find the maximum of a discriminator $D$ given a generator $G$, we take a first order derivative of $f(y)$ and set it equal to zero:
 
 $$ f^{\prime}(y) = 0 \Rightarrow \frac{a}{y}+\frac{b}{1-y} = 0 \Rightarrow \frac{-a+a y-b y}{y(y-1)}=0 \Rightarrow -a+a y-b y= 0 \Rightarrow
 y(a-b)-a=0 \Rightarrow y=\frac{a}{a-b}.$$
@@ -106,7 +112,7 @@ $$ ={-\log 4} + \int_{\boldsymbol{x}} p_{\text{data}}(\boldsymbol{x})(\log \left
 
 $$ +p_{G}(\boldsymbol{x})(\log \left(\frac{p_{G}(\boldsymbol{x})}{(p_{G}(\boldsymbol{x})+p_{\text{data}}(\boldsymbol{x})/2}\right)) \mathrm{d} x$$
 
-Subsequently, Goodfellow et al. (2014) largely draw from information theory and use a definition of the Kullback-Leibler and Jensen-Shannon divergence to show that $- \log 4$ is a unique global minimum. The Kullback-Leibler divergence for probability measures $P$ and $Q$ of a continuous random variable is defined as follows Bishop (2016): 
+Subsequently, Goodfellow et al. (2014) largely draw from information theory and use a definition of the Kullback-Leibler and Jensen-Shannon divergence to show that $- \log 4$ is a unique global minimum. The Kullback-Leibler divergence for probability measures $P$ and $Q$ of a continuous random variable is defined as follows (Bishop 2016): 
 
 $$ \mathrm{KL}(P \| Q)= \int_{\boldsymbol{x}} p(\boldsymbol{x}) \log \left(\frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
