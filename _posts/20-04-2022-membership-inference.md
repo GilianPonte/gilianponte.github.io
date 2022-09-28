@@ -4,7 +4,7 @@ published: true
 layout: archive
 editor_options:
   chunk_output_type: inline
--
+---
 
 # Your first membership inference attack.
 *20 March 2020*
