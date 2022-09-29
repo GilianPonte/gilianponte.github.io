@@ -9,7 +9,7 @@ editor_options:
 # Your first membership inference attack.
 *20 March, 2022*
 
-We start with some libraries to load.
+Another post that is work in progress. In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack. We start with some libraries to load:
 
 ```{r}
 rm(list = ls())
