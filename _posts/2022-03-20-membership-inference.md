@@ -9,7 +9,9 @@ editor_options:
 # Your first membership inference attack.
 *20 March, 2022*
 
-```{r setup, include=FALSE}
+We start with some libraries to load.
+
+```{r}
 rm(list = ls())
 library(rpart.plot)
 library(data.table)
@@ -44,7 +46,9 @@ rpart.plot(tree)
 
 The model was trained as follows:
 
-$Churn = AccountLength + IntlPlan + VMailPlan + DayMins + DayCalls + EveMins + EveCalls + NightMins + NightCalls + IntlMins + IntlCalls + CustServCalls$
+$Churn = f(AccountLength, IntlPlan, VMailPlan, DayMins, DayCalls, EveMins, EveCalls, NightMins, NightCalls, IntlMins, IntlCalls, CustServCalls)$
+
+In other words, churn is some function of the rhs explanatory variables.
 
 ```{r}
 independent <- ("AccountLength + IntlPlan + VMailPlan + DayMins + DayCalls + EveMins + 
