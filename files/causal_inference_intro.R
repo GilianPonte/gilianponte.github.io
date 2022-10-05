@@ -32,8 +32,9 @@ data %>% ggplot(aes(x = treatment_propensity, fill = RESP_TREATED)) + geom_densi
 data %>% ggplot(aes(x = treatment_propensity)) + facet_wrap(~RESP_TREATED) + geom_density(alpha=0.2) + theme_minimal() + xlim(min(data$treatment_propensity),max(data$treatment_propensity))
 
 # Inverse Propensity Weighting
-data$ipw_weights = 0
 data$ipw_weights = ifelse(data$RESP_TREATED == 1, 1/data$treatment_propensity, 1/(1/data$treatment_propensity))
 
-# weight the estimates with the inverse of beign treated
+# weight the estimates with the inverse of being treated
 summary(lm("RESP_REVENUE ~ RESP_TREATED", data = data, weights = ipw_weights))
+## ATE 
+coef(lm("RESP_REVENUE ~ RESP_TREATED", data = data, weights = ipw_weights))[2]
