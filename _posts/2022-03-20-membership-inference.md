@@ -5,8 +5,6 @@ layout: archive
 editor_options:
   chunk_output_type: inline
 ---
-
-# Your first membership inference attack.
 *20 March, 2022*
 
 In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack. To infer whether an individual is part of the training data set may not seem as such a big privacy violation but it is actually connected with a theoretical privacy definition: differential privacy. 
