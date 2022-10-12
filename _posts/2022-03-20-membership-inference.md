@@ -9,7 +9,12 @@ editor_options:
 # Your first membership inference attack.
 *20 March, 2022*
 
-Another post that is work in progress. In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack. We start with some libraries to load:
+In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack. To infer whether an individual is part of the training data set may not seem as such a big privacy violation but it is actually connected with a theoretical privacy definition: differential privacy. 
+
+## The setting
+Consider the case where you have assess to a complete data set of customers. As a requirement scientific papers of firms publish the trained model that they used to predict a certain outcome variable. Let's say in this case whether a customer left the firm (churn). In this case the prediction problem is not that privacy-sensitive but our attack could be applied to the prediction of medical issues as well.
+
+Let's first load some packages.
 
 ```{r}
 rm(list = ls())
@@ -28,22 +33,19 @@ load("C:/Users/Gilia/Dropbox/PhD/Conferences/2022/MARUG/workshop/membership_infe
 
 The following files have been loaded into your working directory:
 
-## Churn data
+The churn data of which you do not know which observation was in the training set or test set.
 
 ```{r}
 print(head(churn2)) ## churn data set with 1,666 obs.
 ```
 
-## Trained model
-
-Decision tree used to predict churn:
+A trained model. In this case we will work with a decision tree that is trained to predict churn.
 
 ```{r}
 rpart.plot(tree)
 ```
 
-##  Use the trained model to predict churn over the entire data set.
-
+## The membership inference attack
 The model was trained as follows:
 
 $Churn = f(AccountLength, IntlPlan, VMailPlan, DayMins, DayCalls, EveMins, EveCalls, NightMins, NightCalls, IntlMins, IntlCalls, CustServCalls)$
@@ -68,8 +70,6 @@ print("true churn")
 head(churn2$Churn[1])
 ```
 
-## Calculating the error.
-
 We use the predictions to calculate the error: $error = churn - predictions$.
 
 ```{r}
@@ -85,7 +85,7 @@ error = abs(error)
 plot(error)
 ```
 
-We sort the error from low to high. Assuming that low error = training set!
+We sort the error from low to high. Assuming that low error = training set.
 
 ```{r}
 sorted = data.frame(sort(error, decreasing =F)) # sort descending.
@@ -94,7 +94,7 @@ colnames(sorted) = c("rn","error")
 ggplot(sorted, aes(x = as.numeric(reorder(rn,-error)), y = as.numeric(error))) + geom_point() + ylab("error") + xlab("row number") + theme(axis.text.x = element_text(angle = -90))
 ```
 
-## Simply select the first 1,666 observations and say they are in training set!
+We simply select the first 1,666 observations and say they are in training set!
 
 ```{r}
 in_training = sorted[1:1666,] # get the first 1,666 observations that have the highest loss
@@ -102,7 +102,7 @@ in_training$rn = as.numeric(in_training$rn) # make row number numeric
 in_training$train_prediction = 1 # assign label that the data point is in training set.
 ```
 
-## Combine the predictions with the original data set.
+We combine the predictions with the original data set.
 
 ```{r}
 churn2$rn = as.numeric(row.names(churn2)) # store row number.
@@ -112,8 +112,10 @@ accuracy[is.na(accuracy$train_prediction),22] = 0 # the values that are missing 
 head(accuracy[,c(20,22)])
 ```
 
-## Calculate the accuracy!
+and we can calculate the accuracy of our membership inference attack!
 
 ```{r}
 print(sum(accuracy$train_prediction == churn2$train)/3333 * 100) ## 80% accuracy!
 ```
+
+We have identified 80% of the individuals in the trainingset as part of the training set.
