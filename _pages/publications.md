@@ -8,7 +8,7 @@ author_profile: true
 
 Working papers: 
 
-1. _Removed title to facilitate review process_ (under review at JMR); Gilian Ponte, Jaap Wieringa, Tom Boot & Peter Verhoef.
+1. _Removed title to facilitate review process_ (two rounds at MSKC, now under review at JMR); Gilian Ponte, Jaap Wieringa, Tom Boot & Peter Verhoef.
 2. Consumers' Perceptions of Privacy Risk (data collection); Gilian Ponte, Tom Boot, Thomas Reutterer, Jaap Wieringa.
 3. Causal Private Neural Networks (data collection); Gilian Ponte, Tom Boot, Thomas Reutterer, Jaap Wieringa.  
 
