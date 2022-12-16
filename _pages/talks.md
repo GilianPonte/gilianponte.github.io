@@ -5,11 +5,12 @@ permalink: /talks/
 author_profile: true
 ---
 ## 2022
+- (Invited talk) Research Seminar, Copenhagen Business School (Denmark).
+- (Research stay) Research Seminar, WU Vienna (Austria).
 - INFORMS Marketing Science, Chicago Booth (USA).
 - ISMS Marketing Science Doctoral Colloquium, Chicago Booth (USA).
 - EMAC Special Session, Corvinus University of Budapest (Hungary).
 - EMAC Doctoral Colloquium, Corvinus University of Budapest (Hungary).
-- Research Seminars series, WU Vienna (Austria).
 - SOM PhD Conference, University of Groningen (The Netherlands).
 - RUG CIC Seminar with industry partners, Utrecht (The Netherlands). 
 
