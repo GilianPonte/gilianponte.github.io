@@ -7,12 +7,12 @@ editor_options:
 ---
 *20 March, 2022*
 
-In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack. To infer whether an individual is part of the training data set may not seem as such a big privacy violation but it is actually connected with a theoretical privacy definition: differential privacy. 
+In this post, I show you in R how easy it is to infer whether an observation was part of the training data set. Something the scientific community calls a membership inference attack (see e.g., Carlini et al. 2021). To infer whether an individual is part of the training data set may not seem as such a big privacy violation but it is actually connected with a theoretical privacy definition: differential privacy. 
 
 ## The setting
-Consider the case where you have assess to a complete data set of customers. As a requirement scientific papers of firms publish the trained model that they used to predict a certain outcome variable. Let's say in this case whether a customer left the firm (churn). In this case the prediction problem is not that privacy-sensitive but our attack could be applied to the prediction of medical issues as well.
+Consider the case where you have assess to a complete data set of customers. As a requirement scientific papers of firms publish the trained model that they used to predict a certain outcome variable. Let's say in this case whether a customer left the firm (churn). In this case the prediction problem is not that privacy-sensitive but our attack could be applied to the prediction of a disease as well.
 
-Let's first load some packages.
+Let's first load some packages (which I assume you have installed).
 
 ```{r}
 rm(list = ls())
@@ -26,29 +26,29 @@ The first step is to load all the data. The data is available at: [membership_in
 
 ```{r}
 ## load all required objects
-load("C:/Users/Gilia/Dropbox/PhD/Conferences/2022/MARUG/workshop/membership_inference_data.rData")
+load("/membership_inference_data.rData")
 ```
 
 The following files have been loaded into your working directory:
 
-The churn data of which you do not know which observation was in the training set or test set.
+1. The churn data of which you do not know which observation was in the training set or test set.
 
 ```{r}
 print(head(churn2)) ## churn data set with 1,666 obs.
 ```
 
-A trained model. In this case we will work with a decision tree that is trained to predict churn.
+2. A trained model. In this case we will work with a decision tree that is trained to predict churn.
 
 ```{r}
 rpart.plot(tree)
 ```
 
 ## The membership inference attack
-The model was trained as follows:
+The model was trained by an analyst that assumed the following data generating process:
 
-$Churn = f(AccountLength, IntlPlan, VMailPlan, DayMins, DayCalls, EveMins, EveCalls, NightMins, NightCalls, IntlMins, IntlCalls, CustServCalls)$
+$Churn = f(AccountLength, IntlPlan, VMailPlan, DayMins, DayCalls, EveMins, EveCalls, NightMins, NightCalls, IntlMins, IntlCalls, CustServCalls)$.
 
-In other words, churn is some function of the rhs explanatory variables.
+In other words, churn is some function of some explanatory variables that are used by an analyst to predict whether a customer churns. In R this looks as follows:
 
 ```{r}
 independent <- ("AccountLength + IntlPlan + VMailPlan + DayMins + DayCalls + EveMins + 
@@ -68,7 +68,7 @@ print("true churn")
 head(churn2$Churn[1])
 ```
 
-We use the predictions to calculate the error: $error = churn - predictions$.
+The big assumption that researchers make is that the observations that are used in the training set will have a smaller prediction error (this may not always be the case, e.g., outliers. But this is generally very effective). Next, we use the predictions from the trained model to calculate the error: $error = churn - predictions$. This looks as follows in R:
 
 ```{r}
 churn2$Churn = as.numeric(churn2$Churn)-1
@@ -76,14 +76,14 @@ error = churn2$Churn - predictions[,2]
 print(head(error))
 ```
 
-Take the absolute value of the error, sort the error from high to low.
+Take the absolute value of the error, then sort the error from high to low. I advice to take the absolute value of the error because the true churn probability can be underestimated or overestimated. In R:
 
 ```{r}
 error = abs(error)
 plot(error)
 ```
 
-We sort the error from low to high. Assuming that low error = training set.
+We sort the error from low to high. Assuming that low error implies presence in the training set.
 
 ```{r}
 sorted = data.frame(sort(error, decreasing =F)) # sort descending.
@@ -116,4 +116,4 @@ and we can calculate the accuracy of our membership inference attack!
 print(sum(accuracy$train_prediction == churn2$train)/3333 * 100) ## 80% accuracy!
 ```
 
-We have identified 80% of the individuals in the trainingset as part of the training set.
+We have identified 80% of the individuals in the trainingset as part of the training set!
