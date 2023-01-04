@@ -8,7 +8,7 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-![banner](https://raw.githubusercontent.com/GilianPonte/gilianponte.github.io/master/files/DALL%C2%B7E%202022-09-05%2017.24.49%20-%20a%20basquiat%20style%20stream%20of%20data%2C%20digital%20art%20-%20kopie.png)
+![bannergeneratedwithDALLE](https://raw.githubusercontent.com/GilianPonte/gilianponte.github.io/master/files/DALL%C2%B7E%202022-09-05%2017.24.49%20-%20a%20basquiat%20style%20stream%20of%20data%2C%20digital%20art%20-%20kopie.png)
 
 I (Gilian Ponte) am a Ph.D student at the Faculty of Business and Economics, University of Groningen, The Netherlands. My research interests lie in Marketing, Deep Learning and Applied Econometrics. My two excellent promotors are [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). Early in my PhD, [Felix Eggers](https://www.cbs.dk/en/research/departments-and-centres/department-of-marketing/staff/femarktg) was also part of the team before going to Copenhagen Business School. My current research focuses on the development of methodologies to preserve privacy in marketing. Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
 
@@ -19,6 +19,9 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 
 ## Your first membership inference attack.
 *20 March, 2022*
+
+<img src="[https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG](https://res.cloudinary.com/practicaldev/image/fetch/s--lzHwFVmQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://github.com/jiep/adversarial-machine-learning/raw/main/docs/en/Inference.png)" alt="drawing" width="700"/>
+
 
 [Read more...](https://gilianponte.github.io/membership-inference/)
 
