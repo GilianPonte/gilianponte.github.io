@@ -63,7 +63,11 @@ $$ =- \log 4. $$
 
 The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{opt}_{G}$ into the equation where the discriminator achieves its maximum:
 
-$$ C(G) = \mathbb{E}_ {x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)})+\mathbb{E}_ {x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $$
+$$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}} $$
+
+$$ (\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) $$
+
+$$ +\mathbb{E}_{x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $$
 
 $$ =\int_{x} p_{\text{data}}(x) \log(\frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) + p_{G}(x)(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)})\mathrm{d}x.$$
 
