@@ -116,15 +116,15 @@ Subsequently, Goodfellow et al. (2014) largely draw from information theory and 
 
 $$ \mathrm{KL}(P \| Q)= \int_{\boldsymbol{x}} p(\boldsymbol{x}) \log \left(\frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}\right) \mathrm{d} x.$$
 
-Intuitively, the Kullback-Leibler divergence measures the difference between two probability distributions. We arrive at Equation 5 by following Goodfellow et al. (2014), in which the authors apply the definition of the Kullback-Leibler divergence in Equation \ref{eq:finally} to arrive at
+Intuitively, the Kullback-Leibler divergence measures the difference between two probability distributions. We arrive at Equation 5 in the paper of Goodfellow et al. (2014), in which the authors apply the definition of the Kullback-Leibler divergence in Equation 35 to arrive at
 
 $$ C(G)=-\log4 + \mathrm{K L}\left(p_{\text{data }}(\boldsymbol{x}) \| \frac{p_{\text{data }}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}{2}\right) + \mathrm{K L}\left(p_{G}(\boldsymbol{x}) \| \frac{p_{\text{data }}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}{2}\right).$$
 
-Bishop (2016) shows that with Jensen's inequality for a convex function and random variable $X$: $\mathrm{E}(f(X)) \geqslant f(\mathrm{E}(X))$, as well as the fact that $f(x) = -\ln x$ is a strictly convex function, that the Kullback-Leibler divergence nonnegative is iff $p(\boldsymbol{x}) = q(\boldsymbol{x})$ for all $\boldsymbol{x}$. Therefore, we take the definition of the Kullback-Leibler divergence from Equation \ref{KL} and use the logarithm quotient rule $\log(\frac{z}{x}) = -\log(\frac{x}{z})$ to arrive at
+Bishop (2016) shows that with Jensen's inequality for a convex function and random variable $X$: $\mathrm{E}(f(X)) \geqslant f(\mathrm{E}(X))$, as well as the fact that $f(x) = -\ln x$ is a strictly convex function, that the Kullback-Leibler divergence nonnegative is iff $p(\boldsymbol{x}) = q(\boldsymbol{x})$ for all $\boldsymbol{x}$. Therefore, we take the definition of the Kullback-Leibler divergence from Equation 37 and use the logarithm quotient rule $\log(\frac{z}{x}) = -\log(\frac{x}{z})$ to arrive at
 
 $$ \mathrm{KL}(P \| Q) = -\int_{\boldsymbol{x}} p(\boldsymbol{x}) \log \left(\frac{q(\boldsymbol{x})}{p(\boldsymbol{x})}\right) \mathrm{d} x. $$
 
-Next, we use Jensen's inequality to prove that the Kullback-Leibler divergence from Equation \ref{KLdiv} must be greater or equal to zero:
+Next, we use Jensen's inequality to prove that the Kullback-Leibler divergence from Equation 39 must be greater or equal to zero:
 
 $$ \mathrm{KL}(P \| Q) = -\int_{\boldsymbol{x}} p(\boldsymbol{x}) \log \left(\frac{q(\boldsymbol{x})}{p(\boldsymbol{x})}\right) \mathrm{d} x $$
 
@@ -140,11 +140,11 @@ Alternatively, we can use $- \log \left(\frac{q(\boldsymbol{x})}{p(\boldsymbol{x
 
 $$ = \int p(\boldsymbol{x}) \log \left(\frac{p(\boldsymbol{x})}{q(\boldsymbol{x})}\right) \mathrm{d} x \geqslant 0.$$
 
-Finally, we use the result from Equation \ref{jensen} to show that the Kullback-Leibler divergence must be equal to or greater than zero in Equation \ref{cg}. This shows that the global minimum must be $-\log4$. Finally, Goodfellow et al. (2014) use the definition of the Jensen-Shannon divergence in Equation \ref{cg} to prove that only one $G$ is able to achieve this minimum Lin et al. (1991):
+Finally, we use the result from Equation 45 to show that the Kullback-Leibler divergence must be equal to or greater than zero in Equation 38. This shows that the global minimum must be $-\log4$. Finally, Goodfellow et al. (2014) use the definition of the Jensen-Shannon divergence in Equation \ref{cg} to prove that only one $G$ is able to achieve this minimum Lin et al. (1991):
 
 $$ \operatorname{JSD}(P \| Q)=\frac{1}{2} \mathrm{KL}(P \| (P+Q)/2)+\frac{1}{2} \mathrm{KL}(Q \|(P+Q)/2).$$
 
-If we use the definition of the Jensen-Shannon divergence for Equation \ref{cg}, where $P = p_{\text{data}}$ and $Q = p_{G}$, we obtain
+If we use the definition of the Jensen-Shannon divergence for Equation 38, where $P = p_{\text{data}}$ and $Q = p_{G}$, we obtain
 
 $$ C(G)  =-\log4 + \mathrm{K L}\left(p_{\text{data }}(\boldsymbol{x}) \| \frac{p_{\text{data }}(\boldsymbol{x})+p_{G}(\boldsymbol{x})}{2}\right)$$
 
