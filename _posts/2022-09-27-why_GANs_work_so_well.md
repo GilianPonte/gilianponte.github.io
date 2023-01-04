@@ -65,6 +65,8 @@ The value $-\log 4$ is a candidate value for the global minimum. Next, we want t
 
 $$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) $$
 
+$$ \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)} $$
+
 $$ + \mathbb{E}_{x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $$
 
 $$ =\int_{x} p_{\text{data}}(x) \log(\frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) + p_{G}(x)(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)})\mathrm{d}x.$$
