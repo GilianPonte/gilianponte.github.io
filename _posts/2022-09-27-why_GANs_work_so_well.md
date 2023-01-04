@@ -4,7 +4,7 @@ title:  "Why can Generative Adversarial Networks (GANs) learn any probability di
 published: true
 ---
 
-This is somewhat a work in progress post... In this post, I will talk about the ability of GANs to learn a pdf. I will aim to provide intuition for Goodfellow et al.'s (2014) proof of the GAN's generator $p_{G}$ convergence in probability to the data generating process $p_{\text{data}}$. In other words, $p_{G} \stackrel{\text{plim.}}{\longrightarrow} p_{\text{data}}$. I want to be clear about our contribution to this post, we only aim to provide more intuition for my readers. Recall that $p_{G}$ is the distribution of the generator $G$ and that $p_{\text{data}}$ is the distribution we want to learn (e.g., a data set). In the situation of $p_{G} \stackrel{\text{ plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp and we can sample high quality data from the generator.
+This is somewhat a work in progress post... In this post, I will talk about the ability of GANs to learn a pdf. I will aim to provide intuition for Goodfellow et al.'s (2014) proof of the GAN's generator $p_{G}$ convergence in probability to the data generating process $p_{\text{data}}$. In other words, $p_{G} \stackrel{\text{plim.}}{\longrightarrow} p_{\text{data}}$. I want to be clear about our contribution to this post, I only aim to provide more intuition for my readers. Let $p_{G}$ denote the distribution of the generator $G$ and that $p_{\text{data}}$ is the distribution we want to learn (e.g., a data set). In the situation of $p_{G} \stackrel{\text{ plim. }}{\longrightarrow} p_{\text{data}}$, the distribution of the generator is equal in distribution to the dgp and we can sample high quality data from the generator.
 
 Goodfellow et al. (2014) formulate the objective of a GAN between $G$ and the discriminator $D$ as follows:
 
@@ -18,7 +18,7 @@ Goodfellow et al. (2014) take the value function $V(D,G)$ from Equation (3) and 
 
 $$ \mathbb{E}_{\boldsymbol{z} \sim p_{Z}(\boldsymbol{z})} \log (1-D(G(\boldsymbol{z}))) = \mathbb{E}_{\boldsymbol{x} \sim p_{G}(\boldsymbol{x})} \log(1-D(\boldsymbol{x})).$$
 
-At first glance, one could argue that the equality from Equation (3) comes from a neural network $G$ that applies a transformation with a unique set of parameters such that $G(\boldsymbol{z})$ leads to samples of $\boldsymbol{x}$. Subsequently, we could assume that an inverse function $G^{-1}$ of $G$ exists to go from $\boldsymbol{x}$ back to samples of $\boldsymbol{z}$. However, a neural network need not be an invertible function, and thus, the inverse function $G^{-1}$ is not unique. Instead, the equality is a result from a Radon-Nikodym derivative from the Radon-Nikodym Theorem. We can use the Radon-Nikodym derivative to switch between probability measures. In the Equation (3), the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
+In Equation (3), the Radon-Nikodym theorem tells us that there exists a Radon-Nikodym derivative to arrive at
 
 $$ V(D, G) := \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}} (\log(D(\boldsymbol{z})) + \mathbb{E}_{\boldsymbol{z} \sim p_{Z}} (\log(1-D(G(\boldsymbol{z}))) $$
 
@@ -39,7 +39,7 @@ Thus, we can conclude that $\frac{a}{a+b}$ is indeed a maximum (i.e., $f^{\prime
 
 $$ D^{opt}_{G}(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x})+p_{G}(\boldsymbol{x})} \text{ and } 1 - D^{opt}_{G}(\boldsymbol{\boldsymbol{x}}) = \frac{p_{G}(\boldsymbol{x})}{p_{G}(\boldsymbol{x}) + p_{\text{data}}(\boldsymbol{x})}.$$
 
-Goodfellow et al. (2014) explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation (4) and define a virtual training criteria for the generator $C(G)$:
+Goodfellow et al. (2014) explain that with the definition of an optimal discriminator, we can reformulate the value function from Equation (4) and define a virtual training criteria for the generator $C(G)$ given an optimal discriminator $D^{opt}_{G}$:
 
 $$ C(G) = \max_{D}V(D^{opt}_{G},G) $$
 
@@ -47,7 +47,7 @@ $$ = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}}(\log \frac{p_{\text{data}}
 
 Now that we have the optimal discriminator $D$ for a given generator $G$, we must find a global minimum of $G$. Goodfellow et al. (2014) claim that the global minimum of $C(G)$ is achieved iff $p_{G} = p_{\text{data}}$. In the first direction, given that $p_{\text{data}} = p_{G}$, we arrive at the optimal discriminator that is unable to distinguish real from artificial samples:
 
-$$ D^{opt}_{G}(\boldsymbol{x})=\frac{1}{2} \text{and} 1 - D^{opt}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
+$$ D^{opt}_{G}(\boldsymbol{x})=\frac{1}{2} \text{ and } 1 - D^{opt}_{G}(\boldsymbol{x}) = \frac{1}{2}.$$
 
 This represents the scenario where the discriminator is unable to distinguish between samples from $p_{\text{data}}$ and $p_{G}$. Subsequently, Goodfellow et al. (2014) plug the optimal discriminator $D^{opt}_{G}(\boldsymbol{x})$ back into the value function from Equation (4) to obtain a candidate value for a global minimum:
 
@@ -63,7 +63,7 @@ $$ =- \log 4. $$
 
 The value $-\log 4$ is a candidate value for the global minimum. Next, we want to prove that this is a unique minimum for the generator. Therefore, we drop the assumption $p_{G} = p_{\text{data}}$ for now and observe that for any $G$, we can plug in $D^{opt}_{G}$ into the equation where the discriminator achieves its maximum:
 
-$$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)})+\mathbb{E}_{x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $$
+$ C(G) = \mathbb{E}_{x \sim p_{\text{data}}}(\log \frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)})+\mathbb{E}_{x \sim p_{G}}(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)}) $
 
 $$ =\int_{x} p_{\text{data}}(x) \log(\frac{p_{\text{data}}(x)}{p_{\text{data}}(x)+p_{G}(x)}) + p_{G}(x)(\log \frac{p_{G}(x)}{{p_{G}}(x)+p_{\text{data}}(x)})\mathrm{d}x.$$
 
