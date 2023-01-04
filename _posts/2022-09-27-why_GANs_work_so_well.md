@@ -6,7 +6,7 @@ published: true
 
 This is somewhat a work in progress post... In this post, I will talk about the ability of GANs to learn a probability density function (pdf). A pdf is used to specify the probability of the random variable falling within a particular range of values. For example, consider the amount of euros/dollars you spend on groceries each month (random variable). For one individual, this will just be one value (e.g., 200 euros) but now consider the montly spending on groceries of all the individuals in the Netherlands. This can be summarized efficiently with a pdf (the red line):
 
-![pdf](https://imgur.com/a/E4R6FHa)
+![pdf](https://i.imgur.com/MjGdChx.png)
 
 
 Even entire data sets can be summarized by a pdf. Learning the pdf of an entire data set has been (in the literature) considered extremely complex and computational expensive. At least that is until Goodfellow et al. (2014) proposed generative adversarial networks (GANs). I assume you are already familiar with the applications of GANs, but if you are not, please spend some time on searching for some of the amazing applications that have been developed over time.
