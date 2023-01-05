@@ -1,5 +1,5 @@
 ---
-title: "Your first membership inference attack"
+title: "A very simple membership inference attack"
 published: true
 layout: archive
 editor_options:
