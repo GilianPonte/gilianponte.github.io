@@ -17,14 +17,6 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 ---
 
 
-## A very simple membership inference attack.
-*20 March, 2022*
-
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lzHwFVmQ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://github.com/jiep/adversarial-machine-learning/raw/main/docs/en/Inference.png" alt="drawing" width="700"/>
-
-
-[Read more...](https://gilianponte.github.io/membership-inference/)
-
 ## GANs can learn any probability density function.
 *7 September, 2021*
 
