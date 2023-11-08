@@ -8,9 +8,9 @@ author_profile: true
 
 Working papers: 
 
-1. _Removed title to facilitate review process_ (two rounds at MSKC, now under review at JMR); Gilian Ponte, Jaap Wieringa, Tom Boot & Peter Verhoef.
+1. Where's Waldo - Larger Sample Size, Less Privacy Risk (now under review at JMR); Gilian Ponte, Jaap Wieringa, Tom Boot & Peter C. Verhoef.
 
-To protect individuals’ privacy, the General Data Protection Regulation requires firms, researchers, and policy makers to minimize data collection. In contrast, we find that data maximization enables a reduction in customers' privacy risk while maintaining the ability to derive meaningful insights. We call this a “Where’s Waldo” effect.
+To protect individuals’ privacy, the General Data Protection Regulation requires firms, researchers, and policy makers to minimize data collection. In contrast, we find that a larger sample size enables a reduction in customers' privacy risk while maintaining the ability to derive meaningful insights. We call this a “Where’s Waldo” effect.
 
 2. Consumers' Perceptions of Privacy Risk (data collection); Gilian Ponte, Tom Boot, Thomas Reutterer, Jaap Wieringa.
 
