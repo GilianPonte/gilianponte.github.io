@@ -5,22 +5,14 @@ permalink: /publications/
 author_profile: true
 ---
 
+Publications
+
+0. G.R. Ponte. (2024), Differential Privacy & Marketing Analytics. _PhD Thesis._ ([link to thesis](https://research.rug.nl/en/publications/differential-privacy-amp-marketing-analytics))
+1. G.R. Ponte, J. E. Wieringa, T. Boot, P.C. Verhoef. (2024), Where’s Waldo? A framework for quantifying the privacy-utility trade-off in marketing applications. _International Journal of Research in Marketing._ ([link to article](https://www.sciencedirect.com/science/article/pii/S0167811624000417?via%3Dihub)) ([link to code](https://github.com/GilianPonte/likelihood_based_privacy_attack))
+
 
 Working papers: 
 
-1. _Under review_ (now under review at JMR); Gilian Ponte, Jaap Wieringa, Tom Boot & Peter C. Verhoef.
-
-To protect individuals’ privacy, the General Data Protection Regulation requires firms, researchers, and policy makers to minimize data collection. In contrast, we find that a larger sample size enables a reduction in customers' privacy risk while maintaining the ability to derive meaningful insights. We call this a “Where’s Waldo” effect.
-
-2. Consumers' Perceptions of Privacy Risk (data collection); Gilian Ponte, Tom Boot, Thomas Reutterer, Jaap Wieringa.
-
-In this study, we examine the relationship between objective privacy risk, as defined by differential privacy, and subjective privacy concerns perceived by consumers. To address this issue, we develop and test a randomized response (RR) design as a solution to reduce response bias while also preserving customers' privacy through satisfying a level of differential privacy.
-
-3. Causal Private Neural Networks (data collection); Gilian Ponte, Tom Boot, Thomas Reutterer, Jaap Wieringa. 
-
-In this project, we develop neural networks that directly predict the incremental effect of a targeting action (i.e., conditional average treatment effect) while protecting subject's privacy mathematically. 
-
-For now [here](https://github.com/GilianPonte/gilianponte.github.io/blob/master/files/RM_thesis_Gilian.pdf) is my research master thesis.
 
 {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
