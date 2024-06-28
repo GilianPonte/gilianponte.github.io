@@ -25,7 +25,7 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 
 <img src="https://fraboeni.github.io/files/2021-01-24-membership-inference/pic2-meta-classifier.png" width="600"/>
 
-[Read more...](https://gilianponte.github.io/membership_inference/)
+[Read more...](https://gilianponte.github.io/membership-inference/)
 
 ## How GANs learn probability density functions.
 *7 September, 2021*
