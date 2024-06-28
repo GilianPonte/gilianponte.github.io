@@ -20,7 +20,7 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 ## A very simple membership inference attack.
 *20 March, 2022*
 
-<img src="https://www.researchgate.net/publication/342464437/figure/fig1/AS:906517884702721@1593142114433/The-membership-inference-attack-MIA.png" alt="mia" width="700"/>
+<img src="https://fraboeni.github.io/files/2021-01-24-membership-inference/pic2-meta-classifier.png" width="700"/>
 
 [Read more...](https://gilianponte.github.io/membership_inference/)
 
