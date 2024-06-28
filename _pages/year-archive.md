@@ -8,7 +8,11 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-Hey there! My name is Gilian Ponte. I am an Assistant Professor at Rotterdam School of Management, Erasmus University Rotterdam. In my research I try to address societally relevant issues in marketing. Currently, I work on the balance between privacy protection (using differential privacy) and the ability to derive insights from data. For example, is it still possible to derive profits from targeting under a privacy protection guarantee for consumers? For the near future, I would like to study misinformation and online echo chambers. My two excellent promotors during my PhD were [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
+Hey there! My name is Gilian Ponte. I am an Assistant Professor at Rotterdam School of Management, Erasmus University Rotterdam. In my research I try to address societally relevant issues in marketing. Currently, I work on the balance between privacy protection (using differential privacy) and the ability to derive insights from data. For example, is it still possible to derive profits from targeting under a privacy protection guarantee for consumers? For the near future, I would like to study misinformation and online echo chambers. 
+
+I obtained my PhD at the University of Groningen. My two excellent promotors during my PhD were [Jaap Wieringa](https://www.rug.nl/staff/j.e.wieringa/) and [Tom Boot](https://sites.google.com/view/tomboot/home). 
+
+Previously, I have worked for two years as a web analyst at Blokker Holding (a major retailer in the Netherlands).
 
 Probably about 70%-90% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students. *Please be aware that some of the posts below were written a very long time ago. I keep them on here to observe the progress over time.*
 
@@ -16,7 +20,7 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 ## A very simple membership inference attack.
 *20 March, 2022*
 
-<img src="[https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG](https://www.researchgate.net/publication/342464437/figure/fig1/AS:906517884702721@1593142114433/The-membership-inference-attack-MIA.png)" alt="mia" width="700"/>
+<img src="https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG](https://www.researchgate.net/publication/342464437/figure/fig1/AS:906517884702721@1593142114433/The-membership-inference-attack-MIA.png" alt="mia" width="700"/>
 
 [Read more...](https://gilianponte.github.io/membership_inference/)
 
