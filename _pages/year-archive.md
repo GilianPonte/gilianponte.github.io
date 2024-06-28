@@ -16,18 +16,21 @@ Previously, I have worked for two years as a web analyst at Blokker Holding (a m
 
 Probably about 70%-90% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students. *Please be aware that some of the posts below were written a very long time ago. I keep them on here to observe the progress over time.*
 
+
+# Posts
+
 ---
 ## A very simple membership inference attack.
 *20 March, 2022*
 
-<img src="https://fraboeni.github.io/files/2021-01-24-membership-inference/pic2-meta-classifier.png" width="700"/>
+<img src="https://fraboeni.github.io/files/2021-01-24-membership-inference/pic2-meta-classifier.png" width="600"/>
 
 [Read more...](https://gilianponte.github.io/membership_inference/)
 
 ## How GANs learn probability density functions.
 *7 September, 2021*
 
-<img src="https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG" alt="drawing" width="700"/>
+<img src="https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG" alt="drawing" width="600"/>
 
 [Read more...](https://gilianponte.github.io/why_GANs_work_so_well/)
 
