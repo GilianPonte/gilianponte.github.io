@@ -8,7 +8,7 @@
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "en-US"
-title                    : "Gilian's thoughts"
+title                    : "Gilian Ponte"
 title_separator          : "-"
 name                     : &name "Gilian Ponte"
 description              : &description "personal description"
