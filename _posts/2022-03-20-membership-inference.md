@@ -1,10 +1,9 @@
-
 ---
+title:  "A Very Simple Membership Inference Attack"
 layout: archive
-title: "A Very Simple Membership Inference Attack"
 published: true
-editor_options:
-  chunk_output_type: inline
+toc: true
+toc_sticky: true
 ---
 
 *20 March, 2022*
