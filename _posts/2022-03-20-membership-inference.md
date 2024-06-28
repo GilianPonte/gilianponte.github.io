@@ -6,6 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
+
 *20 March, 2022*
 
 In this post, I show you in R how easy it is to infer whether an observation was part of the training dataset. This is known as a membership inference attack (see e.g., Carlini et al. 2021). Inferring whether an individual is part of the training dataset may not seem like a significant privacy violation, but it is actually connected with a theoretical privacy definition: differential privacy.
