@@ -13,7 +13,12 @@ Hey there! My name is Gilian Ponte. I am an Assistant Professor at Rotterdam Sch
 Probably about 70%-90% we write as academics does not end up in journals. In this blog, I would like to share the things that I think are still interesting to share with a more general audience. Some pieces are more research heavy while in other posts I will try to address practitioners or students. *Please be aware that some of the posts below were written a very long time ago. I keep them on here to observe the progress over time.*
 
 ---
+## A very simple membership inference attack.
+*20 March, 2022*
 
+<img src="[https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG](https://www.researchgate.net/publication/342464437/figure/fig1/AS:906517884702721@1593142114433/The-membership-inference-attack-MIA.png)" alt="mia" width="700"/>
+
+[Read more...](https://gilianponte.github.io/membership_inference/)
 
 ## How GANs learn probability density functions.
 *7 September, 2021*
@@ -26,18 +31,9 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 ## Generative adversarial networks (GANs): generating celebrity faces.
 *27 March, 2020*
 
-[![DCGAN](https://s5.gifyu.com/images/DCGAN_64x64.gif)](https://www.youtube.com/watch?v=-9Py2RKGRc4)
+[![DCGAN](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7OTP7qTWAiQVj1jh8MUFGOe_9rLz5-AcCw&s)](https://www.youtube.com/watch?v=-9Py2RKGRc4)
 
 As part of the Deep Learning course at Rijksuniversiteit Groningen, we aim to generate celebrity faces from the CelebA data set. We experienced that for images over 64x64 pixels serious computing power is required. Also, we experimented with different architectures. An overview is available at my [YouTube channel](https://www.youtube.com/channel/UCNA5DwzV4ii-6NC-4epRHUA) or for code my [Github](https://github.com/GilianPonte/Deep-Learning).
-
----
-
-## Convolutional neural networks (CNN): image recognition with CIFAR-10 data set.
-*1 March, 2020*
-
-![img](https://i.imgur.com/eCMg9dp.png)
-
-In this project we aim to predict the classes from the CIFAR-10 data set. We develop a convolutional neural network (CNN) with varying parameters. We conduct four main experiments with the activation functions, different optimizers, weight decay and data augmentation. The code is available [here](https://github.com/GilianPonte/Deep-Learning/blob/master/CNNs/cnn.py).
 
 ---
 
