@@ -15,7 +15,7 @@ Probably about 70%-90% we write as academics does not end up in journals. In thi
 ---
 
 
-## GANs can learn any probability density function.
+## How GANs learn probability density functions.
 *7 September, 2021*
 
 <img src="https://4.bp.blogspot.com/-Olt4jmdE7U0/Tnl2VGrFQDI/AAAAAAAAAgc/jdbbGHeTqT0/s1600/3DDist.JPG" alt="drawing" width="700"/>
