@@ -1,8 +1,8 @@
 
 ---
+layout: archive
 title: "A Very Simple Membership Inference Attack"
 published: true
-layout: archive
 editor_options:
   chunk_output_type: inline
 ---
