@@ -58,7 +58,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : G_iliann
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -84,8 +84,8 @@ author:
   name             : ""
   avatar           : "https://github.com/GilianPonte/gilianponte.github.io/blob/23def409ddf927c295ed49ebc1b5696f05045d5b/files/foto.JPG"
   bio              : "My random thoughts"
-  location         : "Groningen, The Netherlands"
-  employer         : "University of Groningen"
+  location         : "Rotterdam, The Netherlands"
+  employer         : "Rotterdam School of Management, Erasmus University Rotterdam"
   pubmed           : 
   googlescholar    : 
   email            :
@@ -97,20 +97,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/GilianPonte"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/gilianponte/"
   orcid            : "http://orcid.org/0000-0002-9390-8039"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "G_iliannn"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
