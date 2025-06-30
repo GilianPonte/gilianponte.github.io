@@ -1,10 +1,9 @@
 ---
 layout: archive
-title: "Conferences and seminars"
+title: "What I'm Reading"
 permalink: /talks/
 author_profile: true
 ---
-## What I'm Reading
 
 <!-- Begin Goodreads Widget -->
 <style type="text/css" media="screen">
