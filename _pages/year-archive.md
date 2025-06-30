@@ -17,4 +17,4 @@ What I value most in my work is contributing to privacy-related policymaking in 
 
 I’m currently developing methods to quantify and manage privacy risks in experimental and modeling contexts, supported by grants from Google.
 
-Outside of work, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food.
+Outside of work, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food. This list also explains why this website is not very up-to-date.
