@@ -16,3 +16,5 @@ Before entering academia, I worked as a web analyst at Blokker Holding, a major 
 What I value most in my work is contributing to privacy-related policymaking in collaboration with Dutch government agencies, including UWV, DUO, TNO, CBS, and the Ministry of Justice and Security. So if you are a policymaker, feel free to reach out!
 
 I’m currently developing methods to quantify and manage privacy risks in experimental and modeling contexts, supported by grants from Google.
+
+Outside of work, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food.
