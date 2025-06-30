@@ -1,24 +1,20 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Restaurants"
 permalink: /teaching/
 author_profile: true
 ---
 
-PhD (2021-2023)
+## Favorite Restaurants by City
 
-- Markting BDK, BSc BDK, Rijksuniversiteit Groningen.
-- [Market Models](https://www.rug.nl/ocasys/feb/vak/show?code=EBM077A05), MSc Marketing (MADS), University of Groningen.
-- [Bsc Thesis Econometrics Operations Research](https://www.rug.nl/ocasys/feb/vak/show?code=EBB925A10), University of Groningen.
-- [MSc Thesis Marketing Analytics & Data Science](https://ocasys.rug.nl/current/catalog/course/EBM218A20), University of Groningen.
-- [Data Science Methods](https://www.rug.nl/ocasys/feb/vak/show?code=EBM175A05) (Research master level), University of Groningen.
+I keep lists of my favorite restaurants in a few cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
 
-PhD (2020)
+- [Rotterdam](https://maps.app.goo.gl/XBBYRXF7Qtfn66C69)  
+- [The Hague](https://maps.app.goo.gl/LEKzisBWpS3WpixE8)  
+- [Groningen](https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6)  
+- [Vienna](https://maps.app.goo.gl/eDdc1YKMKKogukuG8)  
+- [Utrecht](https://maps.app.goo.gl/6uLxKPF8VCbrEymY8)  
+- [Copenhagen](https://maps.app.goo.gl/XQLSzQryoe4ubugv7)  
+- [Amsterdam](https://maps.app.goo.gl/oB6LFmX2ks19qtmMA)
 
-- Markting BDK, BSc BDK, Rijksuniversiteit Groningen.
-- [Market Models](https://www.rug.nl/ocasys/feb/vak/show?code=EBM077A05), MSc Marketing (MADS), University of Groningen.
-- [Bachelor Thesis Econometrics Operations Research](https://www.rug.nl/ocasys/feb/vak/show?code=EBB925A10), University of Groningen.
-
-Assistant (2019):
-
-- [Market Models](https://www.rug.nl/ocasys/feb/vak/show?code=EBM077A05), MSc Marketing (MADS), University of Groningen.
+Let me know if you have any recommendations!
