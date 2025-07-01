@@ -12,6 +12,7 @@ Surprise! No research talk here—I would much rather hear about your favorite b
 - *Two Star & the Dream Police* – Mk.gee
 - *Geography* – Tom Misch
 - *People Watching* - Sam Fender
+- *Women In Music Pt. III* - Haim
 
 Let me know if you have any recommendations!
 
