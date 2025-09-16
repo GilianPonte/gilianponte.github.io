@@ -16,6 +16,13 @@ My research focuses on marketing analytics and privacy, with a particular intere
 One of my recent papers was a Best Paper Award finalist at the International Journal of Research in Marketing (2024), and my PhD dissertation was recognized with the EMAC Doctoral Dissertation Award. My work has also been featured in the [IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics).
  I'm currently developing methods to quantify and manage privacy risks in experimental and modeling contexts, supported by grants from Google and other partners.
 
+I am currently working on the projects (in order of maturity):
+
+The Act of Targeting: Privacy Risk, Plausible Deniability, and Profitability - with Tom Boot, Thomas Reutterer and Jaap Wieringa (R&R at JMR)
+Private Randomized Response - with Tom Boot and Jaap Wieringa
+Setting privacy risk budgets in online experiments - with Alina Ferecatu 
+Machine unlearning in targeting - with Ta-Wei (David) Huang
+
 **Academic Background**:
 I earned my PhD in Differential Privacy & Marketing Analytics at the University of Groningen, under the supervision of Prof. Jaap Wieringa and Dr. Tom Boot. During my PhD, I held a visiting research position at WU Vienna with Prof. Thomas Reutterer. 
 
@@ -29,3 +36,4 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 
 **Outside of Work**:
 Outside of research and teaching, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food. That list also explains why this website isn’t always up to date.
+
