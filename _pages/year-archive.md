@@ -18,10 +18,11 @@ One of my recent papers was a Best Paper Award finalist at the International Jou
 
 I am currently working on the projects (in order of maturity):
 
-The Act of Targeting: Privacy Risk, Plausible Deniability, and Profitability - with Tom Boot, Thomas Reutterer and Jaap Wieringa (R&R at JMR)
-Private Randomized Response - with Tom Boot and Jaap Wieringa
-Setting privacy risk budgets in online experiments - with Alina Ferecatu 
-Machine unlearning in targeting - with Ta-Wei (David) Huang
+- **The Act of Targeting: Privacy Risk, Plausible Deniability, and Profitability** — with Tom Boot, Thomas Reutterer and Jaap Wieringa (R&R at *JMR*)
+- **Private Randomized Response** — with Tom Boot and Jaap Wieringa
+- **Setting Privacy Risk Budgets in Online Experiments** — with Alina Ferecatu
+- **Machine Unlearning in Targeting** — with Ta-Wei (David) Huang
+- **Shuffling for Data Privacy** - with Tom Boot and Bruno Jacobs
 
 **Academic Background**:
 I earned my PhD in Differential Privacy & Marketing Analytics at the University of Groningen, under the supervision of Prof. Jaap Wieringa and Dr. Tom Boot. During my PhD, I held a visiting research position at WU Vienna with Prof. Thomas Reutterer. 
@@ -36,4 +37,5 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 
 **Outside of Work**:
 Outside of research and teaching, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food. That list also explains why this website isn’t always up to date.
+
 
