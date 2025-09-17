@@ -25,17 +25,18 @@ I am currently working on the projects (in order of maturity):
 - **Shuffling for Data Privacy** - with Tom Boot and Bruno Jacobs
 
 **Academic Background**:
-I earned my PhD in Differential Privacy & Marketing Analytics at the University of Groningen, under the supervision of Prof. Jaap Wieringa and Dr. Tom Boot. During my PhD, I held a visiting research position at WU Vienna with Prof. Thomas Reutterer. 
+I earned my PhD in Differential Privacy & Marketing Analytics at the University of Groningen, under the supervision of Jaap Wieringa and Tom Boot. During my PhD, I held a visiting research position at WU Vienna with Thomas Reutterer. 
 
 Before academia, I worked as a web analyst at Blokker Holding, a major Dutch retailer, where I focused on analytics implementation and company-wide insight generation.
 
 **Teaching**:
-My teaching takes a humanistic approach: fostering critical thinking, intrinsic motivation, and a sense of ethical responsibility in working with data. In 2025, I was honored to be nominated for Professor of the Year at RSM. I currently teach courses on marketing analytics and research methods at both the undergraduate and master's levels.
+My teaching takes a humanistic approach: fostering critical thinking, intrinsic motivation, and a sense of ethical responsibility in working with data. In 2025, I was honored to be nominated for Professor of the Year (first block) at RSM. I currently teach courses on marketing analytics and research methods at both the undergraduate and master's levels.
 
 **Public Policy**:
 Beyond academia, I actively contribute to privacy-related policymaking in the Netherlands. I’ve collaborated with agencies such as UWV, DUO, TNO, CBS, and the Ministry of Justice and Security. If you're working in policy and exploring data protection, feel free to get in touch.
 
 **Outside of Work**:
 Outside of research and teaching, I enjoy music, race cycling, philosophy, reading, and good food—and luckily, the cycling helps balance out the food. That list also explains why this website isn’t always up to date.
+
 
 
