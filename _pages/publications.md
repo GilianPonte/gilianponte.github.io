@@ -6,9 +6,9 @@ author_profile: true
 ---
 Surprise! No research talk here—I would much rather hear about your favorite band. Here are a few vinyls I keep playing, in no particular order:
 
-- *Messy* – Olivia Dean  
+- *Messy*, *The Art of Loving* – Olivia Dean  
 - *A Deeper Understanding* – The War on Drugs  
-- *Absolutely* – Dijon  
+- *Absolutely*, *Baby* – Dijon  
 - *Two Star & the Dream Police* – Mk.gee
 - *Geography* – Tom Misch
 - *People Watching* - Sam Fender
@@ -26,3 +26,4 @@ Let me know if you have any recommendations!
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
