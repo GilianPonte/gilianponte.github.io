@@ -13,7 +13,7 @@ No research talk here—I would much rather hear about your favorite band. Here 
 - *Geography* – Tom Misch
 - *People Watching* - Sam Fender
 - *Women In Music Pt. III* - Haim
-- *The Life You Save* - Flock of Dimes
+- *SABLE, fABLE* - Bon Iver
 
 Let me know if you have any recommendations!
 
@@ -27,5 +27,6 @@ Let me know if you have any recommendations!
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
 
 
