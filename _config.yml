@@ -74,7 +74,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  
   google:
     tracking_id          :
 
@@ -310,3 +310,4 @@ compress_html:
   ignore:
     envs: development
     
+
