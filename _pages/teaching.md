@@ -1,11 +1,9 @@
 ---
 layout: archive
-title: "Restaurants"
+title:
 permalink: /teaching/
 author_profile: true
 ---
-
-## Favorite Restaurants by City
 
 This is probably my most impactful work. I keep lists of my favorite restaurants in a few cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
 
@@ -18,4 +16,5 @@ This is probably my most impactful work. I keep lists of my favorite restaurants
 - [Amsterdam](https://maps.app.goo.gl/oB6LFmX2ks19qtmMA)
 
 Let me know if you have any recommendations and don't forget to cite me if you have used any of my lists :)
+
 
