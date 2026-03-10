@@ -14,7 +14,7 @@ Hi there! I'm **Gilian Ponte**, Assistant Professor of Marketing at the Rotterda
 
 My research lies at the intersection of **marketing analytics and privacy**, with a particular focus on **differential privacy, econometrics, and machine learning**. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
 
-My PhD dissertation received the **EMAC Doctoral Dissertation Award**, and my work was recognized as an **IJRM Best Paper Award Finalist (2024)**. I am currently developing methods to quantify and manage privacy risks in experimental and modeling settings, supported by grants from Google and other partners.
+My PhD dissertation received the **EMAC Doctoral Dissertation Award**. I am currently developing methods to quantify and manage privacy risks in experimental and modeling settings, supported by grants from Google and other partners.
 
 ## Publications
 
@@ -44,3 +44,4 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 ## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Fortunately, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
+
