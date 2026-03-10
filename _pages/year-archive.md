@@ -29,6 +29,7 @@ I am currently developing methods to quantify and manage privacy risks in experi
   *[IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics)*
 
 - **Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability (2026)**
+  
   *Journal of Marketing Research*
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
 
@@ -48,6 +49,7 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 ## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Luckily, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
+
 
 
 
