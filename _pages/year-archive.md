@@ -32,7 +32,7 @@ I am currently developing methods to quantify and manage privacy risks in experi
   *Journal of Marketing Research*
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
 
-## Current Projects
+## Work in progress
 
 I am currently working on the following projects, in order of maturity:
 
@@ -48,6 +48,7 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 ## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Luckily, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
+
 
 
 
