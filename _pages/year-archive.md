@@ -50,3 +50,4 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Luckily, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
 
 
+
