@@ -22,15 +22,17 @@ My PhD dissertation received the **EMAC Doctoral Dissertation Award**.
   Gilian Ponte  
   *PhD Thesis*
 
+  *[EMAC Doctoral Dissertation Award](https://www.rug.nl/feb/research/frn/news/archief/2025/250718-gilian-ponte-wins-emac-enginius-doctoral-competition?lang=en)*
+
 - **[Where’s Waldo? A Framework for Quantifying the Privacy–Utility Trade-off in Marketing Applications](https://www.sciencedirect.com/science/article/pii/S0167811624000417)** (2024)  
   with Tom Boot, Jaap Wieringa, and Peter Verhoef  
   *International Journal of Research in Marketing*  
   *IJRM Best Paper Award Finalist 2024*  
   [Featured in the IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics)
 
-- **[Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability](INSERT_PAPER_LINK)** (2026)  
+- **Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability** (2026)  
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
-  *Journal of Marketing Research*
+  *conditionally accepted at Journal of Marketing Research*
 
 ## Work in Progress
 
@@ -48,3 +50,4 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 ## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Fortunately, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
+
