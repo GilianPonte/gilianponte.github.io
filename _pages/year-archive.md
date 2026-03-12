@@ -8,15 +8,15 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-Hi there! I'm **Gilian Ponte**, Assistant Professor of Marketing at the Rotterdam School of Management, Erasmus University Rotterdam.
+Hi there! I'm Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management, Erasmus University Rotterdam.
 
 ## Research
 
-My research lies at the intersection of **marketing analytics and privacy**, with a particular focus on **differential privacy, econometrics, and machine learning**. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
+My research lies at the intersection of marketing analytics and privacy, with a particular focus on differential privacy, econometrics, and machine learning. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
 
-My PhD dissertation received the **EMAC Doctoral Dissertation Award**.
+My PhD dissertation received the EMAC Doctoral Dissertation Award.
 
-## Publications
+### Publications
 
 - **[Differential Privacy & Marketing Analytics](https://research.rug.nl/en/publications/differential-privacy-amp-marketing-analytics/)** (2024)  
   Gilian Ponte  
@@ -34,7 +34,7 @@ My PhD dissertation received the **EMAC Doctoral Dissertation Award**.
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *conditionally accepted at Journal of Marketing Research*
 
-## Work in Progress
+### Work in Progress
 
 I am currently working on the following projects, in order of maturity:
 
@@ -50,4 +50,5 @@ Beyond academia, I actively contribute to privacy-related policymaking in the Ne
 ## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Fortunately, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
+
 
