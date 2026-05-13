@@ -30,7 +30,7 @@ My research lies at the intersection of marketing analytics and privacy, with a 
 
 - **Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability** (2026)  
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
-  *conditionally accepted at Journal of Marketing Research*
+  *forthcoming at Journal of Marketing Research*
 
 ### Work in Progress
 
