@@ -28,9 +28,9 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   *IJRM Best Paper Award Finalist 2024*  
   [Featured in the IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics)
 
-- **Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability** (2026)  
+- **[Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability](https://journals.sagepub.com/doi/epdf/10.1177/00222437261455302)** (2026)  
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
-  *forthcoming at Journal of Marketing Research*
+  *Journal of Marketing Research*
 
 ### Work in Progress
 
@@ -43,7 +43,7 @@ I am currently working on the following projects, in order of maturity:
 
 ## Public Policy
 
-Beyond academia, I actively contribute to privacy-related policymaking in the Netherlands. I have collaborated with organizations such as **UWV, DUO, TNO, CBS, and the Ministry of Justice and Security**. If you work in policy and are exploring data protection, feel free to get in touch.
+Beyond academia, I actively contribute to privacy-related policymaking in the Netherlands. I have collaborated with organizations such as UWV, DUO, TNO, CBS, and the Ministry of Justice and Security. If you work in policy and are exploring data protection, feel free to get in touch.
 
 ## Outside of Work
 
