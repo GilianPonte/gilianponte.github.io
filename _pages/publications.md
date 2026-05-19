@@ -4,7 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-No research talk here—I would much rather hear about your favorite band. Here are a few vinyls I keep playing, in no particular order:
+No research talk here—I would much rather hear about your favorite band. 
 
 - *Messy* / *The Art of Loving* – Olivia Dean  
 - *A Deeper Understanding* – The War on Drugs  
