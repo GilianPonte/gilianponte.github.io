@@ -1,11 +1,16 @@
 ---
 layout: archive
+---
 permalink: /
-author_profile: true
-toc: true
-toc_sticky: true
+title: ""
+layout: condesa-home
+author_profile: false
+condesa_title: "Gilian Ponte"
+condesa_subtitle: "Assistant Professor of Marketing at the Rotterdam School of Management, Erasmus University Rotterdam."
 redirect_from:
   - /wordpress/blog-posts/
+toc: true
+toc_sticky: true
 ---
 
 Hi there! I'm Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management, Erasmus University Rotterdam.
