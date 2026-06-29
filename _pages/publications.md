@@ -2,7 +2,7 @@
 layout: archive
 title: ""
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 No research talk here—I would much rather hear about your favorite band. 
 
