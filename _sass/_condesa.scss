@@ -623,3 +623,201 @@ figure.highlight {
     margin-top: 3rem;
   }
 }
+/* ==========================================================================
+   Condesa homepage layout
+   ========================================================================== */
+
+.condesa-home {
+  max-width: var(--condesa-max-width);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 3rem) var(--condesa-page-padding) 6rem;
+}
+
+.condesa-hero {
+  padding: clamp(2rem, 6vw, 5rem) 0 clamp(2rem, 5vw, 4rem);
+}
+
+.condesa-hero__topline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+  color: var(--condesa-orange);
+  font-size: clamp(0.95rem, 1.6vw, 1.25rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.condesa-hero__title {
+  margin: 0;
+  color: var(--condesa-orange);
+  font-size: clamp(4.6rem, 19vw, 15rem);
+  font-weight: 950;
+  letter-spacing: -0.13em;
+  line-height: 0.72;
+}
+
+.condesa-hero__subtitle {
+  max-width: 980px;
+  margin: clamp(2rem, 4vw, 3.5rem) 0 0;
+  color: var(--condesa-orange);
+  font-size: clamp(1.7rem, 4vw, 3.7rem);
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  line-height: 1.02;
+}
+
+.condesa-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.condesa-hero__actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  color: var(--condesa-orange);
+  border: 2px solid var(--condesa-orange);
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.condesa-hero__actions a:hover {
+  color: var(--condesa-white);
+  background: var(--condesa-orange);
+}
+
+.condesa-intro-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.38fr) minmax(0, 0.62fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  padding: clamp(1.1rem, 2.4vw, 1.6rem);
+  background: var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+  overflow: hidden;
+}
+
+.condesa-intro-card__media {
+  min-height: 420px;
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+  background:
+    radial-gradient(circle at 72% 18%, var(--condesa-blue) 0 18%, transparent 18.5%),
+    radial-gradient(circle at 22% 78%, var(--condesa-orange) 0 20%, transparent 20.5%),
+    linear-gradient(135deg, rgba(235, 80, 39, 0.16), rgba(47, 118, 180, 0.18)),
+    var(--condesa-cream);
+  overflow: hidden;
+}
+
+.condesa-intro-card__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+}
+
+.condesa-intro-card__content {
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.condesa-intro-card__content > p:first-child {
+  margin-top: 0;
+  color: var(--condesa-orange);
+  font-size: clamp(1.6rem, 3.5vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: -0.065em;
+  line-height: 1.02;
+}
+
+.condesa-intro-card__content h2 {
+  margin: 3.5rem 0 1rem;
+  color: var(--condesa-orange);
+  font-size: clamp(2rem, 4.5vw, 4.25rem);
+  font-weight: 950;
+  letter-spacing: -0.075em;
+  line-height: 0.95;
+}
+
+.condesa-intro-card__content h3 {
+  margin: 2.5rem 0 0.75rem;
+  color: var(--condesa-orange);
+  font-size: clamp(1.45rem, 3vw, 2.6rem);
+  font-weight: 950;
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+}
+
+.condesa-intro-card__content ul {
+  padding-left: 1.1rem;
+}
+
+.condesa-intro-card__content li {
+  margin-bottom: 0.7rem;
+}
+
+.condesa-intro-card__content a {
+  color: var(--condesa-orange);
+  font-weight: 850;
+}
+
+.condesa-intro-card__content a:hover {
+  color: var(--condesa-blue);
+}
+
+/* Hide the old AcademicPages sidebar only on the Condesa homepage */
+.layout--condesa-home .sidebar {
+  display: none;
+}
+
+/* Avoid duplicate default spacing on the custom homepage */
+.layout--condesa-home #main {
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .condesa-intro-card {
+    grid-template-columns: 1fr;
+  }
+
+  .condesa-intro-card__media,
+  .condesa-intro-card__media img {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  .condesa-home {
+    padding-top: 1rem;
+  }
+
+  .condesa-hero__title {
+    font-size: clamp(4rem, 24vw, 7rem);
+    letter-spacing: -0.12em;
+  }
+
+  .condesa-hero__subtitle {
+    font-size: clamp(1.5rem, 8vw, 2.35rem);
+  }
+
+  .condesa-hero__actions a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .condesa-intro-card {
+    border-radius: var(--condesa-radius-md);
+  }
+
+  .condesa-intro-card__media,
+  .condesa-intro-card__media img {
+    min-height: 260px;
+    border-radius: calc(var(--condesa-radius-md) - 8px);
+  }
+}
