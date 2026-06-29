@@ -823,3 +823,44 @@ figure.highlight {
     border-radius: calc(var(--condesa-radius-md) - 8px);
   }
 }
+/* ==========================================================================
+   Final homepage width adjustments
+   ========================================================================== */
+
+/* Use the full white homepage card for text instead of keeping the old
+   two-column image/text split. This fixes the narrow text column. */
+.layout--condesa-home .condesa-intro-card {
+  display: block;
+}
+
+.layout--condesa-home .condesa-intro-card__media {
+  display: none;
+}
+
+.layout--condesa-home .condesa-intro-card__content {
+  width: 100%;
+  max-width: none;
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Let plain Markdown and custom Condesa sections use the full available width. */
+.layout--condesa-home .condesa-intro-card__content > p,
+.layout--condesa-home .condesa-intro-card__content > ul,
+.layout--condesa-home .condesa-intro-card__content > ol,
+.layout--condesa-home .condesa-intro-card__content li,
+.layout--condesa-home .condesa-section,
+.layout--condesa-home .condesa-section p,
+.layout--condesa-home .condesa-section ul,
+.layout--condesa-home .condesa-section ol,
+.layout--condesa-home .condesa-publication-grid,
+.layout--condesa-home .condesa-publication,
+.layout--condesa-home .condesa-publication p {
+  width: 100%;
+  max-width: none;
+}
+
+/* Keep ordinary Markdown lists from looking cramped on the homepage. */
+.layout--condesa-home .condesa-intro-card__content > ul,
+.layout--condesa-home .condesa-intro-card__content > ol {
+  padding-left: 1.35rem;
+}
