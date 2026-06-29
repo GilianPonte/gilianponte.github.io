@@ -582,7 +582,8 @@ figure.highlight {
 
 /* Main white homepage card */
 .condesa-intro-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: clamp(1.1rem, 2.4vw, 1.6rem);
   background: var(--condesa-white);
@@ -591,12 +592,22 @@ figure.highlight {
   overflow: hidden;
 }
 
-/* Keep the image, but place it above the text */
+/* Text first */
+.condesa-intro-card__content {
+  order: 1;
+  width: 100%;
+  max-width: none;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+/* Image second, smaller than before */
 .condesa-intro-card__media {
+  order: 2;
   display: block;
   width: 100%;
-  min-height: 360px;
-  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  min-height: 0;
+  margin-top: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 0;
   border-radius: calc(var(--condesa-radius-lg) - 12px);
   overflow: hidden;
   background:
@@ -609,17 +620,12 @@ figure.highlight {
 .condesa-intro-card__media img {
   display: block;
   width: 100%;
-  height: clamp(300px, 42vw, 520px);
+  height: clamp(220px, 28vw, 360px);
+  min-height: 0;
+  max-height: 360px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   border-radius: calc(var(--condesa-radius-lg) - 12px);
-}
-
-/* Homepage text should use the full white box */
-.condesa-intro-card__content {
-  width: 100%;
-  max-width: none;
-  padding: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .condesa-intro-card__content > p,
@@ -722,7 +728,7 @@ figure.highlight {
 
   .condesa-intro-card__media,
   .condesa-intro-card__media img {
-    min-height: 320px;
+    min-height: 0;
   }
 }
 
@@ -787,12 +793,17 @@ figure.highlight {
 
   .condesa-intro-card__media,
   .condesa-intro-card__media img {
-    min-height: 260px;
+    min-height: 0;
     border-radius: calc(var(--condesa-radius-md) - 8px);
   }
 
+  .condesa-intro-card__media {
+    margin-top: 2rem;
+  }
+
   .condesa-intro-card__media img {
-    height: 300px;
+    height: 220px;
+    max-height: 220px;
   }
 
   .condesa-intro-card__content > p:first-child {
@@ -855,3 +866,47 @@ figure.highlight {
     transition: none;
   }
 }
+
+/* ==========================================================================
+   Final homepage order + smaller image override
+   ========================================================================== */
+
+.layout--condesa-home .condesa-intro-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout--condesa-home .condesa-intro-card__content {
+  order: 1;
+}
+
+.layout--condesa-home .condesa-intro-card__media {
+  order: 2;
+  display: block !important;
+  width: 100%;
+  min-height: 0 !important;
+  margin-top: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 0;
+}
+
+.layout--condesa-home .condesa-intro-card__media img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 28vw, 360px) !important;
+  min-height: 0 !important;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media (max-width: 700px) {
+  .layout--condesa-home .condesa-intro-card__media {
+    margin-top: 2rem;
+  }
+
+  .layout--condesa-home .condesa-intro-card__media img {
+    height: 220px !important;
+    max-height: 220px;
+  }
+}
+
