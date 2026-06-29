@@ -12,6 +12,10 @@ layout: default
 
   <section class="condesa-intro-card condesa-intro-card--with-image">
 
+    <article class="condesa-intro-card__content">
+      {{ content }}
+    </article>
+
     {% if site.author.avatar %}
       <div class="condesa-intro-card__media">
         <img
@@ -21,10 +25,6 @@ layout: default
       </div>
     {% endif %}
 
-    <article class="condesa-intro-card__content">
-      {{ content }}
-    </article>
-
   </section>
 
 </main>
@@ -32,14 +32,14 @@ layout: default
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const revealSelectors = [
-      ".condesa-intro-card__media",
       ".condesa-intro-card__content > p",
       ".condesa-intro-card__content > h2",
       ".condesa-intro-card__content > h3",
       ".condesa-intro-card__content > ul",
       ".condesa-intro-card__content > ol",
       ".condesa-intro-card__content > blockquote",
-      ".condesa-intro-card__content > table"
+      ".condesa-intro-card__content > table",
+      ".condesa-intro-card__media"
     ];
 
     const revealItems = Array.from(
