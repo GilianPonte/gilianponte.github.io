@@ -2,9 +2,9 @@
 layout: condesa-home
 permalink: /
 title: ""
-author_profile: false
-toc: false
-toc_sticky: false
+author_profile: true
+toc: true
+toc_sticky: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
