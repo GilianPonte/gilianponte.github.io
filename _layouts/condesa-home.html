@@ -5,50 +5,9 @@ layout: default
 {% include base_path %}
 
 <main id="main" class="condesa-home" role="main">
-
-  <section class="condesa-hero">
-    <div class="condesa-hero__topline">
-      <span>{{ site.author.employer | default: "Rotterdam School of Management" }}</span>
-      <span>{{ site.author.location | default: "Rotterdam, The Netherlands" }}</span>
-    </div>
-
-    <h1 class="condesa-hero__title">
-      {{ page.condesa_title | default: site.title | default: page.title }}
-    </h1>
-
-    {% if page.condesa_subtitle %}
-      <p class="condesa-hero__subtitle">{{ page.condesa_subtitle }}</p>
-    {% endif %}
-
-    <div class="condesa-hero__actions">
-      {% if site.author.email %}
-        <a href="mailto:{{ site.author.email }}">Email</a>
-      {% endif %}
-
-      {% if site.author.googlescholar %}
-        <a href="{{ site.author.googlescholar }}">Google Scholar</a>
-      {% endif %}
-
-      {% if site.author.linkedin %}
-        <a href="https://www.linkedin.com/{{ site.author.linkedin }}">LinkedIn</a>
-      {% endif %}
-
-      {% if site.author.github %}
-        <a href="{{ site.author.github }}">GitHub</a>
-      {% endif %}
-    </div>
-  </section>
-
   <section class="condesa-intro-card">
-    <div class="condesa-intro-card__media">
-      {% if site.author.avatar %}
-        <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.title }}">
-      {% endif %}
-    </div>
-
     <article class="condesa-intro-card__content">
       {{ content }}
     </article>
   </section>
-
 </main>
