@@ -1,1 +1,19 @@
---- layout: archive title: "Restaurants" permalink: /restaurants/ author_profile: false --- <section class="food-page"> <header class="food-hero"> <p class="food-eyebrow">Field notes from the most important research agenda</p> <h1>Where to eat</h1> <p> This is probably my most impactful work. I keep lists of my favorite restaurants in a few cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable. </p> </header> <section class="food-grid" aria-label="Restaurant lists by city"> <article class="food-card"> <div> <p class="food-card__number">01</p> <h2>Rotterdam</h2> <p>Home base energy: direct, underrated, and usually better than people expect.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/XBBYRXF7Qtfn66C69" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">02</p> <h2>The Hague</h2> <p>For diplomatic dinners, beach-adjacent snacks, and quietly excellent meals.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/LEKzisBWpS3WpixE8" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">03</p> <h2>Groningen</h2> <p>Small city, strong opinions, many good reasons to stay for one more drink.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">04</p> <h2>Vienna</h2> <p>Coffee, cake, wine, and the occasional meal that makes bureaucracy feel romantic.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/eDdc1YKMKKogukuG8" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">05</p> <h2>Utrecht</h2> <p>Canals, cosy corners, and the high probability of accidentally having a great evening.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/6uLxKPF8VCbrEymY8" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">06</p> <h2>Copenhagen</h2> <p>Design, bakeries, natural wine, and restaurants that somehow make minimalism taste warm.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/XQLSzQryoe4ubugv7" target="_blank" rel="noopener">Open my list</a> </article> <article class="food-card"> <div> <p class="food-card__number">07</p> <h2>Amsterdam</h2> <p>For when you want to pretend you are just visiting and definitely not comparing cities.</p> </div> <a class="food-card__button" href="https://maps.app.goo.gl/oB6LFmX2ks19qtmMA" target="_blank" rel="noopener">Open my list</a> </article> </section> <section class="food-note"> <h2>Recommendations welcome</h2> <p> Let me know if you have any recommendations—and don’t forget to cite me if you use one of my lists :) </p> </section> </section>
+---
+layout: archive
+title:
+permalink: /teaching/
+author_profile: false
+---
+
+This is probably my most impactful work. I keep lists of my favorite restaurants in a few cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
+
+- [Rotterdam](https://maps.app.goo.gl/XBBYRXF7Qtfn66C69)  
+- [The Hague](https://maps.app.goo.gl/LEKzisBWpS3WpixE8)  
+- [Groningen](https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6)  
+- [Vienna](https://maps.app.goo.gl/eDdc1YKMKKogukuG8)  
+- [Utrecht](https://maps.app.goo.gl/6uLxKPF8VCbrEymY8)  
+- [Copenhagen](https://maps.app.goo.gl/XQLSzQryoe4ubugv7)  
+- [Amsterdam](https://maps.app.goo.gl/oB6LFmX2ks19qtmMA)
+
+Let me know if you have any recommendations and don't forget to cite me if you have used any of my lists :)
+
