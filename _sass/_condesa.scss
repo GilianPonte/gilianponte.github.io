@@ -1,7 +1,6 @@
 /* ==========================================================================
    Condesa-inspired visual refresh
    Safe visual override for AcademicPages / Minimal Mistakes.
-   Keeps existing site text and Markdown unchanged.
    ========================================================================== */
 
 :root {
@@ -21,7 +20,8 @@
   --condesa-page-padding: clamp(1.25rem, 4vw, 3rem);
 }
 
-/* Base
+/* ==========================================================================
+   Base
    ========================================================================== */
 
 html,
@@ -71,7 +71,8 @@ hr {
   margin: 3rem 0;
 }
 
-/* Main layout
+/* ==========================================================================
+   Main layout
    ========================================================================== */
 
 #main {
@@ -97,7 +98,8 @@ hr {
   max-width: none;
 }
 
-/* Header / navigation
+/* ==========================================================================
+   Header / navigation
    ========================================================================== */
 
 .masthead {
@@ -156,7 +158,8 @@ hr {
   background: transparent;
 }
 
-/* Sidebar / author profile
+/* ==========================================================================
+   Sidebar / author profile on non-home pages
    ========================================================================== */
 
 .sidebar {
@@ -252,7 +255,8 @@ hr {
   background: var(--condesa-orange);
 }
 
-/* Big Condesa-style page titles
+/* ==========================================================================
+   Page titles and content
    ========================================================================== */
 
 .page__title,
@@ -262,8 +266,8 @@ hr {
   color: var(--condesa-orange);
   font-size: clamp(3.1rem, 13vw, 9.25rem);
   font-weight: 950;
-  letter-spacing: -0.1em;
-  line-height: 0.82;
+  letter-spacing: -0.085em;
+  line-height: 0.86;
   text-transform: none;
 }
 
@@ -288,9 +292,6 @@ hr {
   letter-spacing: 0.04em;
 }
 
-/* Page content
-   ========================================================================== */
-
 .page__content {
   color: var(--condesa-ink);
 }
@@ -305,7 +306,7 @@ hr {
   color: var(--condesa-orange);
   font-size: clamp(1.55rem, 3.8vw, 3.3rem);
   font-weight: 850;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.055em;
   line-height: 1.04;
 }
 
@@ -315,7 +316,7 @@ hr {
 .page__content h4 {
   color: var(--condesa-orange);
   font-weight: 950;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.055em;
   line-height: 0.96;
 }
 
@@ -380,7 +381,8 @@ hr {
   border-color: var(--condesa-border);
 }
 
-/* Buttons
+/* ==========================================================================
+   Buttons
    ========================================================================== */
 
 .btn,
@@ -408,7 +410,8 @@ hr {
   background: var(--condesa-orange);
 }
 
-/* Archive / publication / post cards
+/* ==========================================================================
+   Archive / publication / post cards
    ========================================================================== */
 
 .archive {
@@ -470,8 +473,8 @@ hr {
   color: var(--condesa-orange);
   font-size: clamp(1.65rem, 3.6vw, 3.6rem);
   font-weight: 950;
-  letter-spacing: -0.075em;
-  line-height: 0.92;
+  letter-spacing: -0.065em;
+  line-height: 0.96;
 }
 
 .archive__item-title a {
@@ -490,7 +493,8 @@ hr {
   line-height: 1.55;
 }
 
-/* Notices
+/* ==========================================================================
+   Notices, pagination, footer, code
    ========================================================================== */
 
 .notice,
@@ -504,9 +508,6 @@ hr {
   border-radius: var(--condesa-radius-md);
   box-shadow: none;
 }
-
-/* Pagination
-   ========================================================================== */
 
 .pagination {
   margin-top: 3rem;
@@ -522,9 +523,6 @@ hr {
   color: var(--condesa-white);
   background: var(--condesa-orange);
 }
-
-/* Footer
-   ========================================================================== */
 
 .page__footer {
   margin-top: 5rem;
@@ -544,9 +542,6 @@ hr {
   font-weight: 850;
 }
 
-/* Code blocks
-   ========================================================================== */
-
 pre,
 code {
   border-radius: 12px;
@@ -558,17 +553,176 @@ figure.highlight {
   overflow: hidden;
 }
 
-/* Mobile
+/* ==========================================================================
+   Condesa homepage
+   ========================================================================== */
+
+.condesa-home {
+  max-width: var(--condesa-max-width);
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem) var(--condesa-page-padding) 6rem;
+}
+
+/* Hide the old large homepage hero if it is still present in the layout */
+.layout--condesa-home .condesa-hero,
+.condesa-home .condesa-hero {
+  display: none !important;
+}
+
+/* Hide old AcademicPages sidebar and table of contents on homepage */
+.layout--condesa-home .sidebar,
+.layout--condesa-home .toc,
+.layout--condesa-home .toc__menu {
+  display: none !important;
+}
+
+.layout--condesa-home #main {
+  padding-top: 0;
+}
+
+/* Main white homepage card */
+.condesa-intro-card {
+  display: block;
+  width: 100%;
+  padding: clamp(1.1rem, 2.4vw, 1.6rem);
+  background: var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+  overflow: hidden;
+}
+
+/* Keep the image, but place it above the text */
+.condesa-intro-card__media {
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 18%, var(--condesa-blue) 0 18%, transparent 18.5%),
+    radial-gradient(circle at 22% 78%, var(--condesa-orange) 0 20%, transparent 20.5%),
+    linear-gradient(135deg, rgba(235, 80, 39, 0.16), rgba(47, 118, 180, 0.18)),
+    var(--condesa-cream);
+}
+
+.condesa-intro-card__media img {
+  display: block;
+  width: 100%;
+  height: clamp(300px, 42vw, 520px);
+  object-fit: cover;
+  object-position: center;
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+}
+
+/* Homepage text should use the full white box */
+.condesa-intro-card__content {
+  width: 100%;
+  max-width: none;
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.condesa-intro-card__content > p,
+.condesa-intro-card__content > ul,
+.condesa-intro-card__content > ol,
+.condesa-intro-card__content li {
+  width: 100%;
+  max-width: none;
+}
+
+/* Homepage intro sentence */
+.condesa-intro-card__content > p:first-child {
+  margin-top: 0;
+  max-width: none;
+  color: var(--condesa-orange);
+  font-size: clamp(1.65rem, 3.6vw, 3.15rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 1.03;
+}
+
+/* Homepage headings */
+.condesa-intro-card__content h2,
+.condesa-intro-card__content h3 {
+  clear: both;
+  margin: clamp(2.5rem, 5vw, 4rem) 0 1rem;
+  color: var(--condesa-orange);
+  font-weight: 950;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.condesa-intro-card__content h2 {
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+}
+
+.condesa-intro-card__content h3 {
+  font-size: clamp(1.8rem, 4vw, 3.6rem);
+}
+
+/* Homepage Markdown lists as soft cards */
+.layout--condesa-home .condesa-intro-card__content > ul {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 2.25rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.layout--condesa-home .condesa-intro-card__content > ul > li {
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.45rem);
+  background:
+    radial-gradient(circle at 94% 14%, rgba(47, 118, 180, 0.12), transparent 7rem),
+    var(--condesa-cream);
+  border: 2px solid rgba(38, 35, 22, 0.10);
+  border-radius: var(--condesa-radius-md);
+}
+
+.layout--condesa-home .condesa-intro-card__content > ul > li:nth-child(odd) {
+  background:
+    radial-gradient(circle at 94% 14%, rgba(235, 80, 39, 0.12), transparent 7rem),
+    var(--condesa-cream);
+}
+
+.condesa-intro-card__content a {
+  color: var(--condesa-orange);
+  font-weight: 850;
+}
+
+.condesa-intro-card__content a:hover {
+  color: var(--condesa-blue);
+}
+
+/* Optional custom Condesa content sections */
+.condesa-section,
+.condesa-section p,
+.condesa-section ul,
+.condesa-section ol,
+.condesa-publication-grid,
+.condesa-publication,
+.condesa-publication p {
+  width: 100%;
+  max-width: none;
+}
+
+/* ==========================================================================
+   Mobile
    ========================================================================== */
 
 @media (max-width: 900px) {
   .page__title,
   .archive__title {
-    letter-spacing: -0.085em;
+    letter-spacing: -0.075em;
   }
 
   .archive__item {
     padding: 1.4rem;
+  }
+
+  .condesa-intro-card__media,
+  .condesa-intro-card__media img {
+    min-height: 320px;
   }
 }
 
@@ -622,195 +776,9 @@ figure.highlight {
   .page__content h2 {
     margin-top: 3rem;
   }
-}
-/* ==========================================================================
-   Condesa homepage layout
-   ========================================================================== */
 
-.condesa-home {
-  max-width: var(--condesa-max-width);
-  margin: 0 auto;
-  padding: clamp(1.25rem, 4vw, 3rem) var(--condesa-page-padding) 6rem;
-}
-
-.condesa-hero {
-  padding: clamp(2rem, 6vw, 5rem) 0 clamp(2rem, 5vw, 4rem);
-}
-
-.condesa-hero__topline {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.75rem 1.5rem;
-  margin-bottom: clamp(2rem, 5vw, 4rem);
-  color: var(--condesa-orange);
-  font-size: clamp(0.95rem, 1.6vw, 1.25rem);
-  font-weight: 900;
-  letter-spacing: -0.03em;
-}
-
-.condesa-hero__title {
-  margin: 0;
-  color: var(--condesa-orange);
-  font-size: clamp(4.6rem, 19vw, 15rem);
-  font-weight: 950;
-  letter-spacing: -0.13em;
-  line-height: 0.72;
-}
-
-.condesa-hero__subtitle {
-  max-width: 980px;
-  margin: clamp(2rem, 4vw, 3.5rem) 0 0;
-  color: var(--condesa-orange);
-  font-size: clamp(1.7rem, 4vw, 3.7rem);
-  font-weight: 900;
-  letter-spacing: -0.07em;
-  line-height: 1.02;
-}
-
-.condesa-hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: clamp(1.5rem, 3vw, 2.5rem);
-}
-
-.condesa-hero__actions a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.75rem;
-  padding: 0.65rem 1rem;
-  color: var(--condesa-orange);
-  border: 2px solid var(--condesa-orange);
-  border-radius: 999px;
-  font-weight: 900;
-  text-decoration: none;
-}
-
-.condesa-hero__actions a:hover {
-  color: var(--condesa-white);
-  background: var(--condesa-orange);
-}
-
-.condesa-intro-card {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.38fr) minmax(0, 0.62fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: start;
-  padding: clamp(1.1rem, 2.4vw, 1.6rem);
-  background: var(--condesa-white);
-  border: 2px solid var(--condesa-border);
-  border-radius: var(--condesa-radius-lg);
-  overflow: hidden;
-}
-
-.condesa-intro-card__media {
-  min-height: 420px;
-  border-radius: calc(var(--condesa-radius-lg) - 12px);
-  background:
-    radial-gradient(circle at 72% 18%, var(--condesa-blue) 0 18%, transparent 18.5%),
-    radial-gradient(circle at 22% 78%, var(--condesa-orange) 0 20%, transparent 20.5%),
-    linear-gradient(135deg, rgba(235, 80, 39, 0.16), rgba(47, 118, 180, 0.18)),
-    var(--condesa-cream);
-  overflow: hidden;
-}
-
-.condesa-intro-card__media img {
-  width: 100%;
-  height: 100%;
-  min-height: 420px;
-  object-fit: cover;
-  border-radius: calc(var(--condesa-radius-lg) - 12px);
-}
-
-.condesa-intro-card__content {
-  padding: clamp(0.75rem, 2vw, 1.5rem);
-}
-
-.condesa-intro-card__content > p:first-child {
-  margin-top: 0;
-  color: var(--condesa-orange);
-  font-size: clamp(1.6rem, 3.5vw, 3.2rem);
-  font-weight: 900;
-  letter-spacing: -0.065em;
-  line-height: 1.02;
-}
-
-.condesa-intro-card__content h2 {
-  margin: 3.5rem 0 1rem;
-  color: var(--condesa-orange);
-  font-size: clamp(2rem, 4.5vw, 4.25rem);
-  font-weight: 950;
-  letter-spacing: -0.075em;
-  line-height: 0.95;
-}
-
-.condesa-intro-card__content h3 {
-  margin: 2.5rem 0 0.75rem;
-  color: var(--condesa-orange);
-  font-size: clamp(1.45rem, 3vw, 2.6rem);
-  font-weight: 950;
-  letter-spacing: -0.06em;
-  line-height: 0.98;
-}
-
-.condesa-intro-card__content ul {
-  padding-left: 1.1rem;
-}
-
-.condesa-intro-card__content li {
-  margin-bottom: 0.7rem;
-}
-
-.condesa-intro-card__content a {
-  color: var(--condesa-orange);
-  font-weight: 850;
-}
-
-.condesa-intro-card__content a:hover {
-  color: var(--condesa-blue);
-}
-
-/* Hide the old AcademicPages sidebar only on the Condesa homepage */
-.layout--condesa-home .sidebar {
-  display: none;
-}
-
-/* Avoid duplicate default spacing on the custom homepage */
-.layout--condesa-home #main {
-  padding-top: 0;
-}
-
-@media (max-width: 900px) {
-  .condesa-intro-card {
-    grid-template-columns: 1fr;
-  }
-
-  .condesa-intro-card__media,
-  .condesa-intro-card__media img {
-    min-height: 320px;
-  }
-}
-
-@media (max-width: 700px) {
   .condesa-home {
     padding-top: 1rem;
-  }
-
-  .condesa-hero__title {
-    font-size: clamp(3.6rem, 21vw, 6.5rem);
-     letter-spacing: -0.065em;
-    line-height: 0.82;
-    word-spacing: 0.03em;
-  }
-
-  .condesa-hero__subtitle {
-    font-size: clamp(1.5rem, 8vw, 2.35rem);
-  }
-
-  .condesa-hero__actions a {
-    width: 100%;
-    justify-content: center;
   }
 
   .condesa-intro-card {
@@ -822,55 +790,17 @@ figure.highlight {
     min-height: 260px;
     border-radius: calc(var(--condesa-radius-md) - 8px);
   }
-}
-/* ==========================================================================
-   Final homepage width adjustments
-   ========================================================================== */
 
-/* Use the full white homepage card for text instead of keeping the old
-   two-column image/text split. This fixes the narrow text column. */
-.layout--condesa-home .condesa-intro-card {
-  display: block;
-}
+  .condesa-intro-card__media img {
+    height: 300px;
+  }
 
-.layout--condesa-home .condesa-intro-card__media {
-  display: none;
-}
+  .condesa-intro-card__content > p:first-child {
+    font-size: clamp(1.45rem, 8vw, 2.25rem);
+    letter-spacing: -0.045em;
+  }
 
-.layout--condesa-home .condesa-intro-card__content {
-  width: 100%;
-  max-width: none;
-  padding: clamp(1rem, 2vw, 1.5rem);
-}
-
-/* Let plain Markdown and custom Condesa sections use the full available width. */
-.layout--condesa-home .condesa-intro-card__content > p,
-.layout--condesa-home .condesa-intro-card__content > ul,
-.layout--condesa-home .condesa-intro-card__content > ol,
-.layout--condesa-home .condesa-intro-card__content li,
-.layout--condesa-home .condesa-section,
-.layout--condesa-home .condesa-section p,
-.layout--condesa-home .condesa-section ul,
-.layout--condesa-home .condesa-section ol,
-.layout--condesa-home .condesa-publication-grid,
-.layout--condesa-home .condesa-publication,
-.layout--condesa-home .condesa-publication p {
-  width: 100%;
-  max-width: none;
-}
-
-/* Keep ordinary Markdown lists from looking cramped on the homepage. */
-.layout--condesa-home .condesa-intro-card__content > ul,
-.layout--condesa-home .condesa-intro-card__content > ol {
-  padding-left: 1.35rem;
-}
-/* ==========================================================================
-   Remove homepage hero
-   ========================================================================== */
-.layout--condesa-home .condesa-hero {
-  display: none !important;
-}
-
-.layout--condesa-home .condesa-home {
-  padding-top: clamp(1rem, 3vw, 2rem);
+  .condesa-intro-card__content h3 {
+    font-size: clamp(1.65rem, 9vw, 2.65rem);
+  }
 }
