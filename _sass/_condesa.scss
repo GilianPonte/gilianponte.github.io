@@ -804,3 +804,54 @@ figure.highlight {
     font-size: clamp(1.65rem, 9vw, 2.65rem);
   }
 }
+/* ==========================================================================
+   Condesa-style scroll reveal / lazy-loading feel
+   ========================================================================== */
+
+.js .condesa-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(8px);
+  transition:
+    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.js .condesa-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Image gets a slightly more visual Condesa-style reveal */
+.js .condesa-intro-card__media.condesa-reveal {
+  transform: translateY(30px) scale(0.985);
+  filter: blur(10px);
+}
+
+.js .condesa-intro-card__media.condesa-reveal.is-visible {
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Lists feel like they load as soft content blocks */
+.js .condesa-intro-card__content > ul.condesa-reveal,
+.js .condesa-intro-card__content > ol.condesa-reveal {
+  transform: translateY(34px);
+}
+
+/* Avoid animation accessibility issues */
+@media (prefers-reduced-motion: reduce) {
+  .js .condesa-reveal,
+  .js .condesa-reveal.is-visible,
+  .js .condesa-intro-card__media.condesa-reveal,
+  .js .condesa-intro-card__media.condesa-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
