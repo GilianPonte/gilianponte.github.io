@@ -2,7 +2,7 @@
 layout: condesa-home
 permalink: /
 title: ""
-author_profile: true
+author_profile: false
 toc: false
 toc_sticky: false
 condesa_title: "Gilian Ponte"
