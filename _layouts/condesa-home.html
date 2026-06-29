@@ -8,22 +8,41 @@ layout: default
   document.documentElement.classList.add("js");
 </script>
 
+{% assign content_parts = content | split: '</p>' %}
+{% assign intro_paragraph = content_parts[0] | append: '</p>' %}
+
+{% capture remaining_content %}
+  {% for part in content_parts offset:1 %}
+    {% unless part == "" %}
+      {{ part }}{% unless forloop.last %}</p>{% endunless %}
+    {% endunless %}
+  {% endfor %}
+{% endcapture %}
+
 <main id="main" class="condesa-home" role="main">
 
   <section class="condesa-intro-card condesa-intro-card--with-image">
 
-    <article class="condesa-intro-card__content">
-      {{ content }}
-    </article>
+    <div class="condesa-intro-row">
 
-    {% if site.author.avatar %}
-      <div class="condesa-intro-card__media">
-        <img
-          src="{{ base_path }}/images/{{ site.author.avatar }}"
-          alt="{{ site.title | default: 'Gilian Ponte' }}"
-          decoding="async">
+      <div class="condesa-intro-text">
+        {{ intro_paragraph }}
       </div>
-    {% endif %}
+
+      {% if site.author.avatar %}
+        <div class="condesa-intro-image">
+          <img
+            src="{{ base_path }}/images/{{ site.author.avatar }}"
+            alt="{{ site.title | default: 'Gilian Ponte' }}"
+            decoding="async">
+        </div>
+      {% endif %}
+
+    </div>
+
+    <article class="condesa-intro-card__content">
+      {{ remaining_content }}
+    </article>
 
   </section>
 
@@ -32,14 +51,15 @@ layout: default
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const revealSelectors = [
+      ".condesa-intro-text",
+      ".condesa-intro-image",
       ".condesa-intro-card__content > p",
       ".condesa-intro-card__content > h2",
       ".condesa-intro-card__content > h3",
       ".condesa-intro-card__content > ul",
       ".condesa-intro-card__content > ol",
       ".condesa-intro-card__content > blockquote",
-      ".condesa-intro-card__content > table",
-      ".condesa-intro-card__media"
+      ".condesa-intro-card__content > table"
     ];
 
     const revealItems = Array.from(
