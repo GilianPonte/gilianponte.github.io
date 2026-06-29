@@ -4,13 +4,20 @@ layout: default
 
 {% include base_path %}
 
+<script>
+  document.documentElement.classList.add("js");
+</script>
+
 <main id="main" class="condesa-home" role="main">
 
   <section class="condesa-intro-card condesa-intro-card--with-image">
 
     {% if site.author.avatar %}
       <div class="condesa-intro-card__media">
-        <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.title | default: 'Gilian Ponte' }}">
+        <img
+          src="{{ base_path }}/images/{{ site.author.avatar }}"
+          alt="{{ site.title | default: 'Gilian Ponte' }}"
+          decoding="async">
       </div>
     {% endif %}
 
@@ -21,3 +28,53 @@ layout: default
   </section>
 
 </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const revealSelectors = [
+      ".condesa-intro-card__media",
+      ".condesa-intro-card__content > p",
+      ".condesa-intro-card__content > h2",
+      ".condesa-intro-card__content > h3",
+      ".condesa-intro-card__content > ul",
+      ".condesa-intro-card__content > ol",
+      ".condesa-intro-card__content > blockquote",
+      ".condesa-intro-card__content > table"
+    ];
+
+    const revealItems = Array.from(
+      document.querySelectorAll(revealSelectors.join(","))
+    );
+
+    revealItems.forEach(function (item, index) {
+      item.classList.add("condesa-reveal");
+      item.style.setProperty("--reveal-delay", Math.min(index * 80, 480) + "ms");
+    });
+
+    if (!("IntersectionObserver" in window)) {
+      revealItems.forEach(function (item) {
+        item.classList.add("is-visible");
+      });
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -12% 0px"
+      }
+    );
+
+    revealItems.forEach(function (item) {
+      observer.observe(item);
+    });
+  });
+</script>
