@@ -554,19 +554,13 @@ figure.highlight {
 }
 
 /* ==========================================================================
-   Condesa homepage
+   Homepage
    ========================================================================== */
 
 .condesa-home {
   max-width: var(--condesa-max-width);
   margin: 0 auto;
   padding: clamp(1rem, 3vw, 2rem) var(--condesa-page-padding) 6rem;
-}
-
-/* Hide the old large homepage hero if it is still present in the layout */
-.layout--condesa-home .condesa-hero,
-.condesa-home .condesa-hero {
-  display: none !important;
 }
 
 /* Hide old AcademicPages sidebar and table of contents on homepage */
@@ -580,10 +574,15 @@ figure.highlight {
   padding-top: 0;
 }
 
+/* Hide the old large homepage hero if it still exists in the layout */
+.layout--condesa-home .condesa-hero,
+.condesa-home .condesa-hero {
+  display: none !important;
+}
+
 /* Main white homepage card */
 .condesa-intro-card {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
   padding: clamp(1.1rem, 2.4vw, 1.6rem);
   background: var(--condesa-white);
@@ -592,22 +591,28 @@ figure.highlight {
   overflow: hidden;
 }
 
-/* Text first */
-.condesa-intro-card__content {
-  order: 1;
-  width: 100%;
-  max-width: none;
-  padding: clamp(0.75rem, 2vw, 1.5rem);
+/* Intro row: text left, image right */
+.condesa-intro-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 34%);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-/* Image second, smaller than before */
-.condesa-intro-card__media {
-  order: 2;
-  display: block;
+/* Smaller orange intro text */
+.condesa-intro-text p {
+  margin: 0;
+  color: var(--condesa-orange);
+  font-size: clamp(1.8rem, 3.1vw, 2.85rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+/* Image on the right of the intro text */
+.condesa-intro-image {
   width: 100%;
-  min-height: 0;
-  margin-top: clamp(2rem, 5vw, 4rem);
-  margin-bottom: 0;
   border-radius: calc(var(--condesa-radius-lg) - 12px);
   overflow: hidden;
   background:
@@ -617,15 +622,26 @@ figure.highlight {
     var(--condesa-cream);
 }
 
-.condesa-intro-card__media img {
+.condesa-intro-image img {
   display: block;
   width: 100%;
-  height: clamp(220px, 28vw, 360px);
-  min-height: 0;
-  max-height: 360px;
+  height: clamp(220px, 26vw, 340px);
   object-fit: cover;
   object-position: center top;
   border-radius: calc(var(--condesa-radius-lg) - 12px);
+}
+
+/* Remove old image container if an older layout still outputs it */
+.condesa-intro-card__media {
+  display: none !important;
+}
+
+/* Remaining homepage content */
+.condesa-intro-card__content {
+  display: block;
+  width: 100%;
+  max-width: none;
+  padding: 0 clamp(0.75rem, 2vw, 1.5rem) clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .condesa-intro-card__content > p,
@@ -636,18 +652,18 @@ figure.highlight {
   max-width: none;
 }
 
-/* Homepage intro sentence */
+/* Reset first paragraph styling inside remaining content,
+   because the real intro paragraph is now in .condesa-intro-text */
 .condesa-intro-card__content > p:first-child {
   margin-top: 0;
-  max-width: none;
-  color: var(--condesa-orange);
-  font-size: clamp(1.65rem, 3.6vw, 3.15rem);
-  font-weight: 900;
-  letter-spacing: -0.055em;
-  line-height: 1.03;
+  color: var(--condesa-ink);
+  font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.55;
 }
 
-/* Homepage headings */
+/* Homepage section headings */
 .condesa-intro-card__content h2,
 .condesa-intro-card__content h3 {
   clear: both;
@@ -713,6 +729,45 @@ figure.highlight {
 }
 
 /* ==========================================================================
+   Scroll reveal / lazy-loading feel
+   ========================================================================== */
+
+.js .condesa-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  filter: blur(8px);
+  transition:
+    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 900ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.js .condesa-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* Image gets a slightly more visual Condesa-style reveal */
+.js .condesa-intro-image.condesa-reveal {
+  transform: translateY(30px) scale(0.985);
+  filter: blur(10px);
+}
+
+.js .condesa-intro-image.condesa-reveal.is-visible {
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Lists feel like they load as soft content blocks */
+.js .condesa-intro-card__content > ul.condesa-reveal,
+.js .condesa-intro-card__content > ol.condesa-reveal {
+  transform: translateY(34px);
+}
+
+/* ==========================================================================
    Mobile
    ========================================================================== */
 
@@ -725,10 +780,21 @@ figure.highlight {
   .archive__item {
     padding: 1.4rem;
   }
+}
 
-  .condesa-intro-card__media,
-  .condesa-intro-card__media img {
-    min-height: 0;
+@media (max-width: 800px) {
+  .condesa-intro-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .condesa-intro-text p {
+    font-size: clamp(1.55rem, 8vw, 2.25rem);
+    letter-spacing: -0.04em;
+  }
+
+  .condesa-intro-image img {
+    height: 220px;
   }
 }
 
@@ -791,208 +857,25 @@ figure.highlight {
     border-radius: var(--condesa-radius-md);
   }
 
-  .condesa-intro-card__media,
-  .condesa-intro-card__media img {
-    min-height: 0;
+  .condesa-intro-image,
+  .condesa-intro-image img {
     border-radius: calc(var(--condesa-radius-md) - 8px);
-  }
-
-  .condesa-intro-card__media {
-    margin-top: 2rem;
-  }
-
-  .condesa-intro-card__media img {
-    height: 220px;
-    max-height: 220px;
-  }
-
-  .condesa-intro-card__content > p:first-child {
-    font-size: clamp(1.45rem, 8vw, 2.25rem);
-    letter-spacing: -0.045em;
   }
 
   .condesa-intro-card__content h3 {
     font-size: clamp(1.65rem, 9vw, 2.65rem);
   }
 }
-/* ==========================================================================
-   Condesa-style scroll reveal / lazy-loading feel
-   ========================================================================== */
-
-.js .condesa-reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  filter: blur(8px);
-  transition:
-    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
-    filter 900ms cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform, filter;
-}
-
-.js .condesa-reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0);
-}
-
-/* Image gets a slightly more visual Condesa-style reveal */
-.js .condesa-intro-card__media.condesa-reveal {
-  transform: translateY(30px) scale(0.985);
-  filter: blur(10px);
-}
-
-.js .condesa-intro-card__media.condesa-reveal.is-visible {
-  transform: translateY(0) scale(1);
-  filter: blur(0);
-}
-
-/* Lists feel like they load as soft content blocks */
-.js .condesa-intro-card__content > ul.condesa-reveal,
-.js .condesa-intro-card__content > ol.condesa-reveal {
-  transform: translateY(34px);
-}
 
 /* Avoid animation accessibility issues */
 @media (prefers-reduced-motion: reduce) {
   .js .condesa-reveal,
   .js .condesa-reveal.is-visible,
-  .js .condesa-intro-card__media.condesa-reveal,
-  .js .condesa-intro-card__media.condesa-reveal.is-visible {
+  .js .condesa-intro-image.condesa-reveal,
+  .js .condesa-intro-image.condesa-reveal.is-visible {
     opacity: 1;
     transform: none;
     filter: none;
     transition: none;
-  }
-}
-
-/* ==========================================================================
-   Final homepage order + smaller image override
-   ========================================================================== */
-
-.layout--condesa-home .condesa-intro-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.layout--condesa-home .condesa-intro-card__content {
-  order: 1;
-}
-
-.layout--condesa-home .condesa-intro-card__media {
-  order: 2;
-  display: block !important;
-  width: 100%;
-  min-height: 0 !important;
-  margin-top: clamp(2rem, 5vw, 4rem);
-  margin-bottom: 0;
-}
-
-.layout--condesa-home .condesa-intro-card__media img {
-  display: block;
-  width: 100%;
-  height: clamp(220px, 28vw, 360px) !important;
-  min-height: 0 !important;
-  max-height: 360px;
-  object-fit: cover;
-  object-position: center top;
-}
-
-@media (max-width: 700px) {
-  .layout--condesa-home .condesa-intro-card__media {
-    margin-top: 2rem;
-  }
-
-  .layout--condesa-home .condesa-intro-card__media img {
-    height: 220px !important;
-    max-height: 220px;
-  }
-}
-/* ==========================================================================
-   Homepage intro: smaller orange text + image on the right
-   ========================================================================== */
-
-/* Make the top white card a grid only for the intro area */
-.layout--condesa-home .condesa-intro-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 36%);
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: start;
-}
-
-/* Let the article's children participate directly in the grid */
-.layout--condesa-home .condesa-intro-card__content {
-  display: contents;
-}
-
-/* The "Hi there!" paragraph: left side */
-.layout--condesa-home .condesa-intro-card__content > p:first-child {
-  grid-column: 1;
-  grid-row: 1;
-  margin: 0;
-  max-width: none;
-  color: var(--condesa-orange);
-  font-size: clamp(1.8rem, 3vw, 2.75rem);
-  font-weight: 900;
-  letter-spacing: -0.045em;
-  line-height: 1.05;
-}
-
-/* Image: right side of the intro text */
-.layout--condesa-home .condesa-intro-card__media {
-  grid-column: 2;
-  grid-row: 1;
-  display: block !important;
-  width: 100%;
-  min-height: 0 !important;
-  margin: 0;
-  border-radius: calc(var(--condesa-radius-lg) - 12px);
-  overflow: hidden;
-}
-
-/* Smaller image */
-.layout--condesa-home .condesa-intro-card__media img {
-  display: block;
-  width: 100%;
-  height: clamp(220px, 26vw, 340px) !important;
-  min-height: 0 !important;
-  max-height: 340px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: calc(var(--condesa-radius-lg) - 12px);
-}
-
-/* Everything after the intro paragraph spans the full card width */
-.layout--condesa-home .condesa-intro-card__content > *:not(:first-child) {
-  grid-column: 1 / -1;
-}
-
-/* Mobile: stack intro text, image, then the rest */
-@media (max-width: 800px) {
-  .layout--condesa-home .condesa-intro-card {
-    grid-template-columns: 1fr;
-  }
-
-  .layout--condesa-home .condesa-intro-card__content > p:first-child {
-    grid-column: 1;
-    grid-row: 1;
-    font-size: clamp(1.55rem, 8vw, 2.25rem);
-    letter-spacing: -0.04em;
-  }
-
-  .layout--condesa-home .condesa-intro-card__media {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 1.5rem;
-  }
-
-  .layout--condesa-home .condesa-intro-card__media img {
-    height: 220px !important;
-    max-height: 220px;
-  }
-
-  .layout--condesa-home .condesa-intro-card__content > *:not(:first-child) {
-    grid-column: 1;
   }
 }
