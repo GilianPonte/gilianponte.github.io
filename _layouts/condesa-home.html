@@ -5,9 +5,19 @@ layout: default
 {% include base_path %}
 
 <main id="main" class="condesa-home" role="main">
-  <section class="condesa-intro-card">
+
+  <section class="condesa-intro-card condesa-intro-card--with-image">
+
+    {% if site.author.avatar %}
+      <div class="condesa-intro-card__media">
+        <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.title | default: 'Gilian Ponte' }}">
+      </div>
+    {% endif %}
+
     <article class="condesa-intro-card__content">
       {{ content }}
     </article>
+
   </section>
+
 </main>
