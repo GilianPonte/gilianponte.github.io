@@ -867,13 +867,10 @@ figure.highlight {
 /* ==========================================================================
    Remove homepage hero
    ========================================================================== */
-
-/* Hide the large top block with school, location, name, and buttons */
 .layout--condesa-home .condesa-hero {
-  display: none;
+  display: none !important;
 }
 
-/* Reduce top spacing now that the hero is gone */
 .layout--condesa-home .condesa-home {
   padding-top: clamp(1rem, 3vw, 2rem);
 }
