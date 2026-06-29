@@ -2,7 +2,7 @@
 layout: archive
 title:
 permalink: /teaching/
-author_profile: true
+author_profile: false
 ---
 
 This is probably my most impactful work. I keep lists of my favorite restaurants in a few cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
