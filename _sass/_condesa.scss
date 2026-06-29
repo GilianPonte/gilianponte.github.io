@@ -798,8 +798,10 @@ figure.highlight {
   }
 
   .condesa-hero__title {
-    font-size: clamp(4rem, 24vw, 7rem);
-    letter-spacing: -0.12em;
+    font-size: clamp(3.6rem, 21vw, 6.5rem);
+    letter-spacing: -0.075em;
+    line-height: 0.82;
+    word-spacing: 0.03em;
   }
 
   .condesa-hero__subtitle {
