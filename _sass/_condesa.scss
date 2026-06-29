@@ -909,4 +909,90 @@ figure.highlight {
     max-height: 220px;
   }
 }
+/* ==========================================================================
+   Homepage intro: smaller orange text + image on the right
+   ========================================================================== */
 
+/* Make the top white card a grid only for the intro area */
+.layout--condesa-home .condesa-intro-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 36%);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+/* Let the article's children participate directly in the grid */
+.layout--condesa-home .condesa-intro-card__content {
+  display: contents;
+}
+
+/* The "Hi there!" paragraph: left side */
+.layout--condesa-home .condesa-intro-card__content > p:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  max-width: none;
+  color: var(--condesa-orange);
+  font-size: clamp(1.8rem, 3vw, 2.75rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+/* Image: right side of the intro text */
+.layout--condesa-home .condesa-intro-card__media {
+  grid-column: 2;
+  grid-row: 1;
+  display: block !important;
+  width: 100%;
+  min-height: 0 !important;
+  margin: 0;
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+  overflow: hidden;
+}
+
+/* Smaller image */
+.layout--condesa-home .condesa-intro-card__media img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 26vw, 340px) !important;
+  min-height: 0 !important;
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+}
+
+/* Everything after the intro paragraph spans the full card width */
+.layout--condesa-home .condesa-intro-card__content > *:not(:first-child) {
+  grid-column: 1 / -1;
+}
+
+/* Mobile: stack intro text, image, then the rest */
+@media (max-width: 800px) {
+  .layout--condesa-home .condesa-intro-card {
+    grid-template-columns: 1fr;
+  }
+
+  .layout--condesa-home .condesa-intro-card__content > p:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: clamp(1.55rem, 8vw, 2.25rem);
+    letter-spacing: -0.04em;
+  }
+
+  .layout--condesa-home .condesa-intro-card__media {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 1.5rem;
+  }
+
+  .layout--condesa-home .condesa-intro-card__media img {
+    height: 220px !important;
+    max-height: 220px;
+  }
+
+  .layout--condesa-home .condesa-intro-card__content > *:not(:first-child) {
+    grid-column: 1;
+  }
+}
