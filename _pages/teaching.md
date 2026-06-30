@@ -10,7 +10,7 @@ author_profile: false
   <header class="food-hero">
 
 
-    <h1>Where to eat</h1>
+    <h2>Where to eat when you visit the Netherlands</h2>
 
     <p>
       This is probably my most impactful work. I keep lists of my favorite restaurants in a few Dutch cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
