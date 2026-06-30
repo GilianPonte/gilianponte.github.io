@@ -1076,3 +1076,163 @@ figure.highlight {
     font-size: clamp(3.5rem, 20vw, 6rem);
   }
 }
+/* ==========================================================================
+   Music page
+   ========================================================================== */
+
+.music-page {
+  max-width: var(--condesa-max-width);
+  margin: 0 auto;
+}
+
+.music-hero {
+  padding: clamp(2rem, 5vw, 4rem);
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(47, 118, 180, 0.16), transparent 12rem),
+    radial-gradient(circle at 12% 82%, rgba(235, 80, 39, 0.14), transparent 12rem),
+    var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+}
+
+.music-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--condesa-blue);
+  font-size: 0.85rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.music-hero h1 {
+  margin: 0 0 1.25rem;
+  color: var(--condesa-orange);
+  font-size: clamp(4.5rem, 15vw, 12rem);
+  font-weight: 950;
+  letter-spacing: -0.105em;
+  line-height: 0.78;
+}
+
+.music-hero p:last-child {
+  max-width: 780px;
+  margin: 0;
+  color: var(--condesa-ink);
+  font-size: clamp(1.1rem, 1.8vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.45;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.music-card {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(235, 80, 39, 0.16), transparent 8rem),
+    var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+  overflow: hidden;
+}
+
+.music-card:nth-child(even) {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(47, 118, 180, 0.16), transparent 8rem),
+    var(--condesa-white);
+}
+
+.music-card::after {
+  content: "";
+  position: absolute;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  width: clamp(72px, 12vw, 120px);
+  aspect-ratio: 1;
+  border: 2px solid rgba(38, 35, 22, 0.14);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, transparent 0 16%, rgba(38, 35, 22, 0.12) 17% 19%, transparent 20% 31%, rgba(38, 35, 22, 0.10) 32% 34%, transparent 35%),
+    rgba(242, 239, 227, 0.8);
+}
+
+.music-card__number {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 1rem;
+  color: var(--condesa-blue);
+  font-size: 0.8rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.music-card h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  margin: 0 0 1rem;
+  color: var(--condesa-orange);
+  font-size: clamp(2rem, 4.6vw, 4.5rem);
+  font-weight: 950;
+  letter-spacing: -0.085em;
+  line-height: 0.9;
+}
+
+.music-card p:last-child {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--condesa-ink);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 850;
+}
+
+.music-note {
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    linear-gradient(135deg, rgba(235, 80, 39, 0.12), rgba(47, 118, 180, 0.12)),
+    var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+}
+
+.music-note h2 {
+  margin: 0 0 1rem;
+  color: var(--condesa-orange);
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.music-note p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--condesa-ink);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.45;
+}
+
+@media (max-width: 800px) {
+  .music-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .music-card {
+    min-height: 220px;
+  }
+
+  .music-hero h1 {
+    font-size: clamp(4rem, 24vw, 7rem);
+  }
+}
