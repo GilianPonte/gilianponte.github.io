@@ -1,0 +1,31 @@
+<button class="scroll-cue" type="button" aria-label="Scroll down">
+  <span aria-hidden="true">↓</span>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const scrollCue = document.querySelector(".scroll-cue");
+
+    if (!scrollCue) return;
+
+    scrollCue.addEventListener("click", function () {
+      window.scrollBy({
+        top: Math.round(window.innerHeight * 0.85),
+        left: 0,
+        behavior: "smooth"
+      });
+    });
+
+    function updateScrollCue() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+      const nearBottom = scrollPosition > pageHeight - 160;
+
+      scrollCue.classList.toggle("is-hidden", nearBottom);
+    }
+
+    updateScrollCue();
+    window.addEventListener("scroll", updateScrollCue, { passive: true });
+    window.addEventListener("resize", updateScrollCue);
+  });
+</script>
