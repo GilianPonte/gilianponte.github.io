@@ -1,8 +1,9 @@
 # main links links
 main:
-
+  - title: "Food"
+    url: /teaching/ 
+    
   - title: "Music"
     url: /publications/
 
-  - title: "Restaurants"
-    url: /teaching/    
+   
