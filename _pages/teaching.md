@@ -23,7 +23,6 @@ author_profile: false
       <div class="food-card__text">
         <p class="food-card__number">01</p>
         <h2>Rotterdam</h2>
-        <p>Home base energy: direct, underrated, and usually better than people expect.</p>
         <a class="food-card__button" href="https://maps.app.goo.gl/XBBYRXF7Qtfn66C69" target="_blank" rel="noopener">Open my list</a>
       </div>
 
@@ -41,7 +40,6 @@ author_profile: false
       <div class="food-card__text">
         <p class="food-card__number">02</p>
         <h2>The Hague</h2>
-        <p>For diplomatic dinners, beach-adjacent snacks, and quietly excellent meals.</p>
         <a class="food-card__button" href="https://maps.app.goo.gl/LEKzisBWpS3WpixE8" target="_blank" rel="noopener">Open my list</a>
       </div>
 
@@ -59,7 +57,6 @@ author_profile: false
       <div class="food-card__text">
         <p class="food-card__number">03</p>
         <h2>Groningen</h2>
-        <p>Small city, strong opinions, many good reasons to stay for one more drink.</p>
         <a class="food-card__button" href="https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6" target="_blank" rel="noopener">Open my list</a>
       </div>
 
@@ -77,7 +74,6 @@ author_profile: false
       <div class="food-card__text">
         <p class="food-card__number">04</p>
         <h2>Utrecht</h2>
-        <p>Canals, cosy corners, and the high probability of accidentally having a great evening.</p>
         <a class="food-card__button" href="https://maps.app.goo.gl/6uLxKPF8VCbrEymY8" target="_blank" rel="noopener">Open my list</a>
       </div>
 
@@ -95,7 +91,6 @@ author_profile: false
       <div class="food-card__text">
         <p class="food-card__number">05</p>
         <h2>Amsterdam</h2>
-        <p>For when you want to pretend you are just visiting and definitely not comparing cities.</p>
         <a class="food-card__button" href="https://maps.app.goo.gl/oB6LFmX2ks19qtmMA" target="_blank" rel="noopener">Open my list</a>
       </div>
 
