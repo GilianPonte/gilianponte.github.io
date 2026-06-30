@@ -1357,52 +1357,35 @@ figure.highlight {
 .repo-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
-  padding: 0.85rem 1.1rem;
-  margin: 0.5rem 0;
-  border: 2px solid #f04b2f;
+  gap: 0.45rem;
+  padding: 0.45rem 0.75rem;
+  border: 1.5px solid #f04b2f;
   border-radius: 999px;
   color: #f04b2f;
   background: #fffaf1;
   text-decoration: none;
+  font-size: 0.78rem;
   font-weight: 800;
-  box-shadow: 0 6px 18px rgba(240, 75, 47, 0.14);
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(240, 75, 47, 0.12);
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
 .repo-link:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   background: #f04b2f;
   color: #fffaf1;
-  box-shadow: 0 10px 26px rgba(240, 75, 47, 0.24);
+  box-shadow: 0 7px 18px rgba(240, 75, 47, 0.22);
 }
 
 .repo-link__icon {
-  display: inline-flex;
-  width: 1.35rem;
-  height: 1.35rem;
-}
-
-.repo-link__icon svg {
-  width: 100%;
-  height: 100%;
+  width: 18px !important;
+  height: 18px !important;
+  flex: 0 0 18px;
   fill: currentColor;
-}
-
-.repo-link__text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
-}
-
-.repo-link__text small {
-  margin-top: 0.22rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  opacity: 0.75;
+  display: block;
 }
 
 .repo-link__arrow {
-  font-size: 1rem;
-  margin-left: 0.15rem;
+  font-size: 0.75rem;
 }
