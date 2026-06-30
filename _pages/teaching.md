@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: ""
+title: "Where to eat when you visit the Netherlands"
 permalink: /teaching/
 author_profile: false
 ---
@@ -10,11 +10,9 @@ author_profile: false
   <header class="food-hero">
 
 
-    <h2>Where to eat when you visit the Netherlands</h2>
-
-    <p>
+    <h2>
       This is probably my most impactful work. I keep lists of my favorite restaurants in a few Dutch cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
-    </p>
+    </h2>
   </header>
 
   <section class="food-grid" aria-label="Restaurant lists by city">
