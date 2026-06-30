@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Restaurants"
+title: ""
 permalink: /teaching/
 author_profile: false
 ---
