@@ -1236,3 +1236,80 @@ figure.highlight {
     font-size: clamp(4rem, 24vw, 7rem);
   }
 }
+/* ==========================================================================
+   Site-wide scroll cue
+   ========================================================================== */
+
+.scroll-cue {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  z-index: 100;
+  width: clamp(3rem, 5vw, 4rem);
+  height: clamp(3rem, 5vw, 4rem);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--condesa-white);
+  background: var(--condesa-orange);
+  border: 2px solid var(--condesa-orange);
+  border-radius: 999px;
+  box-shadow: 0 0.75rem 2rem rgba(38, 35, 22, 0.18);
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease,
+    background 200ms ease,
+    border-color 200ms ease;
+  animation: condesa-scroll-cue-bounce 1.8s ease-in-out infinite;
+}
+
+.scroll-cue span {
+  display: block;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.scroll-cue:hover {
+  background: var(--condesa-blue);
+  border-color: var(--condesa-blue);
+}
+
+.scroll-cue.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+}
+
+@keyframes condesa-scroll-cue-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.45rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .scroll-cue {
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .scroll-cue span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    animation: none;
+  }
+}
