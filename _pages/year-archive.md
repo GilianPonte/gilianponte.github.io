@@ -20,7 +20,6 @@ My research lies at the intersection of marketing analytics and privacy, with a 
 - **[Differential Privacy & Marketing Analytics](https://research.rug.nl/en/publications/differential-privacy-amp-marketing-analytics/)** (2024)  
   Gilian Ponte  
   *PhD Thesis*
-  
   [EMAC Doctoral Dissertation Award](https://www.rug.nl/feb/research/frn/news/archief/2025/250718-gilian-ponte-wins-emac-enginius-doctoral-competition?lang=en)
 
 - **[Where’s Waldo? A Framework for Quantifying the Privacy–Utility Trade-off in Marketing Applications](https://www.sciencedirect.com/science/article/pii/S0167811624000417)** (2024)  
