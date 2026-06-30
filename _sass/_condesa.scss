@@ -1313,3 +1313,18 @@ figure.highlight {
     animation: none;
   }
 }
+/* Hide broken hamburger button */
+.greedy-nav button {
+  display: none !important;
+}
+
+/* Show all navigation links */
+.greedy-nav .visible-links {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+/* Prevent links from being pushed into hidden menu */
+.greedy-nav .hidden-links {
+  display: none !important;
+}
