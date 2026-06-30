@@ -904,3 +904,175 @@ figure.highlight {
   border: 0;
   display: block;
 }
+/* ==========================================================================
+   Restaurant / food page
+   ========================================================================== */
+
+.food-page {
+  max-width: var(--condesa-max-width);
+  margin: 0 auto;
+}
+
+.food-hero {
+  padding: clamp(2rem, 5vw, 4rem);
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  background: var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+}
+
+.food-eyebrow {
+  margin: 0 0 1rem;
+  color: var(--condesa-blue);
+  font-size: 0.85rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.food-hero h1 {
+  margin: 0 0 1.25rem;
+  color: var(--condesa-orange);
+  font-size: clamp(4rem, 13vw, 10rem);
+  font-weight: 950;
+  letter-spacing: -0.095em;
+  line-height: 0.82;
+}
+
+.food-hero p:last-child {
+  max-width: 920px;
+  margin: 0;
+  color: var(--condesa-orange);
+  font-size: clamp(1.5rem, 3.2vw, 3rem);
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.food-grid {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.food-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.45fr) minmax(280px, 0.55fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: stretch;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background:
+    radial-gradient(circle at 92% 14%, rgba(47, 118, 180, 0.16), transparent 8rem),
+    var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+}
+
+.food-card:nth-child(odd) {
+  background:
+    radial-gradient(circle at 90% 14%, rgba(235, 80, 39, 0.16), transparent 8rem),
+    var(--condesa-white);
+}
+
+.food-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food-card__number {
+  margin: 0 0 0.75rem;
+  color: var(--condesa-blue);
+  font-size: 0.8rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.food-card h2 {
+  margin: 0 0 1rem;
+  color: var(--condesa-orange);
+  font-size: clamp(2.4rem, 5vw, 5rem);
+  font-weight: 950;
+  letter-spacing: -0.085em;
+  line-height: 0.88;
+}
+
+.food-card p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--condesa-ink);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.food-card__button {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 2rem;
+  padding: 0.7rem 1rem;
+  color: var(--condesa-orange);
+  border: 2px solid var(--condesa-orange);
+  border-radius: 999px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.food-card__button:hover {
+  color: var(--condesa-white);
+  background: var(--condesa-orange);
+}
+
+.food-map {
+  min-height: 280px;
+  overflow: hidden;
+  border: 2px solid rgba(38, 35, 22, 0.12);
+  border-radius: calc(var(--condesa-radius-lg) - 12px);
+  background: var(--condesa-cream);
+}
+
+.food-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  border: 0;
+}
+
+.food-note {
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background:
+    linear-gradient(135deg, rgba(235, 80, 39, 0.12), rgba(47, 118, 180, 0.12)),
+    var(--condesa-white);
+  border: 2px solid var(--condesa-border);
+  border-radius: var(--condesa-radius-lg);
+}
+
+.food-note h2 {
+  margin: 0 0 1rem;
+  color: var(--condesa-orange);
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  font-weight: 950;
+  letter-spacing: -0.08em;
+  line-height: 0.9;
+}
+
+.food-note p {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+}
+
+@media (max-width: 850px) {
+  .food-card {
+    grid-template-columns: 1fr;
+  }
+
+  .food-map,
+  .food-map iframe {
+    min-height: 240px;
+  }
+
+  .food-hero h1 {
+    font-size: clamp(3.5rem, 20vw, 6rem);
+  }
+}
