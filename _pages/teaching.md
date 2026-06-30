@@ -8,7 +8,7 @@ author_profile: false
 <section class="food-page">
 
   <header class="food-hero">
-    <p class="food-eyebrow">Field notes from the most important research agenda</p>
+
 
     <h1>Where to eat</h1>
 
