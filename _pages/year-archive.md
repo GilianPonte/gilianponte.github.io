@@ -10,15 +10,12 @@ redirect_from:
 ---
 
 Hi there! 
-
 I'm Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management, Erasmus University Rotterdam.
 
 ### Research
-
 My research lies at the intersection of marketing analytics and privacy, with a particular focus on differential privacy, econometrics, and machine learning. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
 
 ### Publications
-
 - **[Differential Privacy & Marketing Analytics](https://research.rug.nl/en/publications/differential-privacy-amp-marketing-analytics/)** (2024)  
   Gilian Ponte  
   *PhD Thesis*
