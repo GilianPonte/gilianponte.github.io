@@ -8,12 +8,8 @@ author_profile: false
 <section class="music-page">
 
   <header class="music-hero">
-    <p class="music-eyebrow">No research talk here</p>
-
-    <h1>Music</h1>
-
     <p>
-      I would much rather hear about your favorite band. Here are a few albums that have been on heavy rotation lately.
+      No research talk here. I would much rather hear about your favorite band. Here are a few albums that have been on heavy rotation lately.
     </p>
   </header>
 
