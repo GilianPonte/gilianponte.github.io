@@ -47,10 +47,10 @@ My research lies at the intersection of marketing analytics and privacy, with a 
 
 ### Work in Progress
 I am currently working on the following projects, in order of maturity:
-- **Private Randomized Response** — with Tom Boot and Jaap Wieringa
-- **Setting Privacy Risk Budgets in Online Experiments** — with Alina Ferecatu
-- **Machine Unlearning in Targeting** — with Ta-Wei (David) Huang
-- **Shuffling for Data Privacy** — with Tom Boot and Bruno Jacobs
+- Private Randomized Response — with Tom Boot and Jaap Wieringa
+- Setting Privacy Risk Budgets in Online Experiments — with Alina Ferecatu
+- Machine Unlearning in Targeting — with Ta-Wei (David) Huang
+- Shuffling for Data Privacy — with Tom Boot and Bruno Jacobs
 
 ### Public Policy
 
