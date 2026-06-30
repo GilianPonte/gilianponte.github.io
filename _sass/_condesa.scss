@@ -883,12 +883,15 @@ figure.highlight {
    Responsive video embeds
    ========================================================================== */
 
+/* ==========================================================================
+   Responsive video embeds
+   ========================================================================== */
+
 .video-embed {
   position: relative;
-  width: 100%;
-  max-width: 900px;
+  width: min(100%, 560px);
   aspect-ratio: 16 / 9;
-  margin: 1.5rem 0 0;
+  margin: 1.5rem auto 0;
   overflow: hidden;
   border: 2px solid var(--condesa-border);
   border-radius: var(--condesa-radius-md);
