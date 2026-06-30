@@ -34,8 +34,8 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *Journal of Marketing Research*
 
-[Python package](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
-[PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
+  [Python package](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
+  [PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
 
 ### Work in Progress
 I am currently working on the following projects, in order of maturity:
