@@ -1389,3 +1389,9 @@ figure.highlight {
 .repo-link__arrow {
   font-size: 0.75rem;
 }
+.repo-link svg {
+  width: 18px !important;
+  height: 18px !important;
+  flex: 0 0 18px;
+  fill: currentColor;
+}
