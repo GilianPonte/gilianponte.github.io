@@ -1313,18 +1313,21 @@ figure.highlight {
     animation: none;
   }
 }
-/* Hide broken hamburger button */
+/* Mobile header: keep nav links, remove broken square menu */
 .greedy-nav button {
   display: none !important;
 }
 
-/* Show all navigation links */
 .greedy-nav .visible-links {
   display: flex !important;
-  visibility: visible !important;
+  align-items: center;
+  gap: 2rem;
 }
 
-/* Prevent links from being pushed into hidden menu */
+.greedy-nav .visible-links li {
+  display: inline-block !important;
+}
+
 .greedy-nav .hidden-links {
   display: none !important;
 }
