@@ -34,20 +34,14 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *Journal of Marketing Research*
 
-  <a class="repo-link" href="https://github.com/GilianPonte/private-targeting" target="_blank" rel="noopener">
-  <span class="repo-link__icon" aria-hidden="true">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.25.8-.55v-2c-3.2.7-3.9-1.55-3.9-1.55-.55-1.35-1.35-1.7-1.35-1.7-1.1-.75.1-.75.1-.75 1.2.1 1.85 1.25 1.85 1.25 1.1 1.85 2.85 1.3 3.55 1 .1-.8.4-1.3.75-1.6-2.55-.3-5.25-1.3-5.25-5.7 0-1.25.45-2.3 1.2-3.1-.1-.3-.5-1.55.1-3.2 0 0 1-.3 3.3 1.2A11.4 11.4 0 0 1 12 5.3c1 0 2 .15 2.95.4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.65.2 2.9.1 3.2.75.8 1.2 1.85 1.2 3.1 0 4.4-2.7 5.35-5.25 5.65.4.35.8 1.05.8 2.15v3.2c0 .3.2.65.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
-    </svg>
-  </span>
-
-  <span class="repo-link__text">
-    <strong>Python package</strong>
-    <small>View repository on GitHub</small>
-  </span>
-
-  <span class="repo-link__arrow" aria-hidden="true">↗</span>
+<a class="repo-link" href="https://github.com/GilianPonte/private-targeting" target="_blank" rel="noopener">
+  <svg class="repo-link__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.25.8-.55v-2c-3.2.7-3.9-1.55-3.9-1.55-.55-1.35-1.35-1.7-1.35-1.7-1.1-.75.1-.75.1-.75 1.2.1 1.85 1.25 1.85 1.25 1.1 1.85 2.85 1.3 3.55 1 .1-.8.4-1.3.75-1.6-2.55-.3-5.25-1.3-5.25-5.7 0-1.25.45-2.3 1.2-3.1-.1-.3-.5-1.55.1-3.2 0 0 1-.3 3.3 1.2A11.4 11.4 0 0 1 12 5.3c1 0 2 .15 2.95.4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.65.2 2.9.1 3.2.75.8 1.2 1.85 1.2 3.1 0 4.4-2.7 5.35-5.25 5.65.4.35.8 1.05.8 2.15v3.2c0 .3.2.65.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+  </svg>
+  <span>Python package</span>
+  <span class="repo-link__arrow">↗</span>
 </a>
+
   [PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
 
 ### Work in Progress
