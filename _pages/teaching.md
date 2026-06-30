@@ -6,13 +6,10 @@ author_profile: false
 ---
 
 <section class="food-page">
-
-  <header class="food-hero">
-
-
-    <h2>
-      This is probably my most impactful work. I keep lists of my favorite restaurants in a few Dutch cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
-    </h2>
+<header class="music-hero">
+    <p>
+     This is probably my most impactful work. I keep lists of my favorite restaurants in a few Dutch cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
+    </p>
   </header>
 
   <section class="food-grid" aria-label="Restaurant lists by city">
