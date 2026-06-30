@@ -32,6 +32,16 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *Journal of Marketing Research*
 
+  <div class="video-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/ObJWPCc2FNk"
+      title="PyData 2024"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
 ### Work in Progress
 
 I am currently working on the following projects, in order of maturity:
