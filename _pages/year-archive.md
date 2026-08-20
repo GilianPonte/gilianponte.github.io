@@ -29,14 +29,16 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   *International Journal of Research in Marketing*
   
   [IJRM Best Paper Award Finalist 2024](https://www.sciencedirect.com/journal/international-journal-of-research-in-marketing/about/awards/announcement-2024-ijrm-best-articles)  
-  [Featured in the IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics)
+  [Featured in the IJRM Newsletter](https://www.ijrm-newsletter.com/post/finding-privacy-in-a-crowd-the-where-s-waldo-effect-in-marketing-analytics)<br>
+  [Code](https://github.com/GilianPonte/whereswaldoIJRM){: .repo-link target="_blank" rel="noopener" }
 
 - **[Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability](https://journals.sagepub.com/doi/epdf/10.1177/00222437261455302)** (2026)  
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *Journal of Marketing Research*
 
-  [Python package](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
-  [PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
+[Code](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }  
+<br>
+[PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
 
 ## Work in Progress
 I am currently working on the following projects, in order of maturity:
