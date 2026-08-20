@@ -9,14 +9,12 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-Hi there! <br>
-<br>
-I am Gilian Ponte, <br> <br> Assistant Professor of Marketing at the Rotterdam School of Management.
+Hi there! I am Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management.
 
-### Research
+## Research
 My research lies at the intersection of marketing analytics and privacy, with a particular focus on differential privacy, econometrics, and machine learning. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
 
-### Publications
+## Publications
 - **[Differential Privacy & Marketing Analytics](https://research.rug.nl/en/publications/differential-privacy-amp-marketing-analytics/)** (2024)  
   Gilian Ponte  
   *PhD Thesis*
@@ -37,18 +35,18 @@ My research lies at the intersection of marketing analytics and privacy, with a 
   [Python package](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
   [PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
 
-### Work in Progress
+## Work in Progress
 I am currently working on the following projects, in order of maturity:
 - Private Randomized Response — with Tom Boot and Jaap Wieringa
 - Setting Privacy Risk Budgets in Online Experiments — with Alina Ferecatu
 - Machine Unlearning in Targeting — with Ta-Wei (David) Huang
 - Shuffling for Data Privacy — with Tom Boot and Bruno Jacobs
 
-### Public Policy
+## Public Policy
 
 Beyond academia, I actively contribute to privacy-related policymaking in the Netherlands. I have collaborated with organizations such as UWV, DUO, TNO, CBS, and the Ministry of Justice and Security. If you work in policy and are exploring data protection, feel free to get in touch.
 
-### Outside of Work
+## Outside of Work
 
 Outside of research and teaching, I enjoy music, road cycling, philosophy, reading, and good food. Fortunately, the cycling helps balance out the food. That list also helps explain why this website is not always fully up to date.
 
