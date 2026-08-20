@@ -9,8 +9,8 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-## Hi there!
-I am Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management.
+<p><span class="intro-greeting">Hi there!</span></p>
+<p>I am Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management.</p>
 
 ## Research
 My research lies at the intersection of marketing analytics and privacy, with a particular focus on differential privacy, econometrics, and machine learning. I study how organizations can protect individual privacy while still generating meaningful insights from data, with implications for both academic research and managerial practice.
@@ -33,9 +33,9 @@ My research lies at the intersection of marketing analytics and privacy, with a 
 - **[Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability](https://journals.sagepub.com/doi/epdf/10.1177/00222437261455302)** (2026)  
   with Tom Boot, Thomas Reutterer, and Jaap Wieringa  
   *Journal of Marketing Research*
-  [Code](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
-  <br>
+  
   [PyData 2024 Tutorial](https://www.youtube-nocookie.com/embed/ObJWPCc2FNk)
+  [Code](https://github.com/GilianPonte/private-targeting){: .repo-link target="_blank" rel="noopener" }
 
 ## Work in Progress
 I am currently working on the following projects, in order of maturity:
