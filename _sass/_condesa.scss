@@ -616,11 +616,11 @@ figure.highlight {
 /* Smaller orange intro text */
 .condesa-intro-text p {
   margin: 0;
-  color: var(--condesa-orange);
-  font-size: clamp(1rem, 1.4vw, 1.3rem);
-  font-weight: 850;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
+  color: var(--condesa-ink);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.6;
 }
 
 /* Image on the right of the intro text */
