@@ -1240,3 +1240,21 @@ figure.highlight {
   flex: 0 0 18px;
   fill: currentColor;
 }
+/* Smaller homepage portrait */
+.condesa-intro-row {
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 2rem;
+}
+
+.condesa-intro-image {
+  width: 220px !important;
+  max-width: 220px !important;
+  justify-self: end;
+}
+
+.condesa-intro-image img {
+  width: 220px !important;
+  height: 220px !important;
+  object-fit: cover;
+  object-position: center top;
+}
