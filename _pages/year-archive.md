@@ -9,7 +9,7 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-## Hi there! <br><br>  
+## Hi there!
 
 I am Gilian Ponte, Assistant Professor of Marketing at the Rotterdam School of Management.
 
