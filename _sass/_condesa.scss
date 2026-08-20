@@ -11,6 +11,8 @@
   --condesa-muted: #6e6656;
   --condesa-white: #fffdf7;
   --condesa-border: rgba(38, 35, 22, 0.14);
+  --condesa-link: #734400;
+  --condesa-link-hover: #4f2f00;
 
   --condesa-radius-sm: 16px;
   --condesa-radius-md: 28px;
@@ -50,14 +52,15 @@ body::before {
 
 a,
 a:visited {
-  color: var(--condesa-orange);
+  color: var(--condesa-link);
+  font-weight: 500;
   text-decoration-color: currentColor;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
 
 a:hover {
-  color: var(--condesa-blue);
+  color: var(--condesa-link-hover);
 }
 
 strong,
@@ -123,15 +126,15 @@ hr {
 }
 
 .greedy-nav a {
-  color: var(--condesa-orange);
+  color: var(--condesa-link);
   font-size: 0.98rem;
-  font-weight: 850;
+  font-weight: 600;
   line-height: 1;
   text-decoration: none;
 }
 
 .greedy-nav a:hover {
-  color: var(--condesa-blue);
+  color: var(--condesa-link-hover);
 }
 
 .greedy-nav .masthead__menu-item--lg a {
@@ -149,7 +152,7 @@ hr {
 }
 
 .greedy-nav .visible-links li:not(.masthead__menu-item--lg) a:hover {
-  border-color: var(--condesa-orange);
+  border-color: var(--condesa-link);
 }
 
 .greedy-nav__toggle,
@@ -233,8 +236,13 @@ hr {
 }
 
 .author__urls a,
-.author__urls button,
 .author__desktop {
+  color: var(--condesa-link);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.author__urls button {
   color: var(--condesa-orange);
   font-weight: 850;
   text-decoration: none;
@@ -245,14 +253,14 @@ hr {
   align-items: center;
   min-height: 2.25rem;
   padding: 0.45rem 0.8rem;
-  border: 2px solid var(--condesa-orange);
+  border: 2px solid var(--condesa-link);
   border-radius: 999px;
   background: transparent;
 }
 
 .author__urls a:hover {
   color: var(--condesa-white);
-  background: var(--condesa-orange);
+  background: var(--condesa-link);
 }
 
 /* ==========================================================================
@@ -478,12 +486,13 @@ hr {
 }
 
 .archive__item-title a {
-  color: inherit;
+  color: var(--condesa-link);
+  font-weight: inherit;
   text-decoration: none;
 }
 
 .archive__item-title a:hover {
-  color: var(--condesa-blue);
+  color: var(--condesa-link-hover);
 }
 
 .archive__item-excerpt,
@@ -538,8 +547,12 @@ hr {
 }
 
 .page__footer a {
-  color: var(--condesa-orange);
-  font-weight: 850;
+  color: var(--condesa-link);
+  font-weight: 500;
+}
+
+.page__footer a:hover {
+  color: var(--condesa-link-hover);
 }
 
 pre,
@@ -708,12 +721,12 @@ figure.highlight {
 }
 
 .condesa-intro-card__content a {
-  color: var(--condesa-orange);
-  font-weight: 850;
+  color: var(--condesa-link);
+  font-weight: 500;
 }
 
 .condesa-intro-card__content a:hover {
-  color: var(--condesa-blue);
+  color: var(--condesa-link-hover);
 }
 
 /* Optional custom Condesa content sections */
@@ -1204,23 +1217,23 @@ figure.highlight {
   align-items: center;
   gap: 0.45rem;
   padding: 0.45rem 0.75rem;
-  border: 1.5px solid #f04b2f;
+  border: 1.5px solid var(--condesa-link);
   border-radius: 999px;
-  color: #f04b2f;
+  color: var(--condesa-link);
   background: #fffaf1;
   text-decoration: none;
   font-size: 0.78rem;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1;
-  box-shadow: 0 4px 12px rgba(240, 75, 47, 0.12);
+  box-shadow: 0 4px 12px rgba(115, 68, 0, 0.12);
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
 }
 
 .repo-link:hover {
   transform: translateY(-1px);
-  background: #f04b2f;
+  background: var(--condesa-link);
   color: #fffaf1;
-  box-shadow: 0 7px 18px rgba(240, 75, 47, 0.22);
+  box-shadow: 0 7px 18px rgba(115, 68, 0, 0.22);
 }
 
 .repo-link__icon {
