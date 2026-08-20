@@ -24,7 +24,6 @@ author_profile: false
       <div class="food-map">
         <iframe
           src="https://www.google.com/maps?q=restaurants%20Rotterdam%20Netherlands&output=embed"
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Rotterdam">
         </iframe>
@@ -41,7 +40,6 @@ author_profile: false
       <div class="food-map">
         <iframe
           src="https://www.google.com/maps?q=restaurants%20The%20Hague%20Netherlands&output=embed"
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in The Hague">
         </iframe>
@@ -58,7 +56,6 @@ author_profile: false
       <div class="food-map">
         <iframe
           src="https://www.google.com/maps?q=restaurants%20Groningen%20Netherlands&output=embed"
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Groningen">
         </iframe>
@@ -75,7 +72,6 @@ author_profile: false
       <div class="food-map">
         <iframe
           src="https://www.google.com/maps?q=restaurants%20Utrecht%20Netherlands&output=embed"
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Utrecht">
         </iframe>
@@ -92,7 +88,6 @@ author_profile: false
       <div class="food-map">
         <iframe
           src="https://www.google.com/maps?q=restaurants%20Amsterdam%20Netherlands&output=embed"
-          loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Amsterdam">
         </iframe>
