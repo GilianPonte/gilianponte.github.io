@@ -597,7 +597,7 @@ figure.highlight {
   grid-template-columns: minmax(0, 1fr) minmax(240px, 34%);
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: start;
-  margin-bottom: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 1.5rem; 
 }
 
 /* Smaller orange intro text */
@@ -667,7 +667,7 @@ figure.highlight {
 .condesa-intro-card__content h2,
 .condesa-intro-card__content h3 {
   clear: both;
-  margin: clamp(2.5rem, 5vw, 4rem) 0 1rem;
+  margin-top: 1rem;
   color: var(--condesa-orange);
   font-weight: 950;
   letter-spacing: -0.055em;
