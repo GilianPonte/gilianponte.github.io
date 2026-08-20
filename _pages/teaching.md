@@ -23,7 +23,7 @@ author_profile: false
 
       <div class="food-map">
         <iframe
-          src="https://www.google.com/maps?q=restaurants%20Rotterdam%20Netherlands&output=embed"
+          src="https://www.google.com/maps?q=Rotterdam%20Netherlands&output=embed"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Rotterdam">
         </iframe>
@@ -39,7 +39,7 @@ author_profile: false
 
       <div class="food-map">
         <iframe
-          src="https://www.google.com/maps?q=restaurants%20The%20Hague%20Netherlands&output=embed"
+          src="https://www.google.com/maps?q=The%20Hague%20Netherlands&output=embed"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in The Hague">
         </iframe>
@@ -55,7 +55,7 @@ author_profile: false
 
       <div class="food-map">
         <iframe
-          src="https://www.google.com/maps?q=restaurants%20Groningen%20Netherlands&output=embed"
+          src="https://www.google.com/maps?q=Groningen%20Netherlands&output=embed"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Groningen">
         </iframe>
@@ -71,7 +71,7 @@ author_profile: false
 
       <div class="food-map">
         <iframe
-          src="https://www.google.com/maps?q=restaurants%20Utrecht%20Netherlands&output=embed"
+          src="https://www.google.com/maps?q=Utrecht%20Netherlands&output=embed"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Utrecht">
         </iframe>
@@ -87,7 +87,7 @@ author_profile: false
 
       <div class="food-map">
         <iframe
-          src="https://www.google.com/maps?q=restaurants%20Amsterdam%20Netherlands&output=embed"
+          src="https://www.google.com/maps?q=Amsterdam%20Netherlands&output=embed"
           referrerpolicy="no-referrer-when-downgrade"
           title="Restaurants in Amsterdam">
         </iframe>
