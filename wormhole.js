@@ -25,6 +25,29 @@
   // LANGUAGE
   lang.textContent =
     "LANGUAGE: " + (navigator.language || "UNKNOWN");
+  
+  // Introductory privacy status message
+  const status = document.createElement("div");
+
+  status.textContent =
+    "INFERRING INFORMATION ABOUT VISITOR...";
+
+  Object.assign(status.style, {
+    position: "absolute",
+    top: "22px",
+    left: "20px",
+    maxWidth: "calc(100% - 125px)",
+    zIndex: "3",
+    color: "#00ff00",
+    fontFamily: '"Courier New", monospace',
+    fontSize: "clamp(10px, 2.5vw, 13px)",
+    letterSpacing: "0.5px",
+    textShadow: "0 0 8px #00ff00",
+    pointerEvents: "none"
+  });
+
+  root.appendChild(status);
+
 
   // APPROXIMATE LOCATION
   // Uses an external IP location service.
