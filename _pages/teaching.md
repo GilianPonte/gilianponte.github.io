@@ -4,7 +4,6 @@ title: "Where to eat when you visit the Netherlands"
 permalink: /food/
 ---
 
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -88,7 +87,6 @@ permalink: /food/
     <nav>
       <a href="/">home</a>
       <a href="/food/">food</a>
-      <a href="/music/">music</a>
     </nav>
 
     <h1>Where to eat when you visit the Netherlands</h1>
