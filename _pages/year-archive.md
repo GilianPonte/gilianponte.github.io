@@ -1,6 +1,5 @@
 ---
 layout: condesa-home
-permalink: /
 title: ""
 author_profile: false
 toc: false
