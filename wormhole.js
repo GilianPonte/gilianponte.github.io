@@ -132,6 +132,12 @@
 
     const elapsed = now - started;
     const t = elapsed / 1000;
+    
+    // Show the status for 3 seconds, then fade out.
+    status.style.opacity = String(
+      Math.max(0, Math.min(1, (3.5 - t) / 0.5))
+    );
+
 
     const w = root.clientWidth;
     const h = root.clientHeight;
