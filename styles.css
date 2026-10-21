@@ -71,3 +71,17 @@ button {
     display: none;
   }
 }
+/* Mobile tunnel improvements */
+@media (max-width: 650px) {
+  #full-turn-tunnel .ftt-msg {
+    max-width: 75vw;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  #full-turn-tunnel .ftt-skip {
+    min-height: 44px;
+    min-width: 64px;
+  }
+}
