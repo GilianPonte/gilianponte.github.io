@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const probability = 0.015; // 1.5% per letter per update
+  const probability = 0.005; // 1.5% per letter per update
   const interval = 150;      // milliseconds
   const symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&";
 
