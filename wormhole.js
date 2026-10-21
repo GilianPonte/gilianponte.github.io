@@ -135,7 +135,7 @@
     
     // Show the status for 3 seconds, then fade out.
     status.style.opacity = String(
-      Math.max(0, Math.min(1, (3.5 - t) / 0.5))
+      Math.max(0, Math.min(1, (2.5 - t) / 0.5))
     );
 
 
@@ -235,22 +235,24 @@
     }
 
     // PRIVACY MESSAGES FLYING THROUGH THE TUNNEL
-    const messages = [
-      {
-        element: loc,
-        delay: 0.7,
-        x: -0.28,
-        y: -0.22,
-        tilt: -8
-      },
-      {
-        element: lang,
-        delay: 4.6,
-        x: 0.27,
-        y: 0.22,
-        tilt: 7
-      }
-    ];
+    
+const messages = [
+  {
+    element: loc,
+    delay: 0.3,
+    x: -0.28,
+    y: -0.22,
+    tilt: -8
+  },
+  {
+    element: lang,
+    delay: 2.8,
+    x: 0.27,
+    y: 0.22,
+    tilt: 7
+  }
+];
+
 
     messages.forEach(message => {
       const progress = (t - message.delay) / 6.8;
