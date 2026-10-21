@@ -127,6 +127,6 @@ permalink: /food/
       <a href="/">← back to homepage</a>
     </footer>
 
-  </main>
+  </main><script src="/glitch.js" defer></script>
 </body>
 </html>
