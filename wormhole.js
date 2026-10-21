@@ -53,6 +53,14 @@
   const lang=root.querySelector('.ftt-language');
   const end=root.querySelector('.ftt-end');
   const skip=root.querySelector('.ftt-skip');
+  const reducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+);
+
+if (reducedMotion.matches) {
+  root.remove();
+  return;
+}
 
   lang.textContent='LANGUAGE: '+(navigator.language||'UNKNOWN');
 
@@ -64,15 +72,15 @@
 
   let active=false,startTime=0,raf=0;
 
-  function finish(){
-    active=false;
-    cancelAnimationFrame(raf);
-    canvas.style.display='none';
-    loc.style.display='none';
-    lang.style.display='none';
-    skip.style.display='none';
-    end.style.display='block';
-  }
+  
+function finish() {
+  active = false;
+  cancelAnimationFrame(raf);
+
+  // Remove the animation and reveal the real homepage.
+  root.remove();
+}
+
 
   function start(){
     cancelAnimationFrame(raf);
