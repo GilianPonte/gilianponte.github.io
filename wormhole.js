@@ -224,7 +224,7 @@
     ];
 
     messages.forEach(message => {
-      const progress = (t - message.delay) / 4.8;
+      const progress = (t - message.delay) / 6.8;
 
       if (progress < 0 || progress > 1) {
         message.element.style.opacity = "0";
