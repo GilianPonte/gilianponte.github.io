@@ -30,7 +30,7 @@ button {
   left: 0;
   z-index: 2;
   white-space: nowrap;
-  font-size: clamp(11px, 2.4vw, 17px);
+  font-size: clamp(17px, 3.6vw, 26px);
   font-weight: bold;
   text-shadow: 0 0 9px #00ff00;
   pointer-events: none;
