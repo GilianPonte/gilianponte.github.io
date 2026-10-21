@@ -40,7 +40,7 @@
     zIndex: "3",
     color: "#00ff00",
     fontFamily: '"Courier New", monospace',
-    fontSize: "clamp(10px, 2.5vw, 13px)",
+    fontSize: "clamp(15px, 2.5vw, 20px)",
     letterSpacing: "0.5px",
     textShadow: "0 0 8px #00ff00",
     pointerEvents: "none"
