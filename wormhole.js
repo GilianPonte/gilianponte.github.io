@@ -85,7 +85,7 @@
   const SIDES = 24;
   const DEPTH = 28;
   const SPEED = 55;
-  const DURATION = 6800;
+  const DURATION = 6000;
 
   let raf = 0;
   let started = null;
