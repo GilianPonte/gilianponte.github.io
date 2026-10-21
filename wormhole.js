@@ -84,8 +84,8 @@
   const TAU = Math.PI * 2;
   const SIDES = 24;
   const DEPTH = 28;
-  const SPEED = 30;
-  const DURATION = 10800;
+  const SPEED = 45;
+  const DURATION = 8800;
 
   let raf = 0;
   let started = null;
