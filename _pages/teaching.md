@@ -1,106 +1,134 @@
 ---
-layout: archive
+layout: null
 title: "Where to eat when you visit the Netherlands"
-permalink: /teaching/
-author_profile: false
+permalink: /food/
 ---
 
-<section class="food-page">
-<header class="music-hero">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food — Gilian Ponte</title>
+
+  <style>
+    html {
+      background: #000;
+      color: #00ff00;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    body {
+      margin: 0;
+      padding: 35px 20px 80px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    a, a:visited {
+      color: #00ff00;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    nav {
+      margin-bottom: 95px;
+    }
+
+    nav a {
+      margin: 0 10px;
+    }
+
+    h1 {
+      font-size: 17px;
+      font-weight: normal;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .cities {
+      margin: 65px 0;
+    }
+
+    .cities a {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 95px;
+    }
+
+    @media (max-width: 600px) {
+      nav { margin-bottom: 60px; }
+      nav a { margin: 0 5px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <nav>
+      <a href="/">home</a>
+      <a href="/food/">food</a>
+      <a href="/music/">music</a>
+    </nav>
+
+    <h1>Where to eat when you visit the Netherlands</h1>
+
     <p>
-     This is probably my most impactful work. I keep lists of my favorite restaurants in a few Dutch cities I’ve lived in or visited—so why not share them with you? After all, food is a big part of what makes a place memorable.
+      This is probably my most impactful work. I keep lists of
+      my favorite restaurants in a few Dutch cities I’ve lived
+      in or visited—so why not share them with you? After all,
+      food is a big part of what makes a place memorable.
     </p>
-  </header>
 
-  <section class="food-grid" aria-label="Restaurant lists by city">
+    <div class="cities">
+      <a href="https://maps.app.goo.gl/XBBYRXF7Qtfn66C69"
+         target="_blank" rel="noopener noreferrer">Rotterdam</a>
 
-    <article class="food-card">
-      <div class="food-card__text">
-        <p class="food-card__number">01</p>
-        <h2>Rotterdam</h2>
-        <a class="food-card__button" href="https://maps.app.goo.gl/XBBYRXF7Qtfn66C69" target="_blank" rel="noopener">Open my list</a>
-      </div>
+      <a href="https://maps.app.goo.gl/LEKzisBWpS3WpixE8"
+         target="_blank" rel="noopener noreferrer">The Hague</a>
 
-      <div class="food-map">
-        <iframe
-          src="https://www.google.com/maps?q=Rotterdam%20Netherlands&output=embed"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Restaurants in Rotterdam">
-        </iframe>
-      </div>
-    </article>
+      <a href="https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6"
+         target="_blank" rel="noopener noreferrer">Groningen</a>
 
-    <article class="food-card">
-      <div class="food-card__text">
-        <p class="food-card__number">02</p>
-        <h2>The Hague</h2>
-        <a class="food-card__button" href="https://maps.app.goo.gl/LEKzisBWpS3WpixE8" target="_blank" rel="noopener">Open my list</a>
-      </div>
+      <a href="https://maps.app.goo.gl/6uLxKPF8VCbrEymY8"
+         target="_blank" rel="noopener noreferrer">Utrecht</a>
 
-      <div class="food-map">
-        <iframe
-          src="https://www.google.com/maps?q=The%20Hague%20Netherlands&output=embed"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Restaurants in The Hague">
-        </iframe>
-      </div>
-    </article>
+      <a href="https://maps.app.goo.gl/oB6LFmX2ks19qtmMA"
+         target="_blank" rel="noopener noreferrer">Amsterdam</a>
+    </div>
 
-    <article class="food-card">
-      <div class="food-card__text">
-        <p class="food-card__number">03</p>
-        <h2>Groningen</h2>
-        <a class="food-card__button" href="https://maps.app.goo.gl/ZPEqE5x3LybuM9yA6" target="_blank" rel="noopener">Open my list</a>
-      </div>
+    <section>
+      <h2>Recommendations welcome</h2>
+      <p>
+        Let me know if you have any recommendations—and
+        don’t forget to cite me if you use one of my lists :)
+      </p>
+    </section>
 
-      <div class="food-map">
-        <iframe
-          src="https://www.google.com/maps?q=Groningen%20Netherlands&output=embed"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Restaurants in Groningen">
-        </iframe>
-      </div>
-    </article>
+    <footer>
+      <a href="/">← back to homepage</a>
+    </footer>
 
-    <article class="food-card">
-      <div class="food-card__text">
-        <p class="food-card__number">04</p>
-        <h2>Utrecht</h2>
-        <a class="food-card__button" href="https://maps.app.goo.gl/6uLxKPF8VCbrEymY8" target="_blank" rel="noopener">Open my list</a>
-      </div>
-
-      <div class="food-map">
-        <iframe
-          src="https://www.google.com/maps?q=Utrecht%20Netherlands&output=embed"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Restaurants in Utrecht">
-        </iframe>
-      </div>
-    </article>
-
-    <article class="food-card">
-      <div class="food-card__text">
-        <p class="food-card__number">05</p>
-        <h2>Amsterdam</h2>
-        <a class="food-card__button" href="https://maps.app.goo.gl/oB6LFmX2ks19qtmMA" target="_blank" rel="noopener">Open my list</a>
-      </div>
-
-      <div class="food-map">
-        <iframe
-          src="https://www.google.com/maps?q=Amsterdam%20Netherlands&output=embed"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Restaurants in Amsterdam">
-        </iframe>
-      </div>
-    </article>
-
-  </section>
-
-  <section class="food-note">
-    <h2>Recommendations welcome</h2>
-    <p>
-      Let me know if you have any recommendations—and don’t forget to cite me if you use one of my lists :)
-    </p>
-  </section>
-
-</section>
+  </main>
+</body>
+</html>
